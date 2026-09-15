@@ -1,4 +1,4 @@
 interface:
   display_name: "科研实验仓库"
   short_description: "先对齐报告、图表、目录与职责并审批，再为委托实验建立可追溯仓库"
-  default_prompt: "使用 $research-experiment-repo，先与我对齐报告、图表、目录和协作职责，提交审批单，批准后再构建实验仓库。"
+  default_prompt: "使用 $create-research-experiment-repo，先与我对齐报告、图表、目录和协作职责，提交审批单，批准后再构建实验仓库。"
