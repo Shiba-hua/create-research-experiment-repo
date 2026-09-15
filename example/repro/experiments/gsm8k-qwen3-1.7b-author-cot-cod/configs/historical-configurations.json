@@ -1,0 +1,423 @@
+{
+  "records": [
+    {
+      "source": "evidence/cod-author-native-render-001/renderer_audit.json",
+      "path": "evidence/cod-author-native-render-001/renderer_audit.json",
+      "bytes": 4628,
+      "sha256": "d23dee9ae40accb15639c2c9e595075e940575f8abcb7ad01a2bbe5836b287c7",
+      "values": {
+        "model_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e"
+      }
+    },
+    {
+      "source": "evidence/gsm8k-author-cod-audit-001/job.json",
+      "path": "evidence/gsm8k-author-cod-audit-001/job.json",
+      "bytes": 811,
+      "sha256": "2efb8ecb005b5c19fdf9dd9f78e054fe7884359c7f3bcfb871d75e3f2eec6a34",
+      "values": {
+        "git_commit": "61ff6a476c3cacec1fe87c846c9559a010f499dd"
+      }
+    },
+    {
+      "source": "evidence/gsm8k-author-comparison-001/cpu_job.json",
+      "path": "evidence/gsm8k-author-comparison-001/cpu_job.json",
+      "bytes": 1192,
+      "sha256": "cca73aa991c7bf2ae05d95f22549feb9bda6e5de8adb7c70640642b03de203b4",
+      "values": {
+        "source_commit": "61ff6a476c3cacec1fe87c846c9559a010f499dd"
+      }
+    },
+    {
+      "source": "evidence/gsm8k-author-cot-audit-001/job.json",
+      "path": "evidence/gsm8k-author-cot-audit-001/job.json",
+      "bytes": 809,
+      "sha256": "a85fb3f2a1ada33c1d7685fa17df090cee59f91f9f6e36a4848843570ce305e5",
+      "values": {
+        "git_commit": "0e1d5a894f132acb44fab952dd2f5b0e23768034"
+      }
+    },
+    {
+      "source": "evidence/gsm8k-author-cot-audit-002/job.json",
+      "path": "evidence/gsm8k-author-cot-audit-002/job.json",
+      "bytes": 811,
+      "sha256": "f279308fe207e1f9986ee520e7f9b91faa4844f76875a41e01bc15f9fdd7ddc5",
+      "values": {
+        "git_commit": "61ff6a476c3cacec1fe87c846c9559a010f499dd"
+      }
+    },
+    {
+      "source": "evidence/gsm8k-author-figures-001/cpu_job.json",
+      "path": "evidence/gsm8k-author-figures-001/cpu_job.json",
+      "bytes": 1267,
+      "sha256": "c7022e7779632834c79da0af0a601a65710f13a95c8623927ade8e56755b79f4",
+      "values": {
+        "source_commit": "61ff6a476c3cacec1fe87c846c9559a010f499dd"
+      }
+    },
+    {
+      "source": "results/gsm8k-author-cod-audit-001/author_plan.json",
+      "path": "results/gsm8k-author-cod-audit-001/author_plan.json",
+      "bytes": 16065,
+      "sha256": "83b93cfd25e0b8c57b4b7a631a61225eb582480405336e22ce2e7f6cb4029ffe",
+      "values": {
+        "evaluation_config": {
+          "max_new_tokens": 4096,
+          "batch_size": 128,
+          "seed": 1729,
+          "temperature": 0.6,
+          "top_p": 0.95,
+          "top_k": 20,
+          "min_p": 0.0,
+          "thinking": "true",
+          "effective_thinking": true,
+          "do_sample": true,
+          "greedy": false,
+          "max_model_len": 8192,
+          "max_num_batched_tokens": 8192,
+          "gpu_memory_utilization": 0.8,
+          "enforce_eager": false,
+          "backend": "vllm",
+          "pinned_backend_version": "0.10.2",
+          "engine_generation": "V1",
+          "engine_client_mode": "inprocess",
+          "dtype": "bfloat16",
+          "n": 1,
+          "enable_lora": false,
+          "mode": "cod",
+          "protocol": "cod_author_8shot_qwen3_gsm8k_audit_v1",
+          "parser_version": "author_compat_qwen3_final_v2",
+          "thinking_opening_prefilled": false,
+          "author_config_path": "configs/gsm8k_cod.yaml",
+          "author_config_sha256": "c83a151f36af1a491080df441044d6dfeb2ada15cefeb98368c2f9e3563f13cb",
+          "upstream_revision": "a7dbf5dea808b1aa1e12f7a90ea573321581df78",
+          "upstream_lock_sha256": "e2c20262aec1d2b016ff5204833d91901624f84b39ec4118bdf7a35fb1788ad4",
+          "prompt_layout": "single user payload; pinned system text + eight Q/A examples + current Q/empty A",
+          "eos_token_ids": [
+            151643,
+            151645
+          ],
+          "sampling_fixed": {
+            "n": 1,
+            "best_of": null,
+            "min_p": 0.0,
+            "repetition_penalty": 1.0,
+            "presence_penalty": 0.0,
+            "frequency_penalty": 0.0,
+            "ignore_eos": false,
+            "stop": null,
+            "stop_token_ids": [
+              151643,
+              151645
+            ],
+            "truncate_prompt_tokens": null,
+            "detokenize": true,
+            "skip_special_tokens": true
+          },
+          "seed_scheme": "seed plus zero-based batch index modulo 2**32; each mode starts at seed",
+          "chat_template_sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+          "tokenizer_vocab_sha256": "f488fa45d324a8bc64c84f0e27b47223872d550f2a6900564f77dfa67ca5ff4d",
+          "tokenizer_class": "Qwen2TokenizerFast",
+          "source_dependencies_sha256": "5c5413993cbadfaf57bf3e1fe6a40338debb357fdabf1fbbf40516a54aeb6ea5",
+          "dependency_versions": {
+            "vllm": "0.10.2",
+            "torch": "2.8.0+cu128",
+            "transformers": "4.57.1",
+            "tokenizers": "0.22.1",
+            "numpy": "2.2.6",
+            "PyYAML": "6.0.3"
+          }
+        },
+        "model": "/workspace/experiment/models/qwen3-1.7b",
+        "engine_constructor_kwargs": {
+          "model": "/workspace/experiment/models/qwen3-1.7b",
+          "tokenizer": "/workspace/experiment/models/qwen3-1.7b",
+          "dtype": "bfloat16",
+          "tensor_parallel_size": 1,
+          "max_model_len": 8192,
+          "max_num_seqs": 128,
+          "max_num_batched_tokens": 8192,
+          "gpu_memory_utilization": 0.8,
+          "enforce_eager": false,
+          "seed": 1729,
+          "trust_remote_code": false,
+          "generation_config": "vllm",
+          "enable_lora": false
+        }
+      }
+    },
+    {
+      "source": "results/gsm8k-author-cod-audit-001/author_summary.json",
+      "path": "results/gsm8k-author-cod-audit-001/author_summary.json",
+      "bytes": 18371,
+      "sha256": "6ba39d3f3316c3e138ef63b034dcb2cb472b07c369a4336b6817fd120df18a65",
+      "values": {
+        "evaluation_config": {
+          "max_new_tokens": 4096,
+          "batch_size": 128,
+          "seed": 1729,
+          "temperature": 0.6,
+          "top_p": 0.95,
+          "top_k": 20,
+          "min_p": 0.0,
+          "thinking": "true",
+          "effective_thinking": true,
+          "do_sample": true,
+          "greedy": false,
+          "max_model_len": 8192,
+          "max_num_batched_tokens": 8192,
+          "gpu_memory_utilization": 0.8,
+          "enforce_eager": false,
+          "backend": "vllm",
+          "pinned_backend_version": "0.10.2",
+          "engine_generation": "V1",
+          "engine_client_mode": "inprocess",
+          "dtype": "bfloat16",
+          "n": 1,
+          "enable_lora": false,
+          "mode": "cod",
+          "protocol": "cod_author_8shot_qwen3_gsm8k_audit_v1",
+          "parser_version": "author_compat_qwen3_final_v2",
+          "thinking_opening_prefilled": false,
+          "author_config_path": "configs/gsm8k_cod.yaml",
+          "author_config_sha256": "c83a151f36af1a491080df441044d6dfeb2ada15cefeb98368c2f9e3563f13cb",
+          "upstream_revision": "a7dbf5dea808b1aa1e12f7a90ea573321581df78",
+          "upstream_lock_sha256": "e2c20262aec1d2b016ff5204833d91901624f84b39ec4118bdf7a35fb1788ad4",
+          "prompt_layout": "single user payload; pinned system text + eight Q/A examples + current Q/empty A",
+          "eos_token_ids": [
+            151643,
+            151645
+          ],
+          "sampling_fixed": {
+            "n": 1,
+            "best_of": null,
+            "min_p": 0.0,
+            "repetition_penalty": 1.0,
+            "presence_penalty": 0.0,
+            "frequency_penalty": 0.0,
+            "ignore_eos": false,
+            "stop": null,
+            "stop_token_ids": [
+              151643,
+              151645
+            ],
+            "truncate_prompt_tokens": null,
+            "detokenize": true,
+            "skip_special_tokens": true
+          },
+          "seed_scheme": "seed plus zero-based batch index modulo 2**32; each mode starts at seed",
+          "chat_template_sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+          "tokenizer_vocab_sha256": "f488fa45d324a8bc64c84f0e27b47223872d550f2a6900564f77dfa67ca5ff4d",
+          "tokenizer_class": "Qwen2TokenizerFast",
+          "source_dependencies_sha256": "5c5413993cbadfaf57bf3e1fe6a40338debb357fdabf1fbbf40516a54aeb6ea5",
+          "dependency_versions": {
+            "vllm": "0.10.2",
+            "torch": "2.8.0+cu128",
+            "transformers": "4.57.1",
+            "tokenizers": "0.22.1",
+            "numpy": "2.2.6",
+            "PyYAML": "6.0.3"
+          }
+        },
+        "model": "/workspace/experiment/models/qwen3-1.7b",
+        "engine_constructor_kwargs": {
+          "model": "/workspace/experiment/models/qwen3-1.7b",
+          "tokenizer": "/workspace/experiment/models/qwen3-1.7b",
+          "dtype": "bfloat16",
+          "tensor_parallel_size": 1,
+          "max_model_len": 8192,
+          "max_num_seqs": 128,
+          "max_num_batched_tokens": 8192,
+          "gpu_memory_utilization": 0.8,
+          "enforce_eager": false,
+          "seed": 1729,
+          "trust_remote_code": false,
+          "generation_config": "vllm",
+          "enable_lora": false
+        }
+      }
+    },
+    {
+      "source": "results/gsm8k-author-cot-audit-002/author_plan.json",
+      "path": "results/gsm8k-author-cot-audit-002/author_plan.json",
+      "bytes": 16065,
+      "sha256": "8188e53876ed6aa0211cc9bc354763c9fa673fed7b5b9cea1aae0c346a907730",
+      "values": {
+        "evaluation_config": {
+          "max_new_tokens": 4096,
+          "batch_size": 128,
+          "seed": 1729,
+          "temperature": 0.6,
+          "top_p": 0.95,
+          "top_k": 20,
+          "min_p": 0.0,
+          "thinking": "true",
+          "effective_thinking": true,
+          "do_sample": true,
+          "greedy": false,
+          "max_model_len": 8192,
+          "max_num_batched_tokens": 8192,
+          "gpu_memory_utilization": 0.8,
+          "enforce_eager": false,
+          "backend": "vllm",
+          "pinned_backend_version": "0.10.2",
+          "engine_generation": "V1",
+          "engine_client_mode": "inprocess",
+          "dtype": "bfloat16",
+          "n": 1,
+          "enable_lora": false,
+          "mode": "cot",
+          "protocol": "cod_author_8shot_qwen3_gsm8k_audit_v1",
+          "parser_version": "author_compat_qwen3_final_v2",
+          "thinking_opening_prefilled": false,
+          "author_config_path": "configs/gsm8k_cot.yaml",
+          "author_config_sha256": "77fda02c1c68dc9e1f0143fed83e78c9f18febd838bfe2b4efcf86e90acf420d",
+          "upstream_revision": "a7dbf5dea808b1aa1e12f7a90ea573321581df78",
+          "upstream_lock_sha256": "e2c20262aec1d2b016ff5204833d91901624f84b39ec4118bdf7a35fb1788ad4",
+          "prompt_layout": "single user payload; pinned system text + eight Q/A examples + current Q/empty A",
+          "eos_token_ids": [
+            151643,
+            151645
+          ],
+          "sampling_fixed": {
+            "n": 1,
+            "best_of": null,
+            "min_p": 0.0,
+            "repetition_penalty": 1.0,
+            "presence_penalty": 0.0,
+            "frequency_penalty": 0.0,
+            "ignore_eos": false,
+            "stop": null,
+            "stop_token_ids": [
+              151643,
+              151645
+            ],
+            "truncate_prompt_tokens": null,
+            "detokenize": true,
+            "skip_special_tokens": true
+          },
+          "seed_scheme": "seed plus zero-based batch index modulo 2**32; each mode starts at seed",
+          "chat_template_sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+          "tokenizer_vocab_sha256": "f488fa45d324a8bc64c84f0e27b47223872d550f2a6900564f77dfa67ca5ff4d",
+          "tokenizer_class": "Qwen2TokenizerFast",
+          "source_dependencies_sha256": "5c5413993cbadfaf57bf3e1fe6a40338debb357fdabf1fbbf40516a54aeb6ea5",
+          "dependency_versions": {
+            "vllm": "0.10.2",
+            "torch": "2.8.0+cu128",
+            "transformers": "4.57.1",
+            "tokenizers": "0.22.1",
+            "numpy": "2.2.6",
+            "PyYAML": "6.0.3"
+          }
+        },
+        "model": "/workspace/experiment/models/qwen3-1.7b",
+        "engine_constructor_kwargs": {
+          "model": "/workspace/experiment/models/qwen3-1.7b",
+          "tokenizer": "/workspace/experiment/models/qwen3-1.7b",
+          "dtype": "bfloat16",
+          "tensor_parallel_size": 1,
+          "max_model_len": 8192,
+          "max_num_seqs": 128,
+          "max_num_batched_tokens": 8192,
+          "gpu_memory_utilization": 0.8,
+          "enforce_eager": false,
+          "seed": 1729,
+          "trust_remote_code": false,
+          "generation_config": "vllm",
+          "enable_lora": false
+        }
+      }
+    },
+    {
+      "source": "results/gsm8k-author-cot-audit-002/author_summary.json",
+      "path": "results/gsm8k-author-cot-audit-002/author_summary.json",
+      "bytes": 18377,
+      "sha256": "f694a4164078f274c38b0e5986db39ca01fe4febbf32e3cb601344ce1be78c7f",
+      "values": {
+        "evaluation_config": {
+          "max_new_tokens": 4096,
+          "batch_size": 128,
+          "seed": 1729,
+          "temperature": 0.6,
+          "top_p": 0.95,
+          "top_k": 20,
+          "min_p": 0.0,
+          "thinking": "true",
+          "effective_thinking": true,
+          "do_sample": true,
+          "greedy": false,
+          "max_model_len": 8192,
+          "max_num_batched_tokens": 8192,
+          "gpu_memory_utilization": 0.8,
+          "enforce_eager": false,
+          "backend": "vllm",
+          "pinned_backend_version": "0.10.2",
+          "engine_generation": "V1",
+          "engine_client_mode": "inprocess",
+          "dtype": "bfloat16",
+          "n": 1,
+          "enable_lora": false,
+          "mode": "cot",
+          "protocol": "cod_author_8shot_qwen3_gsm8k_audit_v1",
+          "parser_version": "author_compat_qwen3_final_v2",
+          "thinking_opening_prefilled": false,
+          "author_config_path": "configs/gsm8k_cot.yaml",
+          "author_config_sha256": "77fda02c1c68dc9e1f0143fed83e78c9f18febd838bfe2b4efcf86e90acf420d",
+          "upstream_revision": "a7dbf5dea808b1aa1e12f7a90ea573321581df78",
+          "upstream_lock_sha256": "e2c20262aec1d2b016ff5204833d91901624f84b39ec4118bdf7a35fb1788ad4",
+          "prompt_layout": "single user payload; pinned system text + eight Q/A examples + current Q/empty A",
+          "eos_token_ids": [
+            151643,
+            151645
+          ],
+          "sampling_fixed": {
+            "n": 1,
+            "best_of": null,
+            "min_p": 0.0,
+            "repetition_penalty": 1.0,
+            "presence_penalty": 0.0,
+            "frequency_penalty": 0.0,
+            "ignore_eos": false,
+            "stop": null,
+            "stop_token_ids": [
+              151643,
+              151645
+            ],
+            "truncate_prompt_tokens": null,
+            "detokenize": true,
+            "skip_special_tokens": true
+          },
+          "seed_scheme": "seed plus zero-based batch index modulo 2**32; each mode starts at seed",
+          "chat_template_sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+          "tokenizer_vocab_sha256": "f488fa45d324a8bc64c84f0e27b47223872d550f2a6900564f77dfa67ca5ff4d",
+          "tokenizer_class": "Qwen2TokenizerFast",
+          "source_dependencies_sha256": "5c5413993cbadfaf57bf3e1fe6a40338debb357fdabf1fbbf40516a54aeb6ea5",
+          "dependency_versions": {
+            "vllm": "0.10.2",
+            "torch": "2.8.0+cu128",
+            "transformers": "4.57.1",
+            "tokenizers": "0.22.1",
+            "numpy": "2.2.6",
+            "PyYAML": "6.0.3"
+          }
+        },
+        "model": "/workspace/experiment/models/qwen3-1.7b",
+        "engine_constructor_kwargs": {
+          "model": "/workspace/experiment/models/qwen3-1.7b",
+          "tokenizer": "/workspace/experiment/models/qwen3-1.7b",
+          "dtype": "bfloat16",
+          "tensor_parallel_size": 1,
+          "max_model_len": 8192,
+          "max_num_seqs": 128,
+          "max_num_batched_tokens": 8192,
+          "gpu_memory_utilization": 0.8,
+          "enforce_eager": false,
+          "seed": 1729,
+          "trust_remote_code": false,
+          "generation_config": "vllm",
+          "enable_lora": false
+        }
+      }
+    }
+  ],
+  "scope": "Selected serialized parameter fields plus exact complete-source references. Inspect each original manifest/plan for additional fields; absent values remain unknown."
+}

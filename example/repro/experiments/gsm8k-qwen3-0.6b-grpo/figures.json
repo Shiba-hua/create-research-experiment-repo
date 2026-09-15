@@ -1,0 +1,22 @@
+{
+  "manifest": "results/gsm8k-grpo-formal-001/figures/plot_manifest.json",
+  "bytes": 32093,
+  "sha256": "755f374e4de0874dac18e25d221504e2ceb611c24983c66aaf9aaf2731debfda",
+  "source_snapshots": [
+    "plotting/training_diagnostics.py",
+    "plotting/audit_plots.py"
+  ],
+  "scope": "Historical render source and provenance; review supplements are separate",
+  "review_supplements": [
+    {
+      "manifest": "docs/experiments/grpo/gsm8k-qwen3-0.6b/figures/accuracy-decode-cost/plot_manifest.json",
+      "bytes": 774,
+      "sha256": "371a740c76608dc424ab19aa87ccac2bd8b0bb58cbe8d576711e70b7e81f10e6"
+    },
+    {
+      "manifest": "docs/experiments/grpo/gsm8k-qwen3-0.6b/figures/trajectory-jumps/plot_manifest.json",
+      "bytes": 1914,
+      "sha256": "d93cb39eac9d0e3ff79fbdcc31911cf54da22464795b5b73ad77d2275a4b31a7"
+    }
+  ]
+}

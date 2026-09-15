@@ -1,0 +1,12 @@
+{
+  "status": "released",
+  "job_sha256": "a85fb3f2a1ada33c1d7685fa17df090cee59f91f9f6e36a4848843570ce305e5",
+  "job_pid": 1171312,
+  "observed_unix": 1789047758.9746792,
+  "process_alive": false,
+  "gpu_compute_processes": [],
+  "gpu_memory_used_mib": [
+    0.0
+  ],
+  "gpu_count": 1
+}

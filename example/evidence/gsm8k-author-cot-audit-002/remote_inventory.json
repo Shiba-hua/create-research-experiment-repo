@@ -1,0 +1,301 @@
+{
+  "allowed_run_ids": [
+    "gsm8k-author-cot-audit-002"
+  ],
+  "files": [
+    {
+      "bytes": 16065,
+      "forbidden_input_fields": [],
+      "mtime_ns": 1789049186408925904,
+      "path": "/workspace/experiment/results/gsm8k-author-cot-audit-002/author_plan.json",
+      "relative_path": "results/gsm8k-author-cot-audit-002/author_plan.json",
+      "sha256": "8188e53876ed6aa0211cc9bc354763c9fa673fed7b5b9cea1aae0c346a907730"
+    },
+    {
+      "bytes": 364,
+      "forbidden_input_fields": [],
+      "mtime_ns": 1789050028295130910,
+      "path": "/workspace/experiment/results/gsm8k-author-cot-audit-002/author_status.json",
+      "relative_path": "results/gsm8k-author-cot-audit-002/author_status.json",
+      "sha256": "b63939356e429b1f354eaabd307ce636e71c0785608d0bb960c62fe64397fc4f"
+    },
+    {
+      "bytes": 28968,
+      "forbidden_input_fields": [],
+      "json_rows": 11,
+      "mtime_ns": 1789049959269872451,
+      "path": "/workspace/experiment/results/gsm8k-author-cot-audit-002/requests.jsonl",
+      "physical_rows": 11,
+      "relative_path": "results/gsm8k-author-cot-audit-002/requests.jsonl",
+      "sha256": "4601dafbfe0d3264b69c35b4dd0e37de5c106da29319c5026a4f7d890948fcdb"
+    },
+    {
+      "bytes": 19504761,
+      "forbidden_input_fields": [],
+      "json_rows": 1319,
+      "mtime_ns": 1789050028265130798,
+      "output_integrity": {
+        "author_correct": 977,
+        "complete_output_text_and_ids_rows": 1319,
+        "strict_correct": 969,
+        "unique_ids": 1319
+      },
+      "path": "/workspace/experiment/results/gsm8k-author-cot-audit-002/author_predictions.jsonl",
+      "physical_rows": 1319,
+      "relative_path": "results/gsm8k-author-cot-audit-002/author_predictions.jsonl",
+      "sha256": "1261a1215f6d2f013e19c1c3baf06d5456544ff5ca7f8ddf8cec426def2fca5a"
+    },
+    {
+      "bytes": 18377,
+      "forbidden_input_fields": [],
+      "mtime_ns": 1789050028295130910,
+      "path": "/workspace/experiment/results/gsm8k-author-cot-audit-002/author_summary.json",
+      "relative_path": "results/gsm8k-author-cot-audit-002/author_summary.json",
+      "sha256": "f694a4164078f274c38b0e5986db39ca01fe4febbf32e3cb601344ce1be78c7f"
+    },
+    {
+      "bytes": 0,
+      "mtime_ns": 1789049166383849169,
+      "path": "/workspace/experiment/evidence/gsm8k-author-cot-audit-002/launcher.log",
+      "relative_path": "evidence/gsm8k-author-cot-audit-002/launcher.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 9202,
+      "mtime_ns": 1789050029335134804,
+      "path": "/workspace/experiment/evidence/gsm8k-author-cot-audit-002/stdout.log",
+      "relative_path": "evidence/gsm8k-author-cot-audit-002/stdout.log",
+      "sha256": "ff2de8f42d86a7cfbc3effd11cf02e28b11e14e07c1a3812b59dd74669a47c39"
+    },
+    {
+      "bytes": 811,
+      "forbidden_input_fields": [],
+      "mtime_ns": 1789050030572139436,
+      "path": "/workspace/experiment/evidence/gsm8k-author-cot-audit-002/job.json",
+      "relative_path": "evidence/gsm8k-author-cot-audit-002/job.json",
+      "sha256": "f279308fe207e1f9986ee520e7f9b91faa4844f76875a41e01bc15f9fdd7ddc5"
+    },
+    {
+      "bytes": 13352,
+      "forbidden_input_fields": [],
+      "json_rows": 58,
+      "mtime_ns": 1789050025309119729,
+      "path": "/workspace/experiment/evidence/gsm8k-author-cot-audit-002/resources.jsonl",
+      "physical_rows": 58,
+      "relative_path": "evidence/gsm8k-author-cot-audit-002/resources.jsonl",
+      "sha256": "4e04acbfc8698b285cc61ead0a400720d40abc5a191311998b7bfcda38139d62"
+    },
+    {
+      "bytes": 2,
+      "mtime_ns": 1789050030572139436,
+      "path": "/workspace/experiment/evidence/gsm8k-author-cot-audit-002/exit_code",
+      "relative_path": "evidence/gsm8k-author-cot-audit-002/exit_code",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "bytes": 287,
+      "forbidden_input_fields": [],
+      "mtime_ns": 1789050236102909028,
+      "path": "/workspace/experiment/evidence/gsm8k-author-cot-audit-002/gpu-release.json",
+      "relative_path": "evidence/gsm8k-author-cot-audit-002/gpu-release.json",
+      "sha256": "e37a91597e81505ccb5aec4e0af615f4ff63637707711233c85b68986f0e2d3e"
+    }
+  ],
+  "forbidden_input_field_names": [
+    "author_payload",
+    "fewshot",
+    "generation_prompt",
+    "generation_prompt_token_ids",
+    "messages",
+    "prompt",
+    "prompt_ids",
+    "prompt_token_ids",
+    "rendered_prompts"
+  ],
+  "kind": "read_only_exact_file_inventory",
+  "observed_at": "2026-09-10T14:46:52.926344+00:00",
+  "queue_reference_inventory": [
+    {
+      "bytes": 159258,
+      "path": "/workspace/experiment/evidence/gsm8k-base-cot-cod-eval-queue-001/queue_plan.json",
+      "run_id_occurrences": {
+        "gsm8k-author-cod-audit-001": 0,
+        "gsm8k-author-cot-audit-002": 0
+      },
+      "sha256": "65380b16d499fab0dc6c83c7f3cf0a57c0a1e502ecf4db63982086220497dea5"
+    },
+    {
+      "bytes": 42923,
+      "path": "/workspace/experiment/evidence/gsm8k-base-cot-cod-eval-queue-001/queue_status.json",
+      "run_id_occurrences": {
+        "gsm8k-author-cod-audit-001": 0,
+        "gsm8k-author-cot-audit-002": 0
+      },
+      "sha256": "0363a65ce0c303b4ae8b0c5157d387d856c086c6c34f46f192bec84eba2dbf0f"
+    },
+    {
+      "bytes": 2042,
+      "path": "/workspace/experiment/evidence/gsm8k-base-cot-cod-eval-queue-001/entry-000.json",
+      "run_id_occurrences": {
+        "gsm8k-author-cod-audit-001": 0,
+        "gsm8k-author-cot-audit-002": 0
+      },
+      "sha256": "2939650a950e7186a115803215a926f0f3c80b5c1cf9980db9d0fac8ec0500b5"
+    },
+    {
+      "bytes": 2046,
+      "path": "/workspace/experiment/evidence/gsm8k-base-cot-cod-eval-queue-001/entry-001.json",
+      "run_id_occurrences": {
+        "gsm8k-author-cod-audit-001": 0,
+        "gsm8k-author-cot-audit-002": 0
+      },
+      "sha256": "3685997ba86e030a43f6041f881c5a63bc441f98c675f8fc8fdd8f9fd4944148"
+    },
+    {
+      "bytes": 2048,
+      "path": "/workspace/experiment/evidence/gsm8k-base-cot-cod-eval-queue-001/entry-002.json",
+      "run_id_occurrences": {
+        "gsm8k-author-cod-audit-001": 0,
+        "gsm8k-author-cot-audit-002": 0
+      },
+      "sha256": "1c54379e89d5be987d75be1c19c608e6f56c727fd5158b65727d05e15e364e47"
+    },
+    {
+      "bytes": 2048,
+      "path": "/workspace/experiment/evidence/gsm8k-base-cot-cod-eval-queue-001/entry-003.json",
+      "run_id_occurrences": {
+        "gsm8k-author-cod-audit-001": 0,
+        "gsm8k-author-cot-audit-002": 0
+      },
+      "sha256": "251374e1d3a2eee30ebd2ab928b7454810994733fd6d5d3f05735b0c9e4848f0"
+    },
+    {
+      "bytes": 2047,
+      "path": "/workspace/experiment/evidence/gsm8k-base-cot-cod-eval-queue-001/entry-004.json",
+      "run_id_occurrences": {
+        "gsm8k-author-cod-audit-001": 0,
+        "gsm8k-author-cot-audit-002": 0
+      },
+      "sha256": "3a7cd1c5f40f7beb62f24d80b6cd18eea53c884d08992eaeb1cef21e00d40937"
+    },
+    {
+      "bytes": 2047,
+      "path": "/workspace/experiment/evidence/gsm8k-base-cot-cod-eval-queue-001/entry-005.json",
+      "run_id_occurrences": {
+        "gsm8k-author-cod-audit-001": 0,
+        "gsm8k-author-cot-audit-002": 0
+      },
+      "sha256": "09d460e7f2ec0cf24859be8d2b4c40008f001e4f05291932cb52267eb6c2bf08"
+    },
+    {
+      "bytes": 2056,
+      "path": "/workspace/experiment/evidence/gsm8k-base-cot-cod-eval-queue-001/entry-006.json",
+      "run_id_occurrences": {
+        "gsm8k-author-cod-audit-001": 0,
+        "gsm8k-author-cot-audit-002": 0
+      },
+      "sha256": "79e24afab8d543718ca045f3fb77425a83e981a1f8de7672a52d8ecece71b601"
+    },
+    {
+      "bytes": 2060,
+      "path": "/workspace/experiment/evidence/gsm8k-base-cot-cod-eval-queue-001/entry-007.json",
+      "run_id_occurrences": {
+        "gsm8k-author-cod-audit-001": 0,
+        "gsm8k-author-cot-audit-002": 0
+      },
+      "sha256": "24d888af4a021ed3725ceb4635316cb66feeda89cc8c39fc9c143e7552c55549"
+    },
+    {
+      "bytes": 2058,
+      "path": "/workspace/experiment/evidence/gsm8k-base-cot-cod-eval-queue-001/entry-008.json",
+      "run_id_occurrences": {
+        "gsm8k-author-cod-audit-001": 0,
+        "gsm8k-author-cot-audit-002": 0
+      },
+      "sha256": "ab177f97d9d9b7169b9d860d93c31e3f4a7776874cdfb9663679d091ffa8d251"
+    },
+    {
+      "bytes": 2061,
+      "path": "/workspace/experiment/evidence/gsm8k-base-cot-cod-eval-queue-001/entry-009.json",
+      "run_id_occurrences": {
+        "gsm8k-author-cod-audit-001": 0,
+        "gsm8k-author-cot-audit-002": 0
+      },
+      "sha256": "921b730bedb2dad0460f008dd506bc8849654576f3824aa5682ad8afea67fcd5"
+    },
+    {
+      "bytes": 2061,
+      "path": "/workspace/experiment/evidence/gsm8k-base-cot-cod-eval-queue-001/entry-010.json",
+      "run_id_occurrences": {
+        "gsm8k-author-cod-audit-001": 0,
+        "gsm8k-author-cot-audit-002": 0
+      },
+      "sha256": "c65d97689f82820372680b8b985d0e8244af59dfabd33f5377aadd9167a7e020"
+    },
+    {
+      "bytes": 2061,
+      "path": "/workspace/experiment/evidence/gsm8k-base-cot-cod-eval-queue-001/entry-011.json",
+      "run_id_occurrences": {
+        "gsm8k-author-cod-audit-001": 0,
+        "gsm8k-author-cot-audit-002": 0
+      },
+      "sha256": "7bb5afba0ee68ea5a8bde231ebf627fb7b9c673fc6a78348feb5f9b7dd9971e6"
+    },
+    {
+      "bytes": 2056,
+      "path": "/workspace/experiment/evidence/gsm8k-base-cot-cod-eval-queue-001/entry-012.json",
+      "run_id_occurrences": {
+        "gsm8k-author-cod-audit-001": 0,
+        "gsm8k-author-cot-audit-002": 0
+      },
+      "sha256": "ffd0ac0c2701e4a25bed4b2f4ab2c6a3c88c3e8450fd1ef2414746e8c7feff81"
+    },
+    {
+      "bytes": 2062,
+      "path": "/workspace/experiment/evidence/gsm8k-base-cot-cod-eval-queue-001/entry-013.json",
+      "run_id_occurrences": {
+        "gsm8k-author-cod-audit-001": 0,
+        "gsm8k-author-cot-audit-002": 0
+      },
+      "sha256": "bfb92f5f5d5e663e2845854876b3d5198392c82fe3ee331fe4c58e960ceb41cf"
+    },
+    {
+      "bytes": 2061,
+      "path": "/workspace/experiment/evidence/gsm8k-base-cot-cod-eval-queue-001/entry-014.json",
+      "run_id_occurrences": {
+        "gsm8k-author-cod-audit-001": 0,
+        "gsm8k-author-cot-audit-002": 0
+      },
+      "sha256": "56990de22affb71e0ef41c5a6116b4b28c02628c11bc68a8b2db637bef8f6017"
+    },
+    {
+      "bytes": 2061,
+      "path": "/workspace/experiment/evidence/gsm8k-base-cot-cod-eval-queue-001/entry-015.json",
+      "run_id_occurrences": {
+        "gsm8k-author-cod-audit-001": 0,
+        "gsm8k-author-cot-audit-002": 0
+      },
+      "sha256": "639f728387679c885cd3c408428aed11ea63fbafcf49b4f2afda3b6f095db624"
+    },
+    {
+      "bytes": 2060,
+      "path": "/workspace/experiment/evidence/gsm8k-base-cot-cod-eval-queue-001/entry-016.json",
+      "run_id_occurrences": {
+        "gsm8k-author-cod-audit-001": 0,
+        "gsm8k-author-cot-audit-002": 0
+      },
+      "sha256": "bfc37bc7c3d917446a9d616eb390e7b2e0113431d4238aaf71dd85a0445b01b8"
+    },
+    {
+      "bytes": 2062,
+      "path": "/workspace/experiment/evidence/gsm8k-base-cot-cod-eval-queue-001/entry-017.json",
+      "run_id_occurrences": {
+        "gsm8k-author-cod-audit-001": 0,
+        "gsm8k-author-cot-audit-002": 0
+      },
+      "sha256": "3091d9c267dddab6660b22ca3f3ccdc9b99d5c867f27443d0d1141475029b36f"
+    }
+  ],
+  "remote_host": "GPU_HOST",
+  "remote_root": "/workspace/experiment"
+}

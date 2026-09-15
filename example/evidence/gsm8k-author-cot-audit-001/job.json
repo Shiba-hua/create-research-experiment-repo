@@ -1,0 +1,30 @@
+{
+  "command": [
+    "/opt/experiment-runtime/bin/run-hostpaths",
+    "env",
+    "VLLM_USE_V1=1",
+    "VLLM_ENABLE_V1_MULTIPROCESSING=0",
+    "python",
+    "-m",
+    "rlvr_lab.cod_author",
+    "--model",
+    "/workspace/experiment/models/qwen3-1.7b",
+    "--data",
+    "/workspace/experiment/data/gsm8k/audit.jsonl",
+    "--source-dir",
+    "/opt/cod-author-a7dbf5d",
+    "--output",
+    "/workspace/experiment/results/gsm8k-author-cot-audit-001",
+    "--mode",
+    "cot"
+  ],
+  "pid": 1171312,
+  "started_unix": 1789047496.8919263,
+  "timeout_seconds": 7200,
+  "cwd": "/workspace/experiment",
+  "status": "failed",
+  "git_commit": "0e1d5a894f132acb44fab952dd2f5b0e23768034",
+  "exit_code": 1,
+  "timed_out": false,
+  "elapsed_seconds": 19.436258156085387
+}

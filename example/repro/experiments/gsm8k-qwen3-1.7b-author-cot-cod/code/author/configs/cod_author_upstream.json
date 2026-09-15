@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/sileix/chain-of-draft",
+  "revision": "a7dbf5dea808b1aa1e12f7a90ea573321581df78",
+  "verified_at": "2026-09-10T08:47:56.970405+00:00",
+  "files": {
+    "configs/gsm8k_cot.yaml": {
+      "url": "https://raw.githubusercontent.com/sileix/chain-of-draft/a7dbf5dea808b1aa1e12f7a90ea573321581df78/configs/gsm8k_cot.yaml",
+      "bytes": 2633,
+      "sha256": "77fda02c1c68dc9e1f0143fed83e78c9f18febd838bfe2b4efcf86e90acf420d",
+      "git_blob_sha": "c9bbd6fbba704694064724bf7b98ee66b0653fca"
+    },
+    "configs/gsm8k_cod.yaml": {
+      "url": "https://raw.githubusercontent.com/sileix/chain-of-draft/a7dbf5dea808b1aa1e12f7a90ea573321581df78/configs/gsm8k_cod.yaml",
+      "bytes": 1889,
+      "sha256": "c83a151f36af1a491080df441044d6dfeb2ada15cefeb98368c2f9e3563f13cb",
+      "git_blob_sha": "b98a9a2c32477ce8fa67dc548ffada39a0932903"
+    },
+    "utils.py": {
+      "url": "https://raw.githubusercontent.com/sileix/chain-of-draft/a7dbf5dea808b1aa1e12f7a90ea573321581df78/utils.py",
+      "bytes": 1684,
+      "sha256": "6e144442e14cb16ebb7313661a80552a0e7e5d03d3828a54b47a79e5eb361782",
+      "git_blob_sha": "e1fc0f16aa7d7433371ee23dece33ccebedf99d8"
+    },
+    "tasks/gsm8k.py": {
+      "url": "https://raw.githubusercontent.com/sileix/chain-of-draft/a7dbf5dea808b1aa1e12f7a90ea573321581df78/tasks/gsm8k.py",
+      "bytes": 1235,
+      "sha256": "884b1c71843390be21f722c2f7449607c0cba9cf41d492b67e6c76b6c883ae4a",
+      "git_blob_sha": "093435b8b8ae68664dce0c3ff09d90cc425d30f1"
+    },
+    "llm_client.py": {
+      "url": "https://raw.githubusercontent.com/sileix/chain-of-draft/a7dbf5dea808b1aa1e12f7a90ea573321581df78/llm_client.py",
+      "bytes": 1447,
+      "sha256": "de36886e5dbba9e39afe242ec9a2053aa3acf30e6af33912d5ac0006c8ed91e1",
+      "git_blob_sha": "6d7b06adc22b373ef507ec68a02349cc427cddc4"
+    }
+  },
+  "license": {
+    "status": "no_license_file_in_pinned_tree",
+    "redistribution_permission": "not_established",
+    "tree_url": "https://api.github.com/repos/sileix/chain-of-draft/git/trees/a7dbf5dea808b1aa1e12f7a90ea573321581df78?recursive=1",
+    "tree_response_sha256": "fbe79d1e21e8ddbfd1b4b646fe53eab5cfd52039b918a615edeb5d335e943319",
+    "tree_response_bytes": 8511,
+    "tree_truncated": false,
+    "tree_entry_count": 29,
+    "license_filename_pattern": "case-insensitive path component starting with LICENSE, LICENCE, COPYING, COPYRIGHT, NOTICE, or UNLICENSE",
+    "matching_paths": [],
+    "LICENSE_url": "https://raw.githubusercontent.com/sileix/chain-of-draft/a7dbf5dea808b1aa1e12f7a90ea573321581df78/LICENSE",
+    "LICENSE_http_status": 404,
+    "policy": "Do not vendor upstream source or the complete few-shot prompts in this checkout. Fetch only into an explicitly chosen external input directory, verify hashes, and never execute upstream code or invoke its model APIs."
+  },
+  "reference_dataset": {
+    "purpose": "Verify that canonical audit answer strings exactly equal author extract_answer applied to original GSM8K answers; not a replacement canonical dataset.",
+    "repository": "https://github.com/openai/grade-school-math",
+    "revision": "b0bb162abedc65e1fdd8e93ed090fd7598ee68bc",
+    "path": "grade_school_math/data/test.jsonl",
+    "url": "https://raw.githubusercontent.com/openai/grade-school-math/b0bb162abedc65e1fdd8e93ed090fd7598ee68bc/grade_school_math/data/test.jsonl",
+    "bytes": 749738,
+    "sha256": "3730d312f6e3440559ace48831e51066acaca737f6eabec99bccb9e4b3c39d14",
+    "rows": 1319,
+    "canonical_source_binding": "Each original record must match canonical source_record_sha256; its full original answer must match metadata.source_answer_sha256. Preserve the canonical dataset source revision recorded in its own manifest."
+  }
+}

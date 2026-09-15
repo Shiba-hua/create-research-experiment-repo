@@ -1,0 +1,33 @@
+{
+  "schema_version": 2,
+  "experiment_id": "gsm8k-qwen3-1.7b-author-cot-cod",
+  "stages": {
+    "author": "61ff6a476c3cacec1fe87c846c9559a010f499dd"
+  },
+  "model": {
+    "id": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "asset_lock": "assets/qwen3-1.7b.json"
+  },
+  "dataset_lock": "assets/gsm8k.json",
+  "evidence": [
+    {
+      "path": "evidence/gsm8k-author-cot-audit-002/job.json",
+      "bytes": 811,
+      "sha256": "f279308fe207e1f9986ee520e7f9b91faa4844f76875a41e01bc15f9fdd7ddc5"
+    },
+    {
+      "path": "evidence/gsm8k-author-cod-audit-001/job.json",
+      "bytes": 811,
+      "sha256": "2efb8ecb005b5c19fdf9dd9f78e054fe7884359c7f3bcfb871d75e3f2eec6a34"
+    }
+  ],
+  "analysis_source_commit": "53eb86391acde20e4b3b3167ec78dc0bb3477e51",
+  "scope": "Historical reproducibility material, not a new model run",
+  "weights_included": false,
+  "dataset_included": false,
+  "private_author_outputs_included": false,
+  "export_scope": "Scoped and sanitized historical material; code is adapted, not an original checkout",
+  "commands": "commands.json",
+  "export_manifest": "../../../EXPORT-MANIFEST.json"
+}

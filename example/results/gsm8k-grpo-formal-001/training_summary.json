@@ -1,0 +1,32 @@
+{
+  "phase": "completed_training_development_only",
+  "project_accepted": false,
+  "audit_evaluated": false,
+  "training_source_commit": "75e05a621004e1e29bfd05b4f6b859afc89fc8e4",
+  "optimizer_steps": 64,
+  "dev_n": 128,
+  "dev_before": 0.71875,
+  "dev_best": 0.8359375,
+  "dev_gain_percentage_points": 11.71875,
+  "best_dev_step": 64,
+  "elapsed_seconds": 17064.43288992904,
+  "nonzero_grad_steps": 64,
+  "missing_gradient_steps": 0,
+  "last_step_diagnostics": {
+    "reward": 0.6328125,
+    "grad_norm": 0.07983428239822388,
+    "entropy": 0.31311944127082825,
+    "kl": 0.10134459263645113,
+    "zero_variance_rate": 0.5625,
+    "all_wrong_rate": 0.125,
+    "all_correct_rate": 0.4375,
+    "gradient/matrix_coverage": 1.0,
+    "completions/mean_length": 823.2265625,
+    "completions/clipped_ratio": 0.2109375,
+    "gpu_peak_allocated_gb": 26.952272415161133
+  },
+  "limitations": [
+    "Development set selected the checkpoint.",
+    "No full audit evaluated yet; this is not project acceptance."
+  ]
+}

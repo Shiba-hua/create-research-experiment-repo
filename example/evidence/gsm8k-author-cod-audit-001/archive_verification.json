@@ -1,0 +1,148 @@
+{
+  "archive_receipt": "results/gsm8k-author-cod-audit-001/author_predictions.jsonl.gz.receipt.json",
+  "full_model_outputs_and_token_ids_preserved": true,
+  "gpu_operations": false,
+  "gzip_identity": {
+    "bytes": 2088980,
+    "name": "author_predictions.jsonl.gz",
+    "sha256": "188398a706a84b35807f34bcd2d42c6cc1b8e2aac1165a58e6d810dab7f0321f"
+  },
+  "index_command": [
+    "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "/workspace/research/experiments/rlvr-l40s-lab/scripts/archived_jsonl.py",
+    "index",
+    "--gzip",
+    "/workspace/research/experiments/rlvr-l40s-lab/results/gsm8k-author-cod-audit-001/author_predictions.jsonl.gz",
+    "--original-name",
+    "author_predictions.jsonl",
+    "--sha256",
+    "71a6a50f4c929f732523761b58f762d1f6c20cbd7f723e7723808c4cd3784129",
+    "--bytes",
+    "16231591",
+    "--rows",
+    "1319"
+  ],
+  "kind": "local_lossless_archive_verification",
+  "original_metadata_rewritten": false,
+  "raw_input_fields_absent": true,
+  "remote_raw_identity": {
+    "bytes": 16231591,
+    "forbidden_input_fields": [],
+    "json_rows": 1319,
+    "mtime_ns": 1789051067231019002,
+    "output_integrity": {
+      "author_correct": 935,
+      "complete_output_text_and_ids_rows": 1319,
+      "strict_correct": 922,
+      "unique_ids": 1319
+    },
+    "path": "/workspace/experiment/results/gsm8k-author-cod-audit-001/author_predictions.jsonl",
+    "physical_rows": 1319,
+    "relative_path": "results/gsm8k-author-cod-audit-001/author_predictions.jsonl",
+    "sha256": "71a6a50f4c929f732523761b58f762d1f6c20cbd7f723e7723808c4cd3784129"
+  },
+  "remote_writes": false,
+  "restore_command": [
+    "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "/workspace/research/experiments/rlvr-l40s-lab/scripts/archived_jsonl.py",
+    "restore",
+    "--receipt",
+    "/workspace/research/experiments/rlvr-l40s-lab/results/gsm8k-author-cod-audit-001/author_predictions.jsonl.gz.receipt.json",
+    "--output-dir",
+    "/private/tmp/cod-author-archive-restore-20260910/gsm8k-author-cod-audit-001"
+  ],
+  "restore_result": {
+    "path": "/private/tmp/cod-author-archive-restore-20260910/gsm8k-author-cod-audit-001/author_predictions.jsonl",
+    "status": "restored"
+  },
+  "restored_identity": {
+    "bytes": 16231591,
+    "path": "/private/tmp/cod-author-archive-restore-20260910/gsm8k-author-cod-audit-001/author_predictions.jsonl",
+    "physical_rows": 1319,
+    "sha256": "71a6a50f4c929f732523761b58f762d1f6c20cbd7f723e7723808c4cd3784129"
+  },
+  "small_original_files_verified": [
+    {
+      "bytes": 16065,
+      "forbidden_input_fields": [],
+      "mtime_ns": 1789050257534989279,
+      "path": "/workspace/experiment/results/gsm8k-author-cod-audit-001/author_plan.json",
+      "relative_path": "results/gsm8k-author-cod-audit-001/author_plan.json",
+      "sha256": "83b93cfd25e0b8c57b4b7a631a61225eb582480405336e22ce2e7f6cb4029ffe"
+    },
+    {
+      "bytes": 364,
+      "forbidden_input_fields": [],
+      "mtime_ns": 1789051067255019091,
+      "path": "/workspace/experiment/results/gsm8k-author-cod-audit-001/author_status.json",
+      "relative_path": "results/gsm8k-author-cod-audit-001/author_status.json",
+      "sha256": "d82687129da099499214ef17ee77f7e1b2d63fee5f6c6ff4e2b7a07d1c23c5cd"
+    },
+    {
+      "bytes": 28968,
+      "forbidden_input_fields": [],
+      "json_rows": 11,
+      "mtime_ns": 1789050998966763981,
+      "path": "/workspace/experiment/results/gsm8k-author-cod-audit-001/requests.jsonl",
+      "physical_rows": 11,
+      "relative_path": "results/gsm8k-author-cod-audit-001/requests.jsonl",
+      "sha256": "05f23c389d517b20fb8c874815f5db56336f490c99ef1d659950ac29c0b55b1d"
+    },
+    {
+      "bytes": 18371,
+      "forbidden_input_fields": [],
+      "mtime_ns": 1789051067255019091,
+      "path": "/workspace/experiment/results/gsm8k-author-cod-audit-001/author_summary.json",
+      "relative_path": "results/gsm8k-author-cod-audit-001/author_summary.json",
+      "sha256": "6ba39d3f3316c3e138ef63b034dcb2cb472b07c369a4336b6817fd120df18a65"
+    },
+    {
+      "bytes": 0,
+      "mtime_ns": 1789050236106909043,
+      "path": "/workspace/experiment/evidence/gsm8k-author-cod-audit-001/launcher.log",
+      "relative_path": "evidence/gsm8k-author-cod-audit-001/launcher.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 9150,
+      "mtime_ns": 1789051068163022483,
+      "path": "/workspace/experiment/evidence/gsm8k-author-cod-audit-001/stdout.log",
+      "relative_path": "evidence/gsm8k-author-cod-audit-001/stdout.log",
+      "sha256": "d252b04f86ebe6f1cc56869de14ed8dba6ccabd400b376a09af89d6b81937b74"
+    },
+    {
+      "bytes": 811,
+      "forbidden_input_fields": [],
+      "mtime_ns": 1789051069925029066,
+      "path": "/workspace/experiment/evidence/gsm8k-author-cod-audit-001/job.json",
+      "relative_path": "evidence/gsm8k-author-cod-audit-001/job.json",
+      "sha256": "2efb8ecb005b5c19fdf9dd9f78e054fe7884359c7f3bcfb871d75e3f2eec6a34"
+    },
+    {
+      "bytes": 12897,
+      "forbidden_input_fields": [],
+      "json_rows": 56,
+      "mtime_ns": 1789051067057018352,
+      "path": "/workspace/experiment/evidence/gsm8k-author-cod-audit-001/resources.jsonl",
+      "physical_rows": 56,
+      "relative_path": "evidence/gsm8k-author-cod-audit-001/resources.jsonl",
+      "sha256": "b924fba27e6fa6aafeea7737ed08a422d4b029b67ea16881aaae073f9c5d0cbe"
+    },
+    {
+      "bytes": 2,
+      "mtime_ns": 1789051069926029069,
+      "path": "/workspace/experiment/evidence/gsm8k-author-cod-audit-001/exit_code",
+      "relative_path": "evidence/gsm8k-author-cod-audit-001/exit_code",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "bytes": 287,
+      "forbidden_input_fields": [],
+      "mtime_ns": 1789051273413789257,
+      "path": "/workspace/experiment/evidence/gsm8k-author-cod-audit-001/gpu-release.json",
+      "relative_path": "evidence/gsm8k-author-cod-audit-001/gpu-release.json",
+      "sha256": "314a894d5f7e5583813a7ec1deb4e76ea97a0abc785dedc891194883a2b9477a"
+    }
+  ],
+  "status": "PASS"
+}

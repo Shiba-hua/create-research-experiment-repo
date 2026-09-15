@@ -1,0 +1,11 @@
+{
+  "status": "complete",
+  "expected": 1319,
+  "requested": 1319,
+  "evaluated": 1319,
+  "plan_sha256": "3d7feca90c87138765d303603aa722fb7a19efded6f08fac7101c6d2dce38ab3",
+  "gpu_release_verified": false,
+  "gpu_initialization_attempted": true,
+  "active_batch_index": 10,
+  "manifest_sha256": "ef3f705b6628d49fabfb5ae7c30cc60cacf5123958471c3cda987ac1018cb794"
+}

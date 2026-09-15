@@ -1,0 +1,37 @@
+{
+  "kind": "read_only_failed_author_attempt_archive",
+  "remote_root": "/workspace/experiment",
+  "evidence_directory": "evidence/gsm8k-author-cot-audit-001",
+  "files": {
+    "exit_code": {
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "bytes": 2
+    },
+    "gpu-release.json": {
+      "sha256": "79ca2815db33ba47982f9f0c7eaf1341523b390de9498a126c3fdb9de6e17a24",
+      "bytes": 287
+    },
+    "job.json": {
+      "sha256": "a85fb3f2a1ada33c1d7685fa17df090cee59f91f9f6e36a4848843570ce305e5",
+      "bytes": 809
+    },
+    "launcher.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "resources.jsonl": {
+      "sha256": "8e155b3bee04203a23e65f5ffda78b3d57e6165b9d30c9f679860e1fa12684ac",
+      "bytes": 446
+    },
+    "stdout.log": {
+      "sha256": "ff2af8c29e69fc07bd006e6321ae0c716b58cb4f299599fd4fe8d390c54514d1",
+      "bytes": 1114
+    }
+  },
+  "results_directory": "results/gsm8k-author-cot-audit-001",
+  "results_directory_existed_at_inventory": false,
+  "generation_started": false,
+  "failure_status_preserved": true,
+  "original_evidence_rewritten": false,
+  "note": "Exact copies of enumerated supervisor/error files. No result directory, author_plan, author_status or predictions existed in the observed failed attempt. GPU release is the archived historical observation, not current host state."
+}

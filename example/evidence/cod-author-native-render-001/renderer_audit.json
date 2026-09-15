@@ -1,0 +1,117 @@
+{
+  "kind": "original_qwen3_cpu_full_audit_render_verification",
+  "status": "PASS",
+  "gpu_inference_performed": false,
+  "model_weights_loaded": false,
+  "CUDA_VISIBLE_DEVICES": "-1",
+  "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+  "dependencies": {
+    "transformers": "5.9.0",
+    "tokenizers": "0.22.2",
+    "numpy": "2.4.6"
+  },
+  "tokenizer_class": "Qwen2Tokenizer",
+  "model_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+  "tokenizer_files": {
+    "config.json": {
+      "bytes": 726,
+      "sha256": "1ddb5b89ebc90dcb417a45c213d818577e65976454d29385c8f6140771d95197"
+    },
+    "tokenizer_config.json": {
+      "bytes": 9732,
+      "sha256": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101"
+    },
+    "tokenizer.json": {
+      "bytes": 11422654,
+      "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+    },
+    "vocab.json": {
+      "bytes": 2776833,
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    },
+    "merges.txt": {
+      "bytes": 1671853,
+      "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"
+    }
+  },
+  "chat_template_sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+  "tokenizer_vocab_sha256": "f488fa45d324a8bc64c84f0e27b47223872d550f2a6900564f77dfa67ca5ff4d",
+  "upstream_lock_sha256": "e2c20262aec1d2b016ff5204833d91901624f84b39ec4118bdf7a35fb1788ad4",
+  "data_file_sha256": "437f2042d9d210e34834d1f596a0b6289f89414672ede7fe47727041dc11da62",
+  "dataset_content_sha256": "df44c802ab119760396c06f089e042123acb28a30cf5537faf05a94e3cc35b67",
+  "native_thinking_explicit": true,
+  "chat_template_kwargs": {
+    "enable_thinking": true
+  },
+  "reference_equivalence_report_sha256": "56661054f8e5f6a8ae42f224f5688d6f08fdde1158fad2146b4959af6955357e",
+  "modes": {
+    "cot": {
+      "questions": 1319,
+      "thinking_opening_prefilled": false,
+      "unchanged_true_render_verified_count": 1319,
+      "true_differs_from_false_count": 1319,
+      "header_only_native_count": 1319,
+      "all_context_checks_passed": true,
+      "prompt_tokens": {
+        "min": 756.0,
+        "p25": 777.0,
+        "median": 790.0,
+        "p75": 806.0,
+        "p90": 825.0,
+        "p95": 838.0,
+        "max": 921.0,
+        "mean": 794.0310841546626
+      },
+      "max_prompt_plus_output_cap": 5017,
+      "rendered_prompts_sha256": "c3c10bf24ec1627322d053f3d5a4276d912d2c2648950fc2f4e3285923cf2fec",
+      "disabled_rendered_prompts_sha256": "de10ec09347157e80b223c17cb782ba20751add0413db59a90948976dedd2c3f",
+      "prompt_token_ids_sha256": "a65965a1a1337814982c3cf0a4739385f5630586bfad5c3e544f5f7ff1353a96"
+    },
+    "cod": {
+      "questions": 1319,
+      "thinking_opening_prefilled": false,
+      "unchanged_true_render_verified_count": 1319,
+      "true_differs_from_false_count": 1319,
+      "header_only_native_count": 1319,
+      "all_context_checks_passed": true,
+      "prompt_tokens": {
+        "min": 572.0,
+        "p25": 593.0,
+        "median": 606.0,
+        "p75": 622.0,
+        "p90": 641.0,
+        "p95": 654.0,
+        "max": 737.0,
+        "mean": 610.0310841546626
+      },
+      "max_prompt_plus_output_cap": 4833,
+      "rendered_prompts_sha256": "0908d537b7ee6153b543a5d25ba6ec7d7bf44e1d750c00a8a2ff1a59d083dbe6",
+      "disabled_rendered_prompts_sha256": "f7595bf4737ec36821cfa25d1efaa9f9445de96ecd70454d289d25aea4007ffd",
+      "prompt_token_ids_sha256": "d0fc4f3a993250ae4747dbbe9dff0fdfb1f33b18044caf222dc263931eacfa40"
+    }
+  },
+  "source_files": {
+    "evidence/cod-author-native-render-001/verify_native_render.py": {
+      "bytes": 5321,
+      "sha256": "6c90bbe29dff7f9b0ed943597ae915fe306170b41d432f0d28a80ace65eeb96d"
+    },
+    "src/rlvr_lab/cod_author.py": {
+      "bytes": 28679,
+      "sha256": "03bf6af84e3406679706267139be61b59a032960ce6f9acdc916270e0ee906b8"
+    },
+    "src/rlvr_lab/cod_author_compare.py": {
+      "bytes": 21902,
+      "sha256": "41248d44cb161e4564ea537bf5123096f69229456dd8d9556c812eb2e5021652"
+    },
+    "tests/test_cod_author.py": {
+      "bytes": 28862,
+      "sha256": "5154d3a9b6fc1263b6b831a776f7ebf480c71322ed04a76077faabbb706fcdce"
+    }
+  },
+  "limitations": [
+    "CPU tokenization/rendering only, not a successful generation attempt or accuracy result.",
+    "No author few-shot text or input IDs are retained; only aggregate hashes and lengths.",
+    "Existing failed attempt remains failed; a fresh output directory is required for the next run."
+  ],
+  "report_sha256": "3ea8904de0eeffa261a376678710a1c9513ffa7a569b993ae7ea1932d0353449"
+}

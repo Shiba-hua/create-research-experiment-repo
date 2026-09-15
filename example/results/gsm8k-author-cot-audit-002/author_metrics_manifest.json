@@ -1,0 +1,87 @@
+{
+  "kind": "numeric_only_author_projection_not_original_predictions",
+  "mode": "cot",
+  "rows": 1319,
+  "original_private_jsonl": {
+    "name": "author_predictions.jsonl",
+    "bytes": 19504761,
+    "physical_rows": 1319,
+    "sha256": "1261a1215f6d2f013e19c1c3baf06d5456544ff5ca7f8ddf8cec426def2fca5a"
+  },
+  "original_private_gzip": {
+    "name": "author_predictions.jsonl.gz",
+    "bytes": 2571846,
+    "sha256": "8a575d9cc0f96d910ba1343bf1f05f79de8c24c60e59bcadfb6f80a896916120"
+  },
+  "original_summary_manifest_sha256": "393130d0d7901823c8a9fdf8e0483be7d583537d1d2fc77be096d6d55b37c445",
+  "preserved_fields": [
+    "id",
+    "project",
+    "question_hash",
+    "source_split",
+    "mode",
+    "canonical_record_sha256",
+    "parser_version",
+    "thinking_opening_prefilled",
+    "thinking_closed",
+    "author_correct",
+    "strict_format_ok",
+    "strict_correct",
+    "response_tokens",
+    "thinking_response_tokens",
+    "final_response_tokens",
+    "generation_prompt_sha256",
+    "generation_prompt_token_ids_sha256",
+    "author_payload_sha256",
+    "prompt_tokens",
+    "total_tokens",
+    "eos",
+    "truncated",
+    "finish_reason",
+    "batch_index",
+    "batch_seed",
+    "elapsed",
+    "batch_elapsed",
+    "evaluation_config_sha256",
+    "parser_source_sha256"
+  ],
+  "projection_builder_sha256": "06160755e7ee0a5e52ab9983111c708c6591d70dd5ccd38f3ae59120e0559745",
+  "projection_field_list_sha256": "e8c6a91ee24cac93c0376a491dca5de4eea6a64aa8b67abb08ae1b6cffb0d0f5",
+  "additional_field": "original_record_line_sha256 binds the exact LF-inclusive private raw record",
+  "removed_fields": [
+    "author_extracted",
+    "author_method",
+    "canonical_answer",
+    "final_text",
+    "lora_request_id",
+    "raw_output_text",
+    "reference_string",
+    "response",
+    "response_token_ids",
+    "segment_token_count_method",
+    "stop_reason",
+    "strict_parsed"
+  ],
+  "counts": {
+    "author_correct": 977,
+    "strict_correct": 969,
+    "strict_format_ok": 1025,
+    "thinking_closed": 1104,
+    "eos": 1034,
+    "truncated": 285
+  },
+  "token_totals": {
+    "prompt_tokens": 1047327,
+    "response_tokens": 1639168,
+    "total_tokens": 2686495
+  },
+  "projection": {
+    "name": "gsm8k-author-cot-audit-002.jsonl",
+    "bytes": 1749769,
+    "sha256": "4eb62b8c3a524c16dec52a1c808ef65c41c00ae042c3cb5e726c71880a57fc8e"
+  },
+  "generated_text_published": false,
+  "token_id_sequences_published": false,
+  "limitation": "This projection supports public numeric inspection only. Full tokenizer/parser verification requires the unchanged private raw archive or authorized server original.",
+  "manifest_sha256": "e00920019365ab35696bacc618bce7d443d86c41d7967eaf99f1a57329cf8882"
+}

@@ -1,0 +1,39 @@
+{
+  "schema": "rlvr.prompt-template/v1",
+  "ids": {
+    "cot": "gsm8k-author-cot-8shot-v1",
+    "cod": "gsm8k-author-cod-8shot-v1"
+  },
+  "styles": {
+    "cot": "Think step by step to answer the following question.",
+    "cod": "Think step by step, but only keep minimum draft for each thinking step, with 5 words at most."
+  },
+  "answer_instruction": "Return the answer at the end of the response after a separator ####.",
+  "qa_format": "Q: {question}\nA: {answer}\n",
+  "assembly": "style + newline + answer_instruction + newline + newline + newline.join(qa_format(example) for each of 8 examples) + newline + qa_format(current_question, empty_answer)",
+  "message_role": "user",
+  "fewshot_count": 8,
+  "fewshot_sources": {
+    "cot": {
+      "url": "https://raw.githubusercontent.com/sileix/chain-of-draft/a7dbf5dea808b1aa1e12f7a90ea573321581df78/configs/gsm8k_cot.yaml",
+      "bytes": 2633,
+      "sha256": "77fda02c1c68dc9e1f0143fed83e78c9f18febd838bfe2b4efcf86e90acf420d",
+      "git_blob_sha": "c9bbd6fbba704694064724bf7b98ee66b0653fca"
+    },
+    "cod": {
+      "url": "https://raw.githubusercontent.com/sileix/chain-of-draft/a7dbf5dea808b1aa1e12f7a90ea573321581df78/configs/gsm8k_cod.yaml",
+      "bytes": 1889,
+      "sha256": "c83a151f36af1a491080df441044d6dfeb2ada15cefeb98368c2f9e3563f13cb",
+      "git_blob_sha": "b98a9a2c32477ce8fa67dc548ffada39a0932903"
+    }
+  },
+  "upstream_revision": "a7dbf5dea808b1aa1e12f7a90ea573321581df78",
+  "source_commit": "61ff6a476c3cacec1fe87c846c9559a010f499dd",
+  "chat_kwargs": {
+    "add_generation_prompt": true,
+    "enable_thinking": true
+  },
+  "chat_template_sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+  "thinking_opening_prefilled": false,
+  "fewshot_payload_vendored": false
+}

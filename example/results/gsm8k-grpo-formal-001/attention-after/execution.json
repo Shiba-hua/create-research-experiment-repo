@@ -1,0 +1,50 @@
+{
+  "label": "after",
+  "command": [
+    "/workspace/experiment/.venv/bin/python",
+    "-m",
+    "rlvr_lab.attention",
+    "--model",
+    "models/qwen3-0.6b",
+    "--data",
+    "data/gsm8k/dev.jsonl",
+    "--row-index",
+    "0",
+    "--device",
+    "cpu",
+    "--max-tokens",
+    "256",
+    "--max-input-tokens",
+    "4096",
+    "--output",
+    "/workspace/experiment/results/gsm8k-grpo-formal-001/attention-after",
+    "--adapter",
+    "/workspace/experiment/results/gsm8k-grpo-formal-001/best_adapter",
+    "--reference-input",
+    "/workspace/experiment/results/gsm8k-grpo-formal-001/attention-before/tokens.json"
+  ],
+  "environment_overrides": {
+    "CUDA_VISIBLE_DEVICES": "-1",
+    "OMP_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "2",
+    "NUMEXPR_NUM_THREADS": "2",
+    "TOKENIZERS_PARALLELISM": "false",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "HF_HUB_OFFLINE": "1",
+    "TRANSFORMERS_OFFLINE": "1",
+    "MPLCONFIGDIR": "/workspace/experiment/results/gsm8k-grpo-formal-001/attention-after/.matplotlib"
+  },
+  "cpu_affinity": [
+    142,
+    143
+  ],
+  "started_at": "2026-09-10T08:12:18.544613+00:00",
+  "completed_at": "2026-09-10T08:12:28.403620+00:00",
+  "elapsed_seconds": 9.859015154186636,
+  "exit_code": 0,
+  "child_maxrss_kib": 1784464,
+  "source_sha256": "3797745b2e61abaa9c78e27e3c12de9fdbdc497aae9038df1832736232d81b58",
+  "stdout": "{\"status\": \"complete_diagnostic_not_acceptance\", \"output\": \"/workspace/experiment/results/gsm8k-grpo-formal-001/attention-after\"}\n",
+  "scope": "CPU only; existing CLI; fixed dev row0; no generation; output artifacts only"
+}

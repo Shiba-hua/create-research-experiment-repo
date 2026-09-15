@@ -1,0 +1,22 @@
+{
+  "status": "installed_metadata_verified_gpu_unverified",
+  "python": "3.11.13 (main, Jun  5 2025, 13:12:00) [GCC 11.2.0]",
+  "glibc": [
+    "glibc",
+    "2.35"
+  ],
+  "versions": {
+    "torch": "2.8.0+cu128",
+    "vllm": "0.10.2",
+    "trl": "0.24.0",
+    "transformers": "4.57.1",
+    "peft": "0.17.1"
+  },
+  "gpu_smoke_run": false,
+  "driver_compatibility": "unverified",
+  "notes": [
+    "Installation did not initialize CUDA.",
+    "All installed wheel versions/URLs/SHA256 are in wheel-inventory.json.",
+    "PRoot is syscall translation, not a security boundary."
+  ]
+}

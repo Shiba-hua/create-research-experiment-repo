@@ -1,0 +1,38 @@
+{
+  "checks": {
+    "complete_request_batches": 11,
+    "decompressed_remote_identity": true,
+    "exact_original_small_files": 10,
+    "forbidden_input_fields": [],
+    "gzip_receipt_identity": true,
+    "historical_release_job_hash_pid_binding": true,
+    "job_exit_code": 0,
+    "job_timed_out": false,
+    "json_rows": 1319,
+    "nonempty_full_output_and_ids_rows": 1319,
+    "output_ids_length_matches_tokens_rows": 1319,
+    "physical_rows": 1319,
+    "plan_full_8shot_fields_absent": true,
+    "raw_bytes": 19504761,
+    "raw_output_equals_response_rows": 1319,
+    "raw_sha256": "1261a1215f6d2f013e19c1c3baf06d5456544ff5ca7f8ddf8cec426def2fca5a",
+    "recomputed_boolean_counts_match_summary": true,
+    "release_observed_after_job_exit": true,
+    "request_order_batch_seed_match_outputs": true,
+    "summary_predictions_binding": true,
+    "temporary_restore_identity": true,
+    "unique_ids": 1319
+  },
+  "edits_performed": false,
+  "kind": "independent_read_only_archive_review",
+  "network_or_gpu_operations": false,
+  "preserved_evidence_boundaries": [
+    "Original stdout includes a destroy_process_group() shutdown warning.",
+    "Original state/summary gpu_release_verified remains false.",
+    "Release evidence is the separate historical gpu-release.json.",
+    "Reviewer did not rerun tokenizer decoding, parser scoring, or current remote resource checks."
+  ],
+  "reviewer_task": "archive_author_runs/review_archive",
+  "run": "gsm8k-author-cot-audit-002",
+  "status": "PASS"
+}

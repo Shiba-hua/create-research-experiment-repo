@@ -1,0 +1,20 @@
+{
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "rlvr_lab.train",
+    "--config",
+    "configs/qwen3-gsm8k-formal-064.json",
+    "--output",
+    "results/gsm8k-grpo-formal-001"
+  ],
+  "pid": 105961,
+  "started_unix": 1788996973.5789027,
+  "timeout_seconds": 28800,
+  "cwd": "/workspace/experiment",
+  "status": "completed",
+  "git_commit": "75e05a621004e1e29bfd05b4f6b859afc89fc8e4",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 17075.16203140281
+}

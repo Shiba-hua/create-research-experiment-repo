@@ -1,0 +1,23 @@
+{
+  "kind": "exact_masked_cpu_comparison_archive",
+  "remote_root": "/workspace/experiment",
+  "local_files_match_remote": true,
+  "files": {
+    "results/gsm8k-author-comparison-001.json": {
+      "bytes": 11632,
+      "sha256": "bb9d6e5798f7cc16cec5a118202c0b235c59173b9621515e899f208a92295712"
+    },
+    "evidence/gsm8k-author-comparison-001/cpu_job.json": {
+      "bytes": 1192,
+      "sha256": "cca73aa991c7bf2ae05d95f22549feb9bda6e5de8adb7c70640642b03de203b4"
+    },
+    "evidence/gsm8k-author-comparison-001/stdout.log": {
+      "bytes": 9396,
+      "sha256": "dbca2335604e1a49a91156201e8e02abeb16d2d337c7d38611dbd97598492fe5"
+    },
+    "evidence/gsm8k-author-comparison-001/dispatch-001-failure.json": {
+      "bytes": 442,
+      "sha256": "5401f2bd21f722034427d7f7ca5bcbe79b6c5f48b2aecce000e38f77cdb159c4"
+    }
+  }
+}

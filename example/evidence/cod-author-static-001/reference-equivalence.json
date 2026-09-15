@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "kind": "cod_author_expected_answer_equivalence",
+  "status": "PASS",
+  "created_at": "2026-09-10T08:55:46.625261+00:00",
+  "author_revision": "a7dbf5dea808b1aa1e12f7a90ea573321581df78",
+  "source_lock_sha256": "6b6345155e9782d8dc6bec417f0cf31aa0bf8a9b4b2cd4e2af65504559648c69",
+  "source": {
+    "purpose": "Verify that canonical audit answer strings exactly equal author extract_answer applied to original GSM8K answers; not a replacement canonical dataset.",
+    "repository": "https://github.com/openai/grade-school-math",
+    "revision": "b0bb162abedc65e1fdd8e93ed090fd7598ee68bc",
+    "path": "grade_school_math/data/test.jsonl",
+    "url": "https://raw.githubusercontent.com/openai/grade-school-math/b0bb162abedc65e1fdd8e93ed090fd7598ee68bc/grade_school_math/data/test.jsonl",
+    "bytes": 749738,
+    "sha256": "3730d312f6e3440559ace48831e51066acaca737f6eabec99bccb9e4b3c39d14",
+    "rows": 1319,
+    "canonical_source_binding": "Each original record must match canonical source_record_sha256; its full original answer must match metadata.source_answer_sha256. Preserve the canonical dataset source revision recorded in its own manifest.",
+    "local_path": "/private/tmp/cod-author-a7dbf5d/reference/gsm8k_test.jsonl"
+  },
+  "canonical_manifest_sha256": "d417cf1d1d18b6870805df80fd57e94c24bb755c046688fecc781e301aff2333",
+  "canonical_manifest_payload_sha256": "3f495bf32e64b4c8b3648e587b52c7080480df8e512249223b85e95f3a703f81",
+  "canonical_audit": {
+    "path": "/workspace/research/experiments/rlvr-l40s-lab/data/gsm8k/audit.jsonl",
+    "sha256": "437f2042d9d210e34834d1f596a0b6289f89414672ede7fe47727041dc11da62",
+    "rows": 1319
+  },
+  "all_original_test_rows_covered_once": true,
+  "mismatch_counts": {
+    "source_record_hash": 0,
+    "source_answer_hash": 0,
+    "question": 0,
+    "expected_answer_string": 0
+  },
+  "mismatches": {
+    "source_record_hash": [],
+    "source_answer_hash": [],
+    "question": [],
+    "expected_answer_string": []
+  },
+  "scope": "All canonical audit rows aligned by metadata.source_index with the hash-locked original official test file. Verifies full source_record_sha256, original source_answer_sha256, question text, and exact author extract_answer(raw answer) equality to canonical answer. This proof is bound to the reported canonical audit SHA256; it does not justify numeric reconstruction for other datasets.",
+  "model_api_calls": 0,
+  "upstream_code_executed": false,
+  "report_payload_sha256": "84b1f3a8ac489bee9eba05c8fd7604b3680011f137f431ba1a333006febbae81"
+}

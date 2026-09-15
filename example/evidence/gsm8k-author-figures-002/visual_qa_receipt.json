@@ -1,0 +1,415 @@
+{
+  "summary": {
+    "schema_version": "1.0.0",
+    "generated_at": "2026-09-10T15:22:32.569592+00:00",
+    "overall_status": "PASS",
+    "coverage": {
+      "expected": 12,
+      "tasks": 12,
+      "completed": 12,
+      "missing": [],
+      "unexpected": [],
+      "invalid": [],
+      "model_violations": [],
+      "inventory_task_mismatch": [],
+      "blocking_warnings": [],
+      "requirement_conflicts": []
+    },
+    "scope": {
+      "markdown_logical_placements": 5,
+      "svg_companion_renders": 5,
+      "exported_pdf_files": 5,
+      "pdf_raster_image_objects": 2,
+      "pdf_page_sentinels": 5
+    },
+    "blocking_findings": [],
+    "advisory_findings": [],
+    "required_model": "gpt-5.6-luna",
+    "reasoning_effort": "medium",
+    "independent_native_workers": 12,
+    "retry_count": 0,
+    "auditor_policy_version": "2.0.0",
+    "auditor_policy_sha256": "6426cf1deb5f73576d8aadcc663bebc047d36d072379ed5da5c7f9287b6b4d3f",
+    "requirements_sha256": "b453826f25b9219a42ae834ab5570f955505d7a890d88c174a29dfa88882c75d",
+    "input_changes": [],
+    "prior_initial_audit_included": false,
+    "runs": [
+      {
+        "run_key": "01_accuracy",
+        "status": "PASS",
+        "expected": 1,
+        "summary_sha256": "47887393562f6101e501def0156890fc788f54a883d12b92e741884c6851ec6b"
+      },
+      {
+        "run_key": "02_paired_flips",
+        "status": "PASS",
+        "expected": 3,
+        "summary_sha256": "f64b3afa62195b46f83a1665f5666472b69afca2b75b822561d6a1c05d0ef4a1"
+      },
+      {
+        "run_key": "03_actual_token_cost",
+        "status": "PASS",
+        "expected": 1,
+        "summary_sha256": "47887393562f6101e501def0156890fc788f54a883d12b92e741884c6851ec6b"
+      },
+      {
+        "run_key": "04_length_and_termination",
+        "status": "PASS",
+        "expected": 1,
+        "summary_sha256": "47887393562f6101e501def0156890fc788f54a883d12b92e741884c6851ec6b"
+      },
+      {
+        "run_key": "05_timing",
+        "status": "PASS",
+        "expected": 1,
+        "summary_sha256": "47887393562f6101e501def0156890fc788f54a883d12b92e741884c6851ec6b"
+      },
+      {
+        "run_key": "markdown",
+        "status": "PASS",
+        "expected": 5,
+        "summary_sha256": "dcf25d083828924bbcff2ae1027fc2ad0a52518eddfd08395a457796ad5ea2cc"
+      }
+    ],
+    "acceptance_boundary": "Visual and figure-text acceptance only. This does not establish preserved quality, noninferiority, training acceptance, or original-paper numerical reproduction."
+  },
+  "inputs": [
+    {
+      "path": "docs/cod_author_results.md",
+      "sha256": "00d58e733bb8cf8269bdf4f4bbac054ca47c9b3f8d9dd450f2d38026008a6b9f",
+      "bytes": 9403
+    },
+    {
+      "path": "results/gsm8k-author-figures-002/01_accuracy.pdf",
+      "sha256": "6abe16b9cee5d55b10963fa61809142989df54262a51bf57c1126875bf025860",
+      "bytes": 30900
+    },
+    {
+      "path": "results/gsm8k-author-figures-002/01_accuracy.png",
+      "sha256": "e8bbf3d6b0e26acc881caf2d7a6c9b54fcdd5c278e708e668eb061e966214ae2",
+      "bytes": 147527
+    },
+    {
+      "path": "results/gsm8k-author-figures-002/01_accuracy.svg",
+      "sha256": "65a92f44c96a2461a31dbf708761a8f890e0ef91b0186a08ab62026b6d0ef318",
+      "bytes": 102707
+    },
+    {
+      "path": "results/gsm8k-author-figures-002/02_paired_flips.pdf",
+      "sha256": "16e5e1c30d32ba97cdac557974a9b88c6964a14e3f27fb3bc38be4d64e43f924",
+      "bytes": 27253
+    },
+    {
+      "path": "results/gsm8k-author-figures-002/02_paired_flips.png",
+      "sha256": "d3c9f1cc3109de8f0a8fbad24e52c75752cb1b3cd531a9669c855785caa6d6c4",
+      "bytes": 90816
+    },
+    {
+      "path": "results/gsm8k-author-figures-002/02_paired_flips.svg",
+      "sha256": "e582550e2c0111e06ddd1959727f5d45f87ccb1376c4030ec78ab4e6700f794c",
+      "bytes": 71539
+    },
+    {
+      "path": "results/gsm8k-author-figures-002/03_actual_token_cost.pdf",
+      "sha256": "7bf5ccabfce0494ad52ce57a4994c14307aa470d9cc767dc33475f28e743deec",
+      "bytes": 24880
+    },
+    {
+      "path": "results/gsm8k-author-figures-002/03_actual_token_cost.png",
+      "sha256": "cc6fa762bb9a816dbb0130fb5f408f54814b2fd0cb7881f3c6bcdec6ee2911f4",
+      "bytes": 82344
+    },
+    {
+      "path": "results/gsm8k-author-figures-002/03_actual_token_cost.svg",
+      "sha256": "7a51f8a2331e9e455f2312052bf278cb9eefc523bbbb739a5a332fdf440cd56b",
+      "bytes": 66753
+    },
+    {
+      "path": "results/gsm8k-author-figures-002/04_length_and_termination.pdf",
+      "sha256": "61a37d761510eeb3052fb32b6032894582be4f72320de69ebed8e66860cb198c",
+      "bytes": 44890
+    },
+    {
+      "path": "results/gsm8k-author-figures-002/04_length_and_termination.png",
+      "sha256": "124ebe79e21a90bd58e5d1708f10e87e5edad2419c1d3ef24e3bde6684f84381",
+      "bytes": 152653
+    },
+    {
+      "path": "results/gsm8k-author-figures-002/04_length_and_termination.svg",
+      "sha256": "fd8e440ec65bd7c76d930e1c71613ca45192229ac1f911726e7555500a344af2",
+      "bytes": 168876
+    },
+    {
+      "path": "results/gsm8k-author-figures-002/05_timing.pdf",
+      "sha256": "f8d3320b18de7ded89c6d52ff4e790c2ef6a8d6acb5e1d8a557b12aabbad5e20",
+      "bytes": 25924
+    },
+    {
+      "path": "results/gsm8k-author-figures-002/05_timing.png",
+      "sha256": "bd1bdc73cf2383e89f367c0fe961a38f6c1ca51cfbbe873708189ee3926b33c9",
+      "bytes": 132707
+    },
+    {
+      "path": "results/gsm8k-author-figures-002/05_timing.svg",
+      "sha256": "974bd3d6733579d5b17a456e28c280f0d66a51c9635e7490aa9da47016f18111",
+      "bytes": 72951
+    },
+    {
+      "path": "results/gsm8k-author-figures-002/README.md",
+      "sha256": "7b5b0fdc7fdf8bf21687105ff511c286549c786ec4e162e6d08ebe1e8f79a0db",
+      "bytes": 1686
+    },
+    {
+      "path": "results/gsm8k-author-figures-002/plot_data.json",
+      "sha256": "4294d7697a1199820a9290f5a394d0f0d772f0a7f584822e4d88f7dbc35992e6",
+      "bytes": 123811
+    },
+    {
+      "path": "results/gsm8k-author-figures-002/plot_manifest.json",
+      "sha256": "03674495530ad88c0558083b13cf17978383126454767f887a4f33822a1fed22",
+      "bytes": 11409
+    }
+  ],
+  "tasks": [
+    {
+      "audit_key": "01_accuracy--figure-0001",
+      "run_key": "01_accuracy",
+      "task_id": "figure-0001",
+      "status": "PASS",
+      "required_model": "gpt-5.6-luna",
+      "reported_model": "gpt-5.6-luna",
+      "reasoning_effort": "medium",
+      "attempts": 1,
+      "placement_kind": "page_coverage_sentinel",
+      "source_path": "results/gsm8k-author-figures-002/01_accuracy.pdf",
+      "asset_path": "results/gsm8k-author-figures-002/01_accuracy.pdf",
+      "asset_sha256": "6abe16b9cee5d55b10963fa61809142989df54262a51bf57c1126875bf025860",
+      "line_start": null,
+      "page": 1,
+      "image_index": null,
+      "raw_result_sha256": "4211a09795b1b78ee04aeed810dd42d56f3b97a8b78a6ea523b6c2284d8a0175",
+      "blocking_findings": 0,
+      "advisory_findings": 0
+    },
+    {
+      "audit_key": "02_paired_flips--figure-0001",
+      "run_key": "02_paired_flips",
+      "task_id": "figure-0001",
+      "status": "PASS",
+      "required_model": "gpt-5.6-luna",
+      "reported_model": "gpt-5.6-luna",
+      "reasoning_effort": "medium",
+      "attempts": 1,
+      "placement_kind": "raster_image_object",
+      "source_path": "results/gsm8k-author-figures-002/02_paired_flips.pdf",
+      "asset_path": "results/gsm8k-author-figures-002/02_paired_flips.pdf",
+      "asset_sha256": "16e5e1c30d32ba97cdac557974a9b88c6964a14e3f27fb3bc38be4d64e43f924",
+      "line_start": null,
+      "page": 1,
+      "image_index": 0,
+      "raw_result_sha256": "b93f35482f13b05b0aa670ce69befa88092349ab9e69b4b03a84570fcff42631",
+      "blocking_findings": 0,
+      "advisory_findings": 0
+    },
+    {
+      "audit_key": "02_paired_flips--figure-0002",
+      "run_key": "02_paired_flips",
+      "task_id": "figure-0002",
+      "status": "PASS",
+      "required_model": "gpt-5.6-luna",
+      "reported_model": "gpt-5.6-luna",
+      "reasoning_effort": "medium",
+      "attempts": 1,
+      "placement_kind": "raster_image_object",
+      "source_path": "results/gsm8k-author-figures-002/02_paired_flips.pdf",
+      "asset_path": "results/gsm8k-author-figures-002/02_paired_flips.pdf",
+      "asset_sha256": "16e5e1c30d32ba97cdac557974a9b88c6964a14e3f27fb3bc38be4d64e43f924",
+      "line_start": null,
+      "page": 1,
+      "image_index": 1,
+      "raw_result_sha256": "6c07f6806793b6c1f6e817ef0f1e004e69a1f3ccdb9dfa33a9a7ad24c8bc22ad",
+      "blocking_findings": 0,
+      "advisory_findings": 0
+    },
+    {
+      "audit_key": "02_paired_flips--figure-0003",
+      "run_key": "02_paired_flips",
+      "task_id": "figure-0003",
+      "status": "PASS",
+      "required_model": "gpt-5.6-luna",
+      "reported_model": "gpt-5.6-luna",
+      "reasoning_effort": "medium",
+      "attempts": 1,
+      "placement_kind": "page_coverage_sentinel",
+      "source_path": "results/gsm8k-author-figures-002/02_paired_flips.pdf",
+      "asset_path": "results/gsm8k-author-figures-002/02_paired_flips.pdf",
+      "asset_sha256": "16e5e1c30d32ba97cdac557974a9b88c6964a14e3f27fb3bc38be4d64e43f924",
+      "line_start": null,
+      "page": 1,
+      "image_index": null,
+      "raw_result_sha256": "43432e22b6b3e7dec06d1d5974d592b653a7f144a796b909c87e8e12546121d4",
+      "blocking_findings": 0,
+      "advisory_findings": 0
+    },
+    {
+      "audit_key": "03_actual_token_cost--figure-0001",
+      "run_key": "03_actual_token_cost",
+      "task_id": "figure-0001",
+      "status": "PASS",
+      "required_model": "gpt-5.6-luna",
+      "reported_model": "gpt-5.6-luna",
+      "reasoning_effort": "medium",
+      "attempts": 1,
+      "placement_kind": "page_coverage_sentinel",
+      "source_path": "results/gsm8k-author-figures-002/03_actual_token_cost.pdf",
+      "asset_path": "results/gsm8k-author-figures-002/03_actual_token_cost.pdf",
+      "asset_sha256": "7bf5ccabfce0494ad52ce57a4994c14307aa470d9cc767dc33475f28e743deec",
+      "line_start": null,
+      "page": 1,
+      "image_index": null,
+      "raw_result_sha256": "37c63de9bc5489a5a923280e6b512c56d3ceeac7ebbcdd5f9268327b4204f2b1",
+      "blocking_findings": 0,
+      "advisory_findings": 0
+    },
+    {
+      "audit_key": "04_length_and_termination--figure-0001",
+      "run_key": "04_length_and_termination",
+      "task_id": "figure-0001",
+      "status": "PASS",
+      "required_model": "gpt-5.6-luna",
+      "reported_model": "gpt-5.6-luna",
+      "reasoning_effort": "medium",
+      "attempts": 1,
+      "placement_kind": "page_coverage_sentinel",
+      "source_path": "results/gsm8k-author-figures-002/04_length_and_termination.pdf",
+      "asset_path": "results/gsm8k-author-figures-002/04_length_and_termination.pdf",
+      "asset_sha256": "61a37d761510eeb3052fb32b6032894582be4f72320de69ebed8e66860cb198c",
+      "line_start": null,
+      "page": 1,
+      "image_index": null,
+      "raw_result_sha256": "c2096b3321699850cfbfdc6c552c67afc155977fd66ec75c3f1120a920c71b67",
+      "blocking_findings": 0,
+      "advisory_findings": 0
+    },
+    {
+      "audit_key": "05_timing--figure-0001",
+      "run_key": "05_timing",
+      "task_id": "figure-0001",
+      "status": "PASS",
+      "required_model": "gpt-5.6-luna",
+      "reported_model": "gpt-5.6-luna",
+      "reasoning_effort": "medium",
+      "attempts": 1,
+      "placement_kind": "page_coverage_sentinel",
+      "source_path": "results/gsm8k-author-figures-002/05_timing.pdf",
+      "asset_path": "results/gsm8k-author-figures-002/05_timing.pdf",
+      "asset_sha256": "f8d3320b18de7ded89c6d52ff4e790c2ef6a8d6acb5e1d8a557b12aabbad5e20",
+      "line_start": null,
+      "page": 1,
+      "image_index": null,
+      "raw_result_sha256": "d37d6b941ab673dba05b97ae9acdf23731bf0cf752d8f22278d0ad7efe73946d",
+      "blocking_findings": 0,
+      "advisory_findings": 0
+    },
+    {
+      "audit_key": "markdown--figure-0001",
+      "run_key": "markdown",
+      "task_id": "figure-0001",
+      "status": "PASS",
+      "required_model": "gpt-5.6-luna",
+      "reported_model": "gpt-5.6-luna",
+      "reasoning_effort": "medium",
+      "attempts": 1,
+      "placement_kind": "markdown_image_placement",
+      "source_path": "docs/cod_author_results.md",
+      "asset_path": "results/gsm8k-author-figures-002/01_accuracy.png",
+      "asset_sha256": "e8bbf3d6b0e26acc881caf2d7a6c9b54fcdd5c278e708e668eb061e966214ae2",
+      "line_start": 17,
+      "page": null,
+      "image_index": null,
+      "raw_result_sha256": "992b1b3d2a94728182ad26870eaed7b56c837ef6b6ce987515c476e3cd0d9bd4",
+      "blocking_findings": 0,
+      "advisory_findings": 0
+    },
+    {
+      "audit_key": "markdown--figure-0002",
+      "run_key": "markdown",
+      "task_id": "figure-0002",
+      "status": "PASS",
+      "required_model": "gpt-5.6-luna",
+      "reported_model": "gpt-5.6-luna",
+      "reasoning_effort": "medium",
+      "attempts": 1,
+      "placement_kind": "markdown_image_placement",
+      "source_path": "docs/cod_author_results.md",
+      "asset_path": "results/gsm8k-author-figures-002/02_paired_flips.png",
+      "asset_sha256": "d3c9f1cc3109de8f0a8fbad24e52c75752cb1b3cd531a9669c855785caa6d6c4",
+      "line_start": 24,
+      "page": null,
+      "image_index": null,
+      "raw_result_sha256": "ccdd748292de83f698a497083591f4e247e191b4fa594997ec5f1380b3e95ef0",
+      "blocking_findings": 0,
+      "advisory_findings": 0
+    },
+    {
+      "audit_key": "markdown--figure-0003",
+      "run_key": "markdown",
+      "task_id": "figure-0003",
+      "status": "PASS",
+      "required_model": "gpt-5.6-luna",
+      "reported_model": "gpt-5.6-luna",
+      "reasoning_effort": "medium",
+      "attempts": 1,
+      "placement_kind": "markdown_image_placement",
+      "source_path": "docs/cod_author_results.md",
+      "asset_path": "results/gsm8k-author-figures-002/03_actual_token_cost.png",
+      "asset_sha256": "cc6fa762bb9a816dbb0130fb5f408f54814b2fd0cb7881f3c6bcdec6ee2911f4",
+      "line_start": 41,
+      "page": null,
+      "image_index": null,
+      "raw_result_sha256": "5fd4a6584e008575cee6494eff3b95c1f73d69bdc1fb3d07e7786d643c003443",
+      "blocking_findings": 0,
+      "advisory_findings": 0
+    },
+    {
+      "audit_key": "markdown--figure-0004",
+      "run_key": "markdown",
+      "task_id": "figure-0004",
+      "status": "PASS",
+      "required_model": "gpt-5.6-luna",
+      "reported_model": "gpt-5.6-luna",
+      "reasoning_effort": "medium",
+      "attempts": 1,
+      "placement_kind": "markdown_image_placement",
+      "source_path": "docs/cod_author_results.md",
+      "asset_path": "results/gsm8k-author-figures-002/04_length_and_termination.png",
+      "asset_sha256": "124ebe79e21a90bd58e5d1708f10e87e5edad2419c1d3ef24e3bde6684f84381",
+      "line_start": 57,
+      "page": null,
+      "image_index": null,
+      "raw_result_sha256": "696ed238b10e29c7d34c316e8f2ca4a5ba4be3afa0db0d3c6f81acc5c3dc464b",
+      "blocking_findings": 0,
+      "advisory_findings": 0
+    },
+    {
+      "audit_key": "markdown--figure-0005",
+      "run_key": "markdown",
+      "task_id": "figure-0005",
+      "status": "PASS",
+      "required_model": "gpt-5.6-luna",
+      "reported_model": "gpt-5.6-luna",
+      "reasoning_effort": "medium",
+      "attempts": 1,
+      "placement_kind": "markdown_image_placement",
+      "source_path": "docs/cod_author_results.md",
+      "asset_path": "results/gsm8k-author-figures-002/05_timing.png",
+      "asset_sha256": "bd1bdc73cf2383e89f367c0fe961a38f6c1ca51cfbbe873708189ee3926b33c9",
+      "line_start": 72,
+      "page": null,
+      "image_index": null,
+      "raw_result_sha256": "964369a27cd55e2bd0d5e4b5791303ea0c87b70eb2cb3124647bc12775a0ffb2",
+      "blocking_findings": 0,
+      "advisory_findings": 0
+    }
+  ]
+}

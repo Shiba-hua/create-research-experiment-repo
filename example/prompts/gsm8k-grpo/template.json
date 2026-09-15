@@ -1,0 +1,23 @@
+{
+  "schema": "rlvr.prompt-template/v1",
+  "id": "gsm8k-grpo-cot-v1",
+  "messages": [
+    {
+      "role": "system",
+      "content": "Solve the problem carefully. Reason step by step before giving the final answer.\nPut the final answer on the last line in exactly this format:\nAnswer: <number>"
+    },
+    {
+      "role": "user",
+      "content_variable": "question",
+      "strip_whitespace": true
+    }
+  ],
+  "fewshot_count": 0,
+  "source_commit": "9359731bc1fcdeeef867ff4c5dd1144ff9cdc11f",
+  "source_file": "src/rlvr_lab/data.py",
+  "chat_kwargs": {
+    "add_generation_prompt": true,
+    "enable_thinking": true
+  },
+  "chat_template_sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8"
+}

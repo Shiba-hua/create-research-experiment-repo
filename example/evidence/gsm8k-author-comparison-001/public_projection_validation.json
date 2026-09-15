@@ -1,0 +1,95 @@
+{
+  "kind": "independent_public_numeric_projection_validation",
+  "status": "PASS",
+  "source_files": {
+    "comparison": {
+      "bytes": 11632,
+      "sha256": "bb9d6e5798f7cc16cec5a118202c0b235c59173b9621515e899f208a92295712"
+    },
+    "builder": {
+      "bytes": 7852,
+      "sha256": "06160755e7ee0a5e52ab9983111c708c6591d70dd5ccd38f3ae59120e0559745"
+    },
+    "verifier": {
+      "bytes": 5892,
+      "sha256": "f80425068f59f1c0e891ed1cf37b3adcb8badbcf99ed687091bf3f54d0ce28e3"
+    }
+  },
+  "runs": {
+    "cot": {
+      "n": 1319,
+      "counts": {
+        "author_correct": 977,
+        "strict_correct": 969,
+        "strict_format_ok": 1025,
+        "thinking_closed": 1104,
+        "eos": 1034,
+        "truncated": 285
+      },
+      "token_totals": {
+        "prompt_tokens": 1047327,
+        "response_tokens": 1639168,
+        "total_tokens": 2686495
+      },
+      "projection": {
+        "bytes": 1749769,
+        "sha256": "4eb62b8c3a524c16dec52a1c808ef65c41c00ae042c3cb5e726c71880a57fc8e"
+      },
+      "projection_manifest": {
+        "bytes": 2703,
+        "sha256": "bb2b0594956c8e7867191de7dffe6257a5aa05df5c71b506f16ee690f6b7387c"
+      },
+      "no_text_or_token_id_sequences": true
+    },
+    "cod": {
+      "n": 1319,
+      "counts": {
+        "author_correct": 935,
+        "strict_correct": 922,
+        "strict_format_ok": 1021,
+        "thinking_closed": 1086,
+        "eos": 1038,
+        "truncated": 281
+      },
+      "token_totals": {
+        "prompt_tokens": 804631,
+        "response_tokens": 1471023,
+        "total_tokens": 2275654
+      },
+      "projection": {
+        "bytes": 1749217,
+        "sha256": "877b252a840261f7a311d01af05dac673773dd5d81b4c3c6ca0fcfa18ffe19da"
+      },
+      "projection_manifest": {
+        "bytes": 2702,
+        "sha256": "bd5230a464cb9af5cccfc5624e53f48dc0b27d75c57477ed07e3acef93f4f323"
+      },
+      "no_text_or_token_id_sequences": true
+    }
+  },
+  "paired_statistics": {
+    "strict_correct": {
+      "delta": -0.0356330553449583,
+      "paired_95_ci": [
+        -0.056103108415466264,
+        -0.01592115238817286
+      ],
+      "wrong_to_right": 68,
+      "right_to_wrong": 115,
+      "matches_full_private_verifier_comparison": true
+    },
+    "author_correct": {
+      "delta": -0.03184230477634572,
+      "paired_95_ci": [
+        -0.05155420773313116,
+        -0.012130401819560273
+      ],
+      "wrong_to_right": 68,
+      "right_to_wrong": 110,
+      "matches_full_private_verifier_comparison": true
+    }
+  },
+  "full_tokenizer_parser_verification_replaced": false,
+  "scope": "Only public numeric coverage/counts/costs/paired intervals and non-reconstructable field structure. Original text/tokenizer/parser verification remains bound to the separate masked-guest private comparison.",
+  "report_sha256": "f6c99b273d73047f6503f1b39a34de96828a1302981d7622957b78e3fcb33ea7"
+}

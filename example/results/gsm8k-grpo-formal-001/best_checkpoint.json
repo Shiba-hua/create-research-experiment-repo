@@ -1,0 +1,5 @@
+{
+  "step": 64,
+  "val_acc": 0.8359375,
+  "selection": "earliest maximum on fixed dev; no audit access"
+}

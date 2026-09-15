@@ -1,0 +1,20 @@
+{
+  "kind": "portable_visual_qa_receipt",
+  "status": "FAIL",
+  "target": "results/gsm8k-author-figures-001/05_timing.png",
+  "target_sha256": "b4442044450c4e6a0eb545baa3dff3cd9cc15798f29a709eada9011ba92b61fa",
+  "policy_version": "2.0.0",
+  "required_model": "gpt-5.6-luna",
+  "logical_placements": 1,
+  "completed": 1,
+  "blocking_findings": 1,
+  "finding": "Left timing legend overlaps the CoD generation-batch value778.7.",
+  "repair": "Move this legend outside the data/annotation area in a new output directory.",
+  "private_audit_receipts": {
+    "figure_inventory.jsonl": "743c3968fa01f499783f4759f68c11b38428272fe5b6bdfc13d7433af3ac443b",
+    "audit_tasks.jsonl": "71ac500267c1969bf9de103a90f69173c137d4e52a9fb969ebb14862d0051a73",
+    "findings.jsonl": "e4248fb1727a637c3cc2c71d6c65615fc473b6feb01e5ae39b36f89c41ec8229",
+    "summary.json": "c42e3fc8eb6552bfdbb7df5a52606f699b1aa9845671eb5a143767ba8eb1519a",
+    "coverage.json": "0a3e61d2323c4d6532d53b57694fdce314cd3cb3414764045ab0405dba0148ce"
+  }
+}

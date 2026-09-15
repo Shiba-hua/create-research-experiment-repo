@@ -1,0 +1,52 @@
+{
+  "cot": {
+    "job": "evidence/gsm8k-author-cot-audit-002/job.json",
+    "command": [
+      "/opt/experiment-runtime/bin/run-hostpaths",
+      "env",
+      "VLLM_USE_V1=1",
+      "VLLM_ENABLE_V1_MULTIPROCESSING=0",
+      "python",
+      "-m",
+      "rlvr_lab.cod_author",
+      "--model",
+      "/workspace/experiment/models/qwen3-1.7b",
+      "--data",
+      "/workspace/experiment/data/gsm8k/audit.jsonl",
+      "--source-dir",
+      "/opt/cod-author-a7dbf5d",
+      "--output",
+      "/workspace/experiment/results/gsm8k-author-cot-audit-002",
+      "--mode",
+      "cot"
+    ],
+    "cwd": "/workspace/experiment",
+    "git_commit": "61ff6a476c3cacec1fe87c846c9559a010f499dd",
+    "timeout_seconds": 7200
+  },
+  "cod": {
+    "job": "evidence/gsm8k-author-cod-audit-001/job.json",
+    "command": [
+      "/opt/experiment-runtime/bin/run-hostpaths",
+      "env",
+      "VLLM_USE_V1=1",
+      "VLLM_ENABLE_V1_MULTIPROCESSING=0",
+      "python",
+      "-m",
+      "rlvr_lab.cod_author",
+      "--model",
+      "/workspace/experiment/models/qwen3-1.7b",
+      "--data",
+      "/workspace/experiment/data/gsm8k/audit.jsonl",
+      "--source-dir",
+      "/opt/cod-author-a7dbf5d",
+      "--output",
+      "/workspace/experiment/results/gsm8k-author-cod-audit-001",
+      "--mode",
+      "cod"
+    ],
+    "cwd": "/workspace/experiment",
+    "git_commit": "61ff6a476c3cacec1fe87c846c9559a010f499dd",
+    "timeout_seconds": 7200
+  }
+}

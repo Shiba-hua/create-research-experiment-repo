@@ -1,0 +1,25 @@
+{
+  "boundary": "All five charts were redrawn under a newer Matplotlib. Only the timing legend receives a layout intervention, but unchanged bytes for other charts are not claimed.",
+  "checks": {
+    "annotation_did_not_change_plot_data_or_figures": true,
+    "both_versions_charts_match_manifests": true,
+    "exact_legend_predicate": true,
+    "final_manifest_sha256": "03674495530ad88c0558083b13cf17978383126454767f887a4f33822a1fed22",
+    "legend_matches": 1,
+    "manifest_annotation_before_after_receipts_match": true,
+    "manifest_digests_valid": true,
+    "original_001_artifact_snapshot_unchanged": true,
+    "original_method_restored": true,
+    "original_renderer_git_unmodified": true,
+    "plot_data_bytes": 123811,
+    "plot_data_bytes_equal": true,
+    "plot_data_dict_equal": true,
+    "plot_data_sha256": "4294d7697a1199820a9290f5a394d0f0d772f0a7f584822e4d88f7dbc35992e6",
+    "upstream_full_validation_distinguished_from_render_only": true
+  },
+  "files_modified_by_reviewer": false,
+  "kind": "independent_read_only_repair_code_and_data_review",
+  "reviewer_task": "archive_author_runs/review_archive",
+  "status": "PASS",
+  "visual_acceptance_performed": false
+}

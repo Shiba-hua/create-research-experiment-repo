@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "experiments": [
+    {
+      "id": "gsm8k-qwen3-0.6b-grpo",
+      "report": "docs/experiments/grpo/gsm8k-qwen3-0.6b/report.md",
+      "capsule": "repro/experiments/gsm8k-qwen3-0.6b-grpo/experiment.json",
+      "runs": [
+        "gsm8k-grpo-formal-001"
+      ],
+      "execution": "historically_completed",
+      "evidence": "historically_accepted",
+      "conclusion": "accuracy_improved"
+    },
+    {
+      "id": "gsm8k-qwen3-1.7b-author-cot-cod",
+      "report": "docs/experiments/cot-cod-prompt/gsm8k-qwen3-1.7b-author-8shot/report.md",
+      "capsule": "repro/experiments/gsm8k-qwen3-1.7b-author-cot-cod/experiment.json",
+      "runs": [
+        "gsm8k-author-cot-audit-002",
+        "gsm8k-author-cod-audit-001"
+      ],
+      "execution": "historically_completed",
+      "evidence": "public_numeric_projection",
+      "conclusion": "quality_cost_tradeoff"
+    }
+  ]
+}

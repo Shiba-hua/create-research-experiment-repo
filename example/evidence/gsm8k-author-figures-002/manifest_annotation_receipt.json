@@ -1,0 +1,14 @@
+{
+  "after": {
+    "bytes": 11409,
+    "sha256": "03674495530ad88c0558083b13cf17978383126454767f887a4f33822a1fed22"
+  },
+  "annotation_script_sha256": "67510881c9b3587de2a61522804dd2c372c6618cb89cdcf25ab2bce332c631c8",
+  "before": {
+    "bytes": 11116,
+    "sha256": "111b65c4efd1bf89c20249202ec60d035eb7c51dcef2b71fc001924859f3c676"
+  },
+  "kind": "derived_manifest_provenance_annotation",
+  "numeric_data_or_figure_changed": false,
+  "target": "results/gsm8k-author-figures-002/plot_manifest.json"
+}

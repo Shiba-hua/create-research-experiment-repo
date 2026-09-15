@@ -1,0 +1,27 @@
+{
+  "coverage": {
+    "blocking_warnings": [],
+    "completed": 1,
+    "expected": 1,
+    "invalid": [],
+    "inventory_task_mismatch": [],
+    "missing": [],
+    "model_violations": [],
+    "requirement_conflicts": [],
+    "tasks": 1,
+    "unexpected": []
+  },
+  "finding_errors": {},
+  "generated_at": "2026-09-10T08:20:05Z",
+  "overall_status": "PASS",
+  "required_model": "gpt-5.6-luna",
+  "schema_version": "1.0.0",
+  "scope": "Visual readability of this CPU prefill attention diagnostic, not model-performance or causal evidence.",
+  "artifacts": {
+    "attention_first_last.png": "d5e5815d6de555d681892f3398c55a0fe2b8e50cbfffb7f1a5f05cd0cdda3384",
+    "attention_first_last.svg": "1f4df3b7e91ab40a23699fe1664e095b2cb1299514e982234a73362a841a41d1",
+    "attention_head_mean.npz": "9cf9fa31f554a054ab266f6cea89a438bb93811e407c9a31f91215d0390f2c61"
+  },
+  "input_ids_sha256": "921d071a89f54cce91b4bc3f5be14eab45633770f5f0d80d1f41661c009a0742",
+  "full_local_audit_retained": "qa/run-001 (excluded from Git; original task packets and policy retained locally)"
+}

@@ -1,0 +1,90 @@
+{
+  "accepted": true,
+  "checks": {
+    "training_and_job": true,
+    "gpu_release": true,
+    "raw_diagnostics": true,
+    "locked_audit": true,
+    "paired_statistics": true,
+    "full_audit_regrading": true,
+    "current_selected_artifacts": true,
+    "performance_gain": true
+  },
+  "check_failures": [],
+  "statistics": {
+    "project": "gsm8k",
+    "n": 1319,
+    "before": {
+      "accuracy": 0.6345716451857468,
+      "correct": 837,
+      "wilson_95_ci": [
+        0.6082280168028688,
+        0.6601336962602223
+      ]
+    },
+    "after": {
+      "accuracy": 0.7354056103108415,
+      "correct": 970,
+      "wilson_95_ci": [
+        0.710941149128181,
+        0.7585028616103531
+      ]
+    },
+    "absolute_gain": 0.10083396512509477,
+    "absolute_gain_percentage_points": 10.083396512509477,
+    "paired_flips": {
+      "wrong_to_right": 203,
+      "right_to_wrong": 70,
+      "unchanged": 1046
+    },
+    "paired_bootstrap_95_ci": [
+      0.07657316148597422,
+      0.12509476876421532
+    ],
+    "bootstrap_samples": 20000,
+    "bootstrap_seed": 20260910,
+    "mcnemar_exact_two_sided_p": 3.436844955515167e-16,
+    "adjusted_p": 6.873689911030334e-16,
+    "multiplicity_method": "Bonferroni bound on Holm for standalone comparison",
+    "family_size": 2,
+    "minimum_absolute_gain": 0.05,
+    "checks": {
+      "absolute_gain_at_least_threshold": true,
+      "paired_bootstrap_lower_above_zero": true,
+      "multiplicity_adjusted_mcnemar_below_0_05": true
+    },
+    "statistical_pass": true,
+    "manifests_verified": true,
+    "accepted": true,
+    "limitations": [
+      "Inference concerns the locked held-out questions, not all tasks in the domain.",
+      "One sampled response per model/question; batch seeds do not couple identical random draws after generation paths diverge.",
+      "Seed and batch order matching do not remove generation variance or establish multi-seed training robustness.",
+      "A single-domain result does not establish completion of the two-domain objective."
+    ]
+  },
+  "scope": "One project; two-domain completion requires two project gates. vLLM additionally requires a post-job GPU-release receipt.",
+  "gpu_release": {
+    "required": false,
+    "receipt_supplied": false
+  },
+  "dataset_overlap_audit_variant": "overlap_audit",
+  "current_artifact_identity_sha256": "d01c5d1c499e0e8dea4f3050d4467374c15222ab74bc771a4fa1342e7e67b48e",
+  "evidence": {
+    "run": "/workspace/experiment/results/gsm8k-grpo-formal-001",
+    "data": "/workspace/experiment/data/gsm8k",
+    "job": "/workspace/experiment/evidence/gsm8k-grpo-formal-001/job.json",
+    "before": "/workspace/experiment/results/gsm8k-grpo-formal-001/audit-before-001/predictions.jsonl",
+    "after": "/workspace/experiment/results/gsm8k-grpo-formal-001/audit-after-001/predictions.jsonl",
+    "acceptance_code_sha256": "14eb9865988b95fe92d1b7a3c82782da2b763f2d31a9e46e5b3938e6aaaaa5cd",
+    "evaluation_manifest_sha256": {
+      "before": "b335d98dad0cd0a29ef7b83ee753e2917b0cae653aeeebfb519f56c5dbb2e095",
+      "after": "61582b42958bf2693401aeb5d7a94bebc157f419e453a10ed4ffcb584ce86ea6"
+    },
+    "input_sha256": {
+      "/workspace/experiment/results/gsm8k-grpo-formal-001/manifest.json": "a5de2488316f0fc6cbe38628894988e766ab9bd3ce6acb336432946b0f1728d2",
+      "/workspace/experiment/data/gsm8k/manifest.json": "d417cf1d1d18b6870805df80fd57e94c24bb755c046688fecc781e301aff2333",
+      "evidence/gsm8k-grpo-formal-001/job.json": "5857d8ff84815b719955f0dff647306f53eb300b92a874a59aa5616bd1e14756"
+    }
+  }
+}

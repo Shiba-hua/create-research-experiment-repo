@@ -1,0 +1,145 @@
+{
+  "coverage": {
+    "blocking_warnings": [],
+    "completed": 7,
+    "expected": 7,
+    "invalid": [],
+    "inventory_task_mismatch": [],
+    "missing": [],
+    "model_violations": [],
+    "requirement_conflicts": [],
+    "tasks": 7,
+    "unexpected": []
+  },
+  "finding_errors": {},
+  "generated_at": "2026-09-10T06:00:30Z",
+  "overall_status": "PASS",
+  "required_model": "gpt-5.6-luna",
+  "schema_version": "1.0.0",
+  "scope": "Visual readability and figure/context consistency only. Statistical and mathematical-project acceptance comes from the separately hashed acceptance.json; this is not two-domain task acceptance.",
+  "figures": {
+    "01_learning.png": "efe9194457e2965ed743f16252b8c255f685b645366d07ecb4200df2deb98890",
+    "01_learning.svg": "2bdae03aa4ad7a6541b1d271131d5f22acc122070b692aa6407a303ac4b300fb",
+    "02_stability.png": "50cc0d152800d340aa5d903177585693fd23a32ea91f4b80c9548c46802a8b29",
+    "02_stability.svg": "719bc379e4bbe3b3ad5e4cfdf6c19db15b9550bfffa8a0dedccf5840c9ab9361",
+    "03_generation.png": "eec8a554e35414e5bfbe9ac91a47e01803393715cd993e7495a342760e9bd52b",
+    "03_generation.svg": "f62c6da1031c5c186fd3e72628102159e70a5c4f5774e19130c5cef9912a7316",
+    "04_resources.png": "878dc57cd690a93224f0c1b59524503dfe60224e5e4191c70b31ff45c9d62c19",
+    "04_resources.svg": "edcc7f10c653d495d79e7957ccb9996831fb2f2c6cf40bea45560c48033bf8eb",
+    "05_acceptance_gsm8k.png": "d1abc041e9458c48ca9bca3ffc099848fde5e2d05b35e3d3521039a5542c8bab",
+    "05_acceptance_gsm8k.svg": "4efa764b9c00c7d458e63e9d733eb0fb04dd2ec347871521a4278bdaf0d36261",
+    "06_tokens_gsm8k.png": "6a5687b2603991c482a4743b5ccd4b06402262702e26fc7a3024c02e6a6c973f",
+    "06_tokens_gsm8k.svg": "f20acd5469dfbd26e96a0b38cb91d47e30d3f3967fa48f0a229fa8732ddb7137",
+    "07_system_resources.png": "f12db17e0be35fa5808e666068f8763f9dfa617dd3e7797af371286333ebbd93",
+    "07_system_resources.svg": "3e14f556856fec0943e0a36f4e485bcae17a1b5249077058260e9a874834d210"
+  },
+  "readme_sha256": "96ebda60375b4142c434f2aa35f725d84740ccb60d8838ea1d724f443120c231",
+  "plot_manifest_sha256": "755f374e4de0874dac18e25d221504e2ceb611c24983c66aaf9aaf2731debfda",
+  "experiment_acceptance": {
+    "source": "../acceptance.json",
+    "sha256": "49db5c2a46c60d6edb15590e09c6b559c9c84ef75aa566264cde494708805f04",
+    "project": "gsm8k",
+    "recorded_accepted": true
+  },
+  "independent_results": [
+    {
+      "task_id": "figure-0001",
+      "status": "PASS",
+      "model": "gpt-5.6-luna",
+      "confidence_note": "Full-resolution PNG is clear and complete; axes, labels, legends, plotted marks, title, and required scope note are readable without cropping or overlap. Caption and README context match the six learning diagnostics and explicitly state that dev results are not audit results.",
+      "findings": [],
+      "reuse_evidence": {
+        "prior_audit_run": "gsm8k-formal-001-accepted",
+        "asset_sha256": "efe9194457e2965ed743f16252b8c255f685b645366d07ecb4200df2deb98890",
+        "reason": "Candidate PNG/SVG and figure caption unchanged; only separate 05 acceptance wording was repaired."
+      }
+    },
+    {
+      "task_id": "figure-0002",
+      "status": "PASS",
+      "model": "gpt-5.6-luna",
+      "confidence_note": "Full 2682x1435 PNG inspected at original resolution; axes, labels, legends, data marks, title, and notes are complete and readable. Panels match the stability caption and formal-run context, with no visible overlap, cropping, unrelated content, or audit-acceptance claim.",
+      "findings": [],
+      "reuse_evidence": {
+        "prior_audit_run": "gsm8k-formal-001-accepted",
+        "asset_sha256": "50cc0d152800d340aa5d903177585693fd23a32ea91f4b80c9548c46802a8b29",
+        "reason": "Candidate PNG/SVG and figure caption unchanged; only separate 05 acceptance wording was repaired."
+      }
+    },
+    {
+      "task_id": "figure-0003",
+      "status": "PASS",
+      "model": "gpt-5.6-luna",
+      "confidence_note": "Full-resolution PNG and complete packet context were inspected; all four generation panels, legends, axes, notes, and caption are visually coherent and readable, with no blocking defect.",
+      "findings": [],
+      "reuse_evidence": {
+        "prior_audit_run": "gsm8k-formal-001-accepted",
+        "asset_sha256": "eec8a554e35414e5bfbe9ac91a47e01803393715cd993e7495a342760e9bd52b",
+        "reason": "Candidate PNG/SVG and figure caption unchanged; only separate 05 acceptance wording was repaired."
+      }
+    },
+    {
+      "task_id": "figure-0004",
+      "status": "PASS",
+      "model": "gpt-5.6-luna",
+      "confidence_note": "Full-resolution PNG is clear and complete. Axes, legends, plotted series, missing-metric notices, and measurement-boundary footnotes are readable and consistent with the caption and formal-run context.",
+      "findings": [],
+      "reuse_evidence": {
+        "prior_audit_run": "gsm8k-formal-001-accepted",
+        "asset_sha256": "878dc57cd690a93224f0c1b59524503dfe60224e5e4191c70b31ff45c9d62c19",
+        "reason": "Candidate PNG/SVG and figure caption unchanged; only separate 05 acceptance wording was repaired."
+      }
+    },
+    {
+      "task_id": "figure-0005",
+      "status": "PASS",
+      "model": "gpt-5.6-luna",
+      "confidence_note": "Full PNG inspected at original resolution; all six resource panels, axes, labels, title, and explanatory notes are visible and legible, with no apparent cropping, overlap, semantic mismatch, or unsupported audit claim.",
+      "findings": [],
+      "reuse_evidence": {
+        "prior_audit_run": "gsm8k-formal-001-accepted",
+        "asset_sha256": "f12db17e0be35fa5808e666068f8763f9dfa617dd3e7797af371286333ebbd93",
+        "reason": "Candidate PNG/SVG and figure caption unchanged; only separate 05 acceptance wording was repaired."
+      }
+    },
+    {
+      "task_id": "figure-0006",
+      "status": "PASS",
+      "model": "gpt-5.6-luna",
+      "confidence_note": "Full-resolution PNG and complete packet context were inspected. The figure is readable and uncropped, shows separate Wilson intervals and a paired bootstrap gain interval, and explicitly states `gsm8k project acceptance=True`; README context separately records that the second domain remains pending.",
+      "findings": []
+    },
+    {
+      "task_id": "figure-0007",
+      "status": "PASS",
+      "model": "gpt-5.6-luna",
+      "confidence_note": "Full-resolution PNG is clear and complete. The empirical before/after token CDFs, EOS-inclusive axis, truncation bars, and cautionary note match the supplied GSM8K audit context; no cropping, overlap, semantic mismatch, or unsupported four-arm claim is visible.",
+      "findings": [],
+      "reuse_evidence": {
+        "prior_audit_run": "gsm8k-formal-001-accepted",
+        "asset_sha256": "6a5687b2603991c482a4743b5ccd4b06402262702e26fc7a3024c02e6a6c973f",
+        "reason": "Candidate PNG/SVG and figure caption unchanged; only separate 05 acceptance wording was repaired."
+      }
+    }
+  ],
+  "audit_composition": {
+    "previously_audited_diagnostic_placements_reused": 5,
+    "new_logical_placements_audited": 2,
+    "repaired_placement_reaudited": 1,
+    "final_logical_coverage": 7,
+    "required_model": "gpt-5.6-luna",
+    "reasoning_effort": "medium"
+  },
+  "resolved_findings": [
+    {
+      "figure": "05_acceptance_gsm8k.png",
+      "initial_status": "FAIL",
+      "category": "figure_caption_body_mismatch",
+      "issue": "Unqualified overall project acceptance wording was ambiguous about the two-domain objective.",
+      "repair": "The reusable footer now names the actual comparison project: gsm8k project acceptance=True. README says the second domain remains pending.",
+      "final_status": "PASS"
+    }
+  ],
+  "preservation": "All ten original diagnostic PNG/SVG hashes are unchanged. The token-distribution PNG/SVG are unchanged after their successful first review. Only acceptance-chart wording was repaired.",
+  "comparison_scope": "Actual two-model GRPO before/after audit. No completed four-arm strategy curve is claimed."
+}

@@ -1,0 +1,16 @@
+INFO 09-10 13:38:25 [__init__.py:216] Automatically detected platform cuda.
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/workspace/experiment/src/rlvr_lab/cod_author.py", line 420, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/workspace/experiment/src/rlvr_lab/cod_author.py", line 414, in main
+    result = run(parser.parse_args(argv))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/experiment/src/rlvr_lab/cod_author.py", line 380, in run
+    context = prepare_evaluation(args.data, args.model, args.source_dir, args.output, args.mode, tokenizer, model_config)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/experiment/src/rlvr_lab/cod_author.py", line 221, in prepare_evaluation
+    raise ValueError('Native Qwen3 rendered prompt must open the thinking channel')
+ValueError: Native Qwen3 rendered prompt must open the thinking channel

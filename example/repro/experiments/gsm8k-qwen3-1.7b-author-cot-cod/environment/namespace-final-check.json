@@ -1,0 +1,8 @@
+{
+  "observed_at": "2026-09-10T09:00:49.038194+00:00",
+  "legacy_wrapper_still_unchanged": true,
+  "legacy_sha256": "614fa702bd483cbff7e707a26db5a7607efe5152c406b4c573be4d5bfebeb4e1",
+  "run_hostpaths_sha256": "fdb77815acf599d917b3115d73039fa3373c385a094777b1d37905cc1c41cd92",
+  "native_host_can_open_workspace_manifest": false,
+  "native_host_can_open_host_manifest": true
+}

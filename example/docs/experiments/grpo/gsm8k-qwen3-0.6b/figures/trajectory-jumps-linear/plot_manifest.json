@@ -1,0 +1,27 @@
+{
+  "schema": "rlvr.budget-gated-plot/v1",
+  "scope": "CPU replay of saved trajectories; not an independently evaluated budget curve",
+  "curves": {
+    "path": "curves.json",
+    "bytes": 1034305,
+    "sha256": "12c75bf754baee0e8d54c7423beb5ae39ac1429e7bba5882c5edded2e5762a54"
+  },
+  "files": [
+    {
+      "path": "budget_gated_val_acc.png",
+      "bytes": 204552,
+      "sha256": "245c2fa078b5c544004066f1b6b3e561bdc53ffdab0de8d7934044e7ab8402b1"
+    },
+    {
+      "path": "budget_gated_val_acc.svg",
+      "bytes": 51309,
+      "sha256": "0361d0d291467538273578ea7b23d910eb2cc1e577dd467193a6ec1073517cba"
+    }
+  ],
+  "producer": {
+    "path": "repro/budget_gated_curve.py",
+    "sha256": "89a5a4a123077d8649cb9939db468888946ee77e5c7b6aa0631f328fa8903822"
+  },
+  "new_inference": false,
+  "prefix_regrading": false
+}

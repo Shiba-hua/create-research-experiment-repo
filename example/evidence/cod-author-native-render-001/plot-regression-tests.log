@@ -1,0 +1,11 @@
+test_actual_cost_and_ecdf_data_include_wrong_format_failed_truncated_rows (test_plot_cod_author.AuthorPlotStatisticsTests.test_actual_cost_and_ecdf_data_include_wrong_format_failed_truncated_rows) ... ok
+test_complete_flag_cannot_bypass_full_comparison_recomputation (test_plot_cod_author.AuthorPlotStatisticsTests.test_complete_flag_cannot_bypass_full_comparison_recomputation) ... ok
+test_incomplete_input_creates_no_figure_directory (test_plot_cod_author.AuthorPlotStatisticsTests.test_incomplete_input_creates_no_figure_directory) ... ok
+test_shared_batch_time_is_counted_once_and_is_not_request_latency (test_plot_cod_author.AuthorPlotStatisticsTests.test_shared_batch_time_is_counted_once_and_is_not_request_latency) ... ok
+test_strict_and_compatibility_remain_distinct_with_exact_paired_matrices (test_plot_cod_author.AuthorPlotStatisticsTests.test_strict_and_compatibility_remain_distinct_with_exact_paired_matrices) ... ok
+test_wrong_score_flips_cost_and_dropped_rows_are_rejected (test_plot_cod_author.AuthorPlotStatisticsTests.test_wrong_score_flips_cost_and_dropped_rows_are_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.013s
+
+OK

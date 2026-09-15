@@ -1,0 +1,22 @@
+{
+  "manifest": "results/gsm8k-author-figures-002/plot_manifest.json",
+  "bytes": 11409,
+  "sha256": "03674495530ad88c0558083b13cf17978383126454767f887a4f33822a1fed22",
+  "source_snapshots": [
+    "plotting/plot_cod_author.py",
+    "plotting/render_legend_repair.py"
+  ],
+  "scope": "Historical render source and provenance; review supplements are separate",
+  "review_supplements": [
+    {
+      "manifest": "docs/experiments/cot-cod-prompt/gsm8k-qwen3-1.7b-author-8shot/figures/accuracy-decode-cost/plot_manifest.json",
+      "bytes": 774,
+      "sha256": "c79efb012cd979e1abb27860fe19f5e7401135ca5f4be5d3129e748b5a8669e6"
+    },
+    {
+      "manifest": "docs/experiments/cot-cod-prompt/gsm8k-qwen3-1.7b-author-8shot/figures/trajectory-jumps/plot_manifest.json",
+      "bytes": 1879,
+      "sha256": "76133be607d8e509cb1668a66145ae09faf573e1b6eafb947b5047f328b191ab"
+    }
+  ]
+}

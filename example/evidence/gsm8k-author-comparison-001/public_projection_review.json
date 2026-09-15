@@ -1,0 +1,21 @@
+{
+  "kind": "independent_read_only_public_projection_review",
+  "status": "PASS",
+  "review_scope": "Actual full2638rows plus bounded synthetic malformed-input checks; no GPU, original-record changes or commits by reviewer.",
+  "actual_rows": 2638,
+  "original_fields_compared_with_type_and_value": 76502,
+  "all_original_line_hashes_verified": true,
+  "all_raw_receipt_summary_projection_bindings_verified": true,
+  "no_public_text_or_token_sequences": true,
+  "counts_cost_batches_paired_20000_intervals_unchanged": true,
+  "builder_sha256": "06160755e7ee0a5e52ab9983111c708c6591d70dd5ccd38f3ae59120e0559745",
+  "verification_report_sha256": "f6c99b273d73047f6503f1b39a34de96828a1302981d7622957b78e3fcb33ea7",
+  "bounded_regressions": {
+    "parser_array": "rejected_without_output",
+    "parser_free_paragraph": "rejected_without_output",
+    "unknown_raw_field": "rejected_without_output",
+    "receipt_extra_fields": "fixed-key projection strips extras; no output disclosure",
+    "valid_control": "passed"
+  },
+  "verification_report_replayed_in_memory_matches_saved_report": true
+}

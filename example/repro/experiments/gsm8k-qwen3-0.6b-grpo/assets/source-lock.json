@@ -1,0 +1,12 @@
+{
+  "model_lock": "qwen3-0.6b.json",
+  "data_lock": "gsm8k.json",
+  "model_identity": {
+    "bytes": 1522,
+    "sha256": "1cea9ebe8d74620e28d07d44bf7ae19f26f1749fb65bb2ae51c876d28a6ba444"
+  },
+  "data_identity": {
+    "bytes": 2896,
+    "sha256": "d417cf1d1d18b6870805df80fd57e94c24bb755c046688fecc781e301aff2333"
+  }
+}

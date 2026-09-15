@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-09-09T22:06:38.681822+00:00",
+  "project": "gsm8k",
+  "seed": 20260910,
+  "prompt_mode": "cot",
+  "source": {
+    "path": "openai/gsm8k",
+    "name": "main",
+    "url": "https://huggingface.co/datasets/openai/gsm8k",
+    "upstream": "https://github.com/openai/grade-school-math",
+    "requested_revision": "main",
+    "resolved_revision": "740312add88f781978c0658806c59bc2815b9866",
+    "transport_endpoint": "https://hf-mirror.com",
+    "cache_dir": null,
+    "provenance_class": "public official dataset splits from publisher repository",
+    "split_metadata": {
+      "train": {
+        "rows": 7473,
+        "fingerprint": "c6f812ae33c9159d",
+        "dataset_version": "0.0.0",
+        "homepage": "",
+        "license": "",
+        "citation": ""
+      },
+      "test": {
+        "rows": 1319,
+        "fingerprint": "59ec1b7f9357c7a2",
+        "dataset_version": "0.0.0",
+        "homepage": "",
+        "license": "",
+        "citation": ""
+      }
+    },
+    "revision_note": "The production CLI resolves a dataset commit through HfApi at the recorded transport endpoint and passes that immutable SHA to load_dataset; raw/canonical record and file hashes additionally pin materialized data."
+  },
+  "split_policy": {
+    "train": "official train excluding reserved dev",
+    "dev": "512 seeded rows from official train",
+    "audit": "official test; held out from training and development decisions",
+    "shuffle": "Python random.Random seeded by SHA256(seed:project:split); limits applied after full-split overlap audit and fixed shuffle",
+    "requested_limits": {
+      "train": null,
+      "dev": null,
+      "audit": null
+    }
+  },
+  "overlap_audit": {
+    "status": "PASS",
+    "normalization": "Unicode NFKC, casefold, whitespace collapse; question stem only",
+    "split_counts": {
+      "train": 6961,
+      "dev": 512,
+      "audit": 1319
+    },
+    "overlap_question_count": 0,
+    "overlaps": [],
+    "within_split_duplicate_question_count": {
+      "train": 0,
+      "dev": 0,
+      "audit": 0
+    },
+    "scope": "Exact normalized question overlap across supplied splits only; does not establish absence of pretraining contamination or semantic duplicates."
+  },
+  "files": {
+    "train": {
+      "path": "train.jsonl",
+      "rows": 6961,
+      "sha256": "c6edf7596d65032d25cc57fff7af20f5c318e7d7b0c15c935e17711c4ab0b4d8",
+      "available_rows": 6961
+    },
+    "dev": {
+      "path": "dev.jsonl",
+      "rows": 512,
+      "sha256": "1a7cbe4781a2e6e4dd8fca6214569ff0923f091127852448013f8d6c7396f73b",
+      "available_rows": 512
+    },
+    "audit": {
+      "path": "audit.jsonl",
+      "rows": 1319,
+      "sha256": "437f2042d9d210e34834d1f596a0b6289f89414672ede7fe47727041dc11da62",
+      "available_rows": 1319
+    }
+  },
+  "manifest_payload_sha256": "3f495bf32e64b4c8b3648e587b52c7080480df8e512249223b85e95f3a703f81"
+}

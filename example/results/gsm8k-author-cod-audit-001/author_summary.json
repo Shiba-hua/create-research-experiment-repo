@@ -1,0 +1,443 @@
+{
+  "protocol": "cod_author_8shot_qwen3_gsm8k_audit_v1",
+  "evaluation_config": {
+    "max_new_tokens": 4096,
+    "batch_size": 128,
+    "seed": 1729,
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "thinking": "true",
+    "effective_thinking": true,
+    "do_sample": true,
+    "greedy": false,
+    "max_model_len": 8192,
+    "max_num_batched_tokens": 8192,
+    "gpu_memory_utilization": 0.8,
+    "enforce_eager": false,
+    "backend": "vllm",
+    "pinned_backend_version": "0.10.2",
+    "engine_generation": "V1",
+    "engine_client_mode": "inprocess",
+    "dtype": "bfloat16",
+    "n": 1,
+    "enable_lora": false,
+    "mode": "cod",
+    "protocol": "cod_author_8shot_qwen3_gsm8k_audit_v1",
+    "parser_version": "author_compat_qwen3_final_v2",
+    "thinking_opening_prefilled": false,
+    "author_config_path": "configs/gsm8k_cod.yaml",
+    "author_config_sha256": "c83a151f36af1a491080df441044d6dfeb2ada15cefeb98368c2f9e3563f13cb",
+    "upstream_revision": "a7dbf5dea808b1aa1e12f7a90ea573321581df78",
+    "upstream_lock_sha256": "e2c20262aec1d2b016ff5204833d91901624f84b39ec4118bdf7a35fb1788ad4",
+    "prompt_layout": "single user payload; pinned system text + eight Q/A examples + current Q/empty A",
+    "eos_token_ids": [
+      151643,
+      151645
+    ],
+    "sampling_fixed": {
+      "n": 1,
+      "best_of": null,
+      "min_p": 0.0,
+      "repetition_penalty": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "ignore_eos": false,
+      "stop": null,
+      "stop_token_ids": [
+        151643,
+        151645
+      ],
+      "truncate_prompt_tokens": null,
+      "detokenize": true,
+      "skip_special_tokens": true
+    },
+    "seed_scheme": "seed plus zero-based batch index modulo 2**32; each mode starts at seed",
+    "chat_template_sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+    "tokenizer_vocab_sha256": "f488fa45d324a8bc64c84f0e27b47223872d550f2a6900564f77dfa67ca5ff4d",
+    "tokenizer_class": "Qwen2TokenizerFast",
+    "source_dependencies_sha256": "5c5413993cbadfaf57bf3e1fe6a40338debb357fdabf1fbbf40516a54aeb6ea5",
+    "dependency_versions": {
+      "vllm": "0.10.2",
+      "torch": "2.8.0+cu128",
+      "transformers": "4.57.1",
+      "tokenizers": "0.22.1",
+      "numpy": "2.2.6",
+      "PyYAML": "6.0.3"
+    }
+  },
+  "evaluation_config_sha256": "140746e8d7637d290bb420b7563de201f8d465acb17c4e587f665bf3993412bc",
+  "source_code": {
+    "code_commit": "61ff6a476c3cacec1fe87c846c9559a010f499dd",
+    "evaluation_code_path": "src/rlvr_lab/cod_author.py",
+    "evaluation_code_sha256": "03bf6af84e3406679706267139be61b59a032960ce6f9acdc916270e0ee906b8",
+    "source_files": {
+      "src/rlvr_lab/teacher_generate.py": {
+        "bytes": 29913,
+        "sha256": "30bca7e9b6aa5c36b91768c44acb7cec365e1733903dffc6bd9cdbe5676b3dd7"
+      },
+      "src/rlvr_lab/coldstart_data.py": {
+        "bytes": 23568,
+        "sha256": "0bf9f36c83ae4792173c4b01aefc3eb228c0c85cd3196814683f0edead09aa5f"
+      },
+      "src/rlvr_lab/evaluate.py": {
+        "bytes": 25661,
+        "sha256": "699aa001641d3f4c11ced2172367f6a9bb5db50db66b970472f4404acb89c7d9"
+      },
+      "src/rlvr_lab/data.py": {
+        "bytes": 22317,
+        "sha256": "067af7f7dfaa8e262327a4af766019c5bf72429493b95c2d9529e18cea0201ea"
+      },
+      "src/rlvr_lab/rewards.py": {
+        "bytes": 7207,
+        "sha256": "0299a9d11db45e9e712ee67c2eccd7151b8118b0864310a9c8e20ba4eceb6154"
+      },
+      "src/rlvr_lab/statistics.py": {
+        "bytes": 16220,
+        "sha256": "b2b8cfe9e811cbe188dc7dd0f4aef35502cb793aae8590da6f2d0527c1bdbf60"
+      },
+      "src/rlvr_lab/evaluate_vllm.py": {
+        "bytes": 28353,
+        "sha256": "0c201b90d3b1d5a6793b6e7080afe1c850328d1469a922962527f87638249507"
+      },
+      "src/rlvr_lab/cod_author.py": {
+        "bytes": 28679,
+        "sha256": "03bf6af84e3406679706267139be61b59a032960ce6f9acdc916270e0ee906b8"
+      },
+      "configs/cod_author_upstream.json": {
+        "bytes": 3758,
+        "sha256": "e2c20262aec1d2b016ff5204833d91901624f84b39ec4118bdf7a35fb1788ad4"
+      },
+      "scripts/fetch_cod_author_sources.py": {
+        "bytes": 25701,
+        "sha256": "a80ce2c371722968b7e0b7a273b10c02eb65e3add29cd5dfcece3e65780b295e"
+      }
+    }
+  },
+  "upstream": {
+    "schema_version": 1,
+    "repository": "https://github.com/sileix/chain-of-draft",
+    "revision": "a7dbf5dea808b1aa1e12f7a90ea573321581df78",
+    "verified_at": "2026-09-10T08:47:56.970405+00:00",
+    "files": {
+      "configs/gsm8k_cot.yaml": {
+        "url": "https://raw.githubusercontent.com/sileix/chain-of-draft/a7dbf5dea808b1aa1e12f7a90ea573321581df78/configs/gsm8k_cot.yaml",
+        "bytes": 2633,
+        "sha256": "77fda02c1c68dc9e1f0143fed83e78c9f18febd838bfe2b4efcf86e90acf420d",
+        "git_blob_sha": "c9bbd6fbba704694064724bf7b98ee66b0653fca"
+      },
+      "configs/gsm8k_cod.yaml": {
+        "url": "https://raw.githubusercontent.com/sileix/chain-of-draft/a7dbf5dea808b1aa1e12f7a90ea573321581df78/configs/gsm8k_cod.yaml",
+        "bytes": 1889,
+        "sha256": "c83a151f36af1a491080df441044d6dfeb2ada15cefeb98368c2f9e3563f13cb",
+        "git_blob_sha": "b98a9a2c32477ce8fa67dc548ffada39a0932903"
+      },
+      "utils.py": {
+        "url": "https://raw.githubusercontent.com/sileix/chain-of-draft/a7dbf5dea808b1aa1e12f7a90ea573321581df78/utils.py",
+        "bytes": 1684,
+        "sha256": "6e144442e14cb16ebb7313661a80552a0e7e5d03d3828a54b47a79e5eb361782",
+        "git_blob_sha": "e1fc0f16aa7d7433371ee23dece33ccebedf99d8"
+      },
+      "tasks/gsm8k.py": {
+        "url": "https://raw.githubusercontent.com/sileix/chain-of-draft/a7dbf5dea808b1aa1e12f7a90ea573321581df78/tasks/gsm8k.py",
+        "bytes": 1235,
+        "sha256": "884b1c71843390be21f722c2f7449607c0cba9cf41d492b67e6c76b6c883ae4a",
+        "git_blob_sha": "093435b8b8ae68664dce0c3ff09d90cc425d30f1"
+      },
+      "llm_client.py": {
+        "url": "https://raw.githubusercontent.com/sileix/chain-of-draft/a7dbf5dea808b1aa1e12f7a90ea573321581df78/llm_client.py",
+        "bytes": 1447,
+        "sha256": "de36886e5dbba9e39afe242ec9a2053aa3acf30e6af33912d5ac0006c8ed91e1",
+        "git_blob_sha": "6d7b06adc22b373ef507ec68a02349cc427cddc4"
+      }
+    },
+    "license": {
+      "status": "no_license_file_in_pinned_tree",
+      "redistribution_permission": "not_established",
+      "tree_url": "https://api.github.com/repos/sileix/chain-of-draft/git/trees/a7dbf5dea808b1aa1e12f7a90ea573321581df78?recursive=1",
+      "tree_response_sha256": "fbe79d1e21e8ddbfd1b4b646fe53eab5cfd52039b918a615edeb5d335e943319",
+      "tree_response_bytes": 8511,
+      "tree_truncated": false,
+      "tree_entry_count": 29,
+      "license_filename_pattern": "case-insensitive path component starting with LICENSE, LICENCE, COPYING, COPYRIGHT, NOTICE, or UNLICENSE",
+      "matching_paths": [],
+      "LICENSE_url": "https://raw.githubusercontent.com/sileix/chain-of-draft/a7dbf5dea808b1aa1e12f7a90ea573321581df78/LICENSE",
+      "LICENSE_http_status": 404,
+      "policy": "Do not vendor upstream source or the complete few-shot prompts in this checkout. Fetch only into an explicitly chosen external input directory, verify hashes, and never execute upstream code or invoke its model APIs."
+    },
+    "reference_dataset": {
+      "purpose": "Verify that canonical audit answer strings exactly equal author extract_answer applied to original GSM8K answers; not a replacement canonical dataset.",
+      "repository": "https://github.com/openai/grade-school-math",
+      "revision": "b0bb162abedc65e1fdd8e93ed090fd7598ee68bc",
+      "path": "grade_school_math/data/test.jsonl",
+      "url": "https://raw.githubusercontent.com/openai/grade-school-math/b0bb162abedc65e1fdd8e93ed090fd7598ee68bc/grade_school_math/data/test.jsonl",
+      "bytes": 749738,
+      "sha256": "3730d312f6e3440559ace48831e51066acaca737f6eabec99bccb9e4b3c39d14",
+      "rows": 1319,
+      "canonical_source_binding": "Each original record must match canonical source_record_sha256; its full original answer must match metadata.source_answer_sha256. Preserve the canonical dataset source revision recorded in its own manifest."
+    },
+    "lock_file_sha256": "e2c20262aec1d2b016ff5204833d91901624f84b39ec4118bdf7a35fb1788ad4"
+  },
+  "model": "/workspace/experiment/models/qwen3-1.7b",
+  "adapter": null,
+  "evaluated_artifact": {
+    "binding": "actual local files SHA256 before model load",
+    "base": {
+      "path": "/workspace/experiment/models/qwen3-1.7b",
+      "model_id": "Qwen/Qwen3-1.7B",
+      "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+      "snapshot_manifest_sha256": "d4b07840eec23bc7fe69349ff3706fad4915f8132b4e7bb88c9fe5eee8fd02ab",
+      "fetch_manifest_verified": true,
+      "files": {
+        "LICENSE": {
+          "bytes": 11343,
+          "sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e"
+        },
+        "README.md": {
+          "bytes": 13963,
+          "sha256": "257e52c419dac2258852643f18af6c974f21f8c6c1b6f371b6cca6201cf29091"
+        },
+        "config.json": {
+          "bytes": 726,
+          "sha256": "1ddb5b89ebc90dcb417a45c213d818577e65976454d29385c8f6140771d95197"
+        },
+        "generation_config.json": {
+          "bytes": 239,
+          "sha256": "2325da0f15bb848e018c5ae071b7943332e9f871d6b60e2ed22ca97d4cb993d2"
+        },
+        "merges.txt": {
+          "bytes": 1671853,
+          "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"
+        },
+        "model-00001-of-00002.safetensors": {
+          "bytes": 3441185608,
+          "sha256": "169ad53ec313c3a34b06c0809216e4fc072cce444a5d4ff2b59690d064130ed5"
+        },
+        "model-00002-of-00002.safetensors": {
+          "bytes": 622329984,
+          "sha256": "912becff8d60672aa8628ef08c05898d9adf17c2ad4ae3caf99b065622fdeff9"
+        },
+        "model.safetensors.index.json": {
+          "bytes": 25605,
+          "sha256": "0d660e94b165eb912669a5249dff44b83188c4777a07ddb9611fb78d91b0578d"
+        },
+        "tokenizer.json": {
+          "bytes": 11422654,
+          "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+        },
+        "tokenizer_config.json": {
+          "bytes": 9732,
+          "sha256": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101"
+        },
+        "vocab.json": {
+          "bytes": 2776833,
+          "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+        }
+      },
+      "files_sha256": "381727c425236330491c2dc0e478b9546c7b2f1e7f115910f31fe3da78569b65"
+    },
+    "adapter": null
+  },
+  "artifact_identity_recorded": true,
+  "source_model_generation_config": {
+    "bos_token_id": 151643,
+    "do_sample": true,
+    "eos_token_id": [
+      151645,
+      151643
+    ],
+    "pad_token_id": 151643,
+    "temperature": 0.6,
+    "top_k": 20,
+    "top_p": 0.95,
+    "transformers_version": "4.51.0"
+  },
+  "engine_constructor_kwargs": {
+    "model": "/workspace/experiment/models/qwen3-1.7b",
+    "tokenizer": "/workspace/experiment/models/qwen3-1.7b",
+    "dtype": "bfloat16",
+    "tensor_parallel_size": 1,
+    "max_model_len": 8192,
+    "max_num_seqs": 128,
+    "max_num_batched_tokens": 8192,
+    "gpu_memory_utilization": 0.8,
+    "enforce_eager": false,
+    "seed": 1729,
+    "trust_remote_code": false,
+    "generation_config": "vllm",
+    "enable_lora": false
+  },
+  "input_files": {
+    "canonical_manifest": {
+      "path": "/workspace/experiment/data/gsm8k/manifest.json",
+      "bytes": 2896,
+      "sha256": "d417cf1d1d18b6870805df80fd57e94c24bb755c046688fecc781e301aff2333"
+    },
+    "canonical_train": {
+      "path": "/workspace/experiment/data/gsm8k/train.jsonl",
+      "bytes": 6720258,
+      "sha256": "c6edf7596d65032d25cc57fff7af20f5c318e7d7b0c15c935e17711c4ab0b4d8"
+    },
+    "canonical_dev": {
+      "path": "/workspace/experiment/data/gsm8k/dev.jsonl",
+      "bytes": 494924,
+      "sha256": "1a7cbe4781a2e6e4dd8fca6214569ff0923f091127852448013f8d6c7396f73b"
+    },
+    "canonical_audit": {
+      "path": "/workspace/experiment/data/gsm8k/audit.jsonl",
+      "bytes": 1275168,
+      "sha256": "437f2042d9d210e34834d1f596a0b6289f89414672ede7fe47727041dc11da62"
+    }
+  },
+  "data_file": "/workspace/experiment/data/gsm8k/audit.jsonl",
+  "data_file_sha256": "437f2042d9d210e34834d1f596a0b6289f89414672ede7fe47727041dc11da62",
+  "dataset_role": "audit",
+  "project": "gsm8k",
+  "dataset_content_sha256": "df44c802ab119760396c06f089e042123acb28a30cf5537faf05a94e3cc35b67",
+  "row_order_sha256": "1b69d3a683cb1f996a09c9a8b097d7b2d9405c80c1c9fc4f271053e2eb7405ec",
+  "rendered_prompts_sha256": "0908d537b7ee6153b543a5d25ba6ec7d7bf44e1d750c00a8a2ff1a59d083dbe6",
+  "prompt_token_ids_sha256": "d0fc4f3a993250ae4747dbbe9dff0fdfb1f33b18044caf222dc263931eacfa40",
+  "input_retention": "per-question SHA256 and token counts only; upstream source fetched outside Git",
+  "parser_source_sha256": "03bf6af84e3406679706267139be61b59a032960ce6f9acdc916270e0ee906b8",
+  "retries_per_prompt": 0,
+  "num_generations_per_prompt": 1,
+  "gpu_release_verified": false,
+  "reference_policy": "canonical numeric value reconstructed as exact finite decimal; original solution not used",
+  "reference_equivalence_audit": {
+    "schema_version": 1,
+    "kind": "cod_author_expected_answer_equivalence",
+    "status": "PASS",
+    "created_at": "2026-09-10T14:24:10.986032+00:00",
+    "author_revision": "a7dbf5dea808b1aa1e12f7a90ea573321581df78",
+    "source_lock_sha256": "6b6345155e9782d8dc6bec417f0cf31aa0bf8a9b4b2cd4e2af65504559648c69",
+    "source": {
+      "purpose": "Verify that canonical audit answer strings exactly equal author extract_answer applied to original GSM8K answers; not a replacement canonical dataset.",
+      "repository": "https://github.com/openai/grade-school-math",
+      "revision": "b0bb162abedc65e1fdd8e93ed090fd7598ee68bc",
+      "path": "grade_school_math/data/test.jsonl",
+      "url": "https://raw.githubusercontent.com/openai/grade-school-math/b0bb162abedc65e1fdd8e93ed090fd7598ee68bc/grade_school_math/data/test.jsonl",
+      "bytes": 749738,
+      "sha256": "3730d312f6e3440559ace48831e51066acaca737f6eabec99bccb9e4b3c39d14",
+      "rows": 1319,
+      "canonical_source_binding": "Each original record must match canonical source_record_sha256; its full original answer must match metadata.source_answer_sha256. Preserve the canonical dataset source revision recorded in its own manifest.",
+      "local_path": "/opt/cod-author-a7dbf5d/reference/gsm8k_test.jsonl"
+    },
+    "canonical_manifest_sha256": "d417cf1d1d18b6870805df80fd57e94c24bb755c046688fecc781e301aff2333",
+    "canonical_manifest_payload_sha256": "3f495bf32e64b4c8b3648e587b52c7080480df8e512249223b85e95f3a703f81",
+    "canonical_audit": {
+      "path": "/workspace/experiment/data/gsm8k/audit.jsonl",
+      "sha256": "437f2042d9d210e34834d1f596a0b6289f89414672ede7fe47727041dc11da62",
+      "rows": 1319
+    },
+    "all_original_test_rows_covered_once": true,
+    "mismatch_counts": {
+      "source_record_hash": 0,
+      "source_answer_hash": 0,
+      "question": 0,
+      "expected_answer_string": 0
+    },
+    "mismatches": {
+      "source_record_hash": [],
+      "source_answer_hash": [],
+      "question": [],
+      "expected_answer_string": []
+    },
+    "scope": "All canonical audit rows aligned by metadata.source_index with the hash-locked original official test file. Verifies full source_record_sha256, original source_answer_sha256, question text, and exact author extract_answer(raw answer) equality to canonical answer. This proof is bound to the reported canonical audit SHA256; it does not justify numeric reconstruction for other datasets.",
+    "model_api_calls": 0,
+    "upstream_code_executed": false,
+    "report_payload_sha256": "13098c846a1a47feee319b51182384d8273fad6b93ed510f46601d435227cfbf"
+  },
+  "status": "complete",
+  "started_at": "2026-09-10T14:24:45.277060+00:00",
+  "completed_at": "2026-09-10T14:37:47.234687+00:00",
+  "runtime": {
+    "python_executable": "/opt/rlvr-vllm-venv/bin/python",
+    "python_version": "3.11.13 (main, Jun  5 2025, 13:12:00) [GCC 11.2.0]",
+    "pid": 1228918,
+    "torch": "2.8.0+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA L40S",
+    "VLLM_USE_V1": "1",
+    "engine_class": "vllm.v1.engine.llm_engine.LLMEngine",
+    "engine_generation_verified": "V1",
+    "VLLM_ENABLE_V1_MULTIPROCESSING": "0",
+    "engine_client_class": "vllm.v1.engine.core_client.InprocClient",
+    "engine_client_mode_verified": "inprocess"
+  },
+  "counts": {
+    "expected": 1319,
+    "evaluated": 1319,
+    "author_correct": 935,
+    "strict_correct": 922,
+    "strict_format_ok": 1021,
+    "thinking_closed": 1086,
+    "eos": 1038,
+    "truncated": 281
+  },
+  "author_accuracy": 0.7088703563305534,
+  "strict_accuracy": 0.6990144048521607,
+  "elapsed_seconds": 781.9576422548853,
+  "predictions_file": "author_predictions.jsonl",
+  "predictions_sha256": "71a6a50f4c929f732523761b58f762d1f6c20cbd7f723e7723808c4cd3784129",
+  "requests_file_identity": {
+    "bytes": 28968,
+    "sha256": "05f23c389d517b20fb8c874815f5db56336f490c99ef1d659950ac29c0b55b1d"
+  },
+  "response_tokens": {
+    "min": 107.0,
+    "p25": 240.0,
+    "median": 320.0,
+    "p75": 521.5,
+    "p90": 4096.0,
+    "p95": 4096.0,
+    "max": 4096.0,
+    "mean": 1115.2562547384382,
+    "total": 1471023
+  },
+  "prompt_tokens": {
+    "min": 572.0,
+    "p25": 593.0,
+    "median": 606.0,
+    "p75": 622.0,
+    "p90": 641.0,
+    "p95": 654.0,
+    "max": 737.0,
+    "mean": 610.0310841546626,
+    "total": 804631
+  },
+  "total_tokens": {
+    "min": 695.0,
+    "p25": 843.0,
+    "median": 931.0,
+    "p75": 1149.0,
+    "p90": 4715.0,
+    "p95": 4729.0,
+    "max": 4833.0,
+    "mean": 1725.287338893101,
+    "total": 2275654
+  },
+  "thinking_response_tokens": {
+    "min": 81.0,
+    "p25": 210.5,
+    "median": 289.0,
+    "p75": 472.0,
+    "p90": 3629.6000000000004,
+    "p95": 4095.0,
+    "max": 4095.0,
+    "mean": 881.9469294920394,
+    "total": 1163288
+  },
+  "final_response_tokens": {
+    "min": 0.0,
+    "p25": 17.0,
+    "median": 25.0,
+    "p75": 33.0,
+    "p90": 45.0,
+    "p95": 60.09999999999991,
+    "max": 3827.0,
+    "mean": 141.75587566338135,
+    "total": 186976
+  },
+  "manifest_sha256": "ef3f705b6628d49fabfb5ae7c30cc60cacf5123958471c3cda987ac1018cb794"
+}

@@ -1,0 +1,47 @@
+{
+  "status": "pair_identity_and_two_independent_luna_audits_pass",
+  "verified_at": "2026-09-10T08:21:08.114812+00:00",
+  "fixed_dev_row_index": 0,
+  "id": "gsm8k:train:466",
+  "input_tokens": 110,
+  "display_tokens": 110,
+  "tokens_files_byte_identical": true,
+  "tokens_file_sha256": "ddd77c18a30690c686f1cc105425dd0ed4f20139ddf913e7b42ba5cf53d5a34f",
+  "input_ids_sha256": "921d071a89f54cce91b4bc3f5be14eab45633770f5f0d80d1f41661c009a0742",
+  "after_reference_input_sha256": "ddd77c18a30690c686f1cc105425dd0ed4f20139ddf913e7b42ba5cf53d5a34f",
+  "base_identity_equal": true,
+  "base_model_id": "Qwen/Qwen3-0.6B",
+  "base_revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+  "base_files_sha256": "6831766a64188ad08a449eb1e84dd5095163cc58e2e24b32fedf2f8dffa8ed5c",
+  "best_checkpoint_step": 64,
+  "adapter_files_sha256": "2da309a81d369f3e57de50143daf8c595f02cd9be882a2d8bea23c49a9b8fc43",
+  "adapter_weight_sha256": "3089ad0af464b21eeda4fb6cfac6d5f2f762a88da05a679e4991a00633484069",
+  "npz_content": "28 complete110x110 head-mean matrices; independent per-head tensors not retained",
+  "heads_per_layer": 16,
+  "display_layers": [
+    0,
+    27
+  ],
+  "display_linear_scale": [
+    0,
+    1
+  ],
+  "execution": "sequential CPU BF16 eager; CUDA_VISIBLE_DEVICES=-1;2CPU affinity and threadcaps2",
+  "qa": {
+    "before": {
+      "status": "PASS",
+      "logical_placements": 1,
+      "model": "gpt-5.6-luna"
+    },
+    "after": {
+      "status": "PASS",
+      "logical_placements": 1,
+      "model": "gpt-5.6-luna"
+    }
+  },
+  "limitations": [
+    "Prefill only; no decoded answer.",
+    "Qualitative attention is not causal evidence of reasoning/correctness or experimental acceptance."
+  ],
+  "commit_created": false
+}

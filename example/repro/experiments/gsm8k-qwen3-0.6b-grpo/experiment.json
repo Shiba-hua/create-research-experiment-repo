@@ -1,0 +1,39 @@
+{
+  "schema_version": 2,
+  "experiment_id": "gsm8k-qwen3-0.6b-grpo",
+  "stages": {
+    "train": "75e05a621004e1e29bfd05b4f6b859afc89fc8e4",
+    "evaluate": "9359731bc1fcdeeef867ff4c5dd1144ff9cdc11f"
+  },
+  "model": {
+    "id": "Qwen/Qwen3-0.6B",
+    "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+    "asset_lock": "assets/qwen3-0.6b.json"
+  },
+  "dataset_lock": "assets/gsm8k.json",
+  "evidence": [
+    {
+      "path": "evidence/gsm8k-grpo-formal-001/job.json",
+      "bytes": 480,
+      "sha256": "5857d8ff84815b719955f0dff647306f53eb300b92a874a59aa5616bd1e14756"
+    },
+    {
+      "path": "evidence/gsm8k-grpo-formal-001-audit-before-001/job.json",
+      "bytes": 876,
+      "sha256": "b110a65b7b6656738f0e263e50bb8c8421ea2064180e906c29e2b8a4c2a07a50"
+    },
+    {
+      "path": "evidence/gsm8k-grpo-formal-001-audit-after-001/job.json",
+      "bytes": 972,
+      "sha256": "9cdebc4e9be3c6354bd101f51f362c7e9ca755eda56a57f0dae2388ed1ff583f"
+    }
+  ],
+  "analysis_source_commit": "53eb86391acde20e4b3b3167ec78dc0bb3477e51",
+  "scope": "Historical reproducibility material, not a new model run",
+  "weights_included": false,
+  "dataset_included": false,
+  "private_author_outputs_included": false,
+  "export_scope": "Scoped and sanitized historical material; code is adapted, not an original checkout",
+  "commands": "commands.json",
+  "export_manifest": "../../../EXPORT-MANIFEST.json"
+}

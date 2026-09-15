@@ -1,0 +1,147 @@
+{
+  "schema": "rlvr.accuracy-decode-cost/v1",
+  "experiment": "grpo",
+  "title": "GSM8K | Qwen3-0.6B | GRPO comparison",
+  "points": [
+    {
+      "n": 1319,
+      "correct": 837,
+      "val_acc": 0.6345716451857468,
+      "decode_tokens_total": 1051630,
+      "avg_decode_tokens": 797.2934040940106,
+      "accuracy_wilson_95_ci": [
+        0.6082280168028688,
+        0.6601336962602223
+      ],
+      "measured_output_budget": 1536,
+      "score_field": "correctness",
+      "correct_and_truncated": 0,
+      "arm": "base",
+      "label": "Base",
+      "predictions": "results/gsm8k-grpo-formal-001/audit-before-001/predictions.jsonl"
+    },
+    {
+      "n": 1319,
+      "correct": 970,
+      "val_acc": 0.7354056103108415,
+      "decode_tokens_total": 973659,
+      "avg_decode_tokens": 738.1796815769522,
+      "accuracy_wilson_95_ci": [
+        0.710941149128181,
+        0.7585028616103531
+      ],
+      "measured_output_budget": 1536,
+      "score_field": "correctness",
+      "correct_and_truncated": 0,
+      "arm": "grpo",
+      "label": "GRPO (step 64)",
+      "predictions": "results/gsm8k-grpo-formal-001/audit-after-001/predictions.jsonl"
+    }
+  ],
+  "sources": [
+    {
+      "path": "results/gsm8k-grpo-formal-001/audit-before-001/predictions.jsonl",
+      "bytes": 4681422,
+      "sha256": "8a1eb3551f1d3b81984fbb616578ff8d00c01f259751264ada64a4897de0d7f4"
+    },
+    {
+      "path": "results/gsm8k-grpo-formal-001/audit-before-001/evaluation_summary.json",
+      "bytes": 8057,
+      "sha256": "00347edcf112005a0e40bcc3c7f61636bf7f88695fd54a8ac6037a1f9eed80e0"
+    },
+    {
+      "path": "results/gsm8k-grpo-formal-001/audit-after-001/predictions.jsonl",
+      "bytes": 4467315,
+      "sha256": "554ee6b5d0b0e5d71bdce6d761b74fec2e912a44f1dcba731efd6f35b3bcfb62"
+    },
+    {
+      "path": "results/gsm8k-grpo-formal-001/audit-after-001/evaluation_summary.json",
+      "bytes": 8625,
+      "sha256": "085caa2785813ddaf5841cb3236d7e49aa75e142e01fe8fc614aeb9284d84e7f"
+    },
+    {
+      "path": "results/gsm8k-grpo-formal-001/acceptance.json",
+      "bytes": 3587,
+      "sha256": "49db5c2a46c60d6edb15590e09c6b559c9c84ef75aa566264cde494708805f04"
+    }
+  ],
+  "historical_evaluation_commit": "9359731bc1fcdeeef867ff4c5dd1144ff9cdc11f",
+  "axis_contract": {
+    "x": "sum(response_tokens) / all question count",
+    "y": "sum(recorded strict correctness) / all question count",
+    "decode_includes": [
+      "generated reasoning",
+      "generated final answer",
+      "returned EOS"
+    ],
+    "decode_excludes": [
+      "prompt",
+      "padding",
+      "teacher generation",
+      "training"
+    ],
+    "failure_and_truncation_costs_included": true,
+    "thinking_segment_tokens_added_again": false
+  },
+  "independent_budgets_per_arm": 1,
+  "multi_budget_curve_observed": false,
+  "new_model_run": false,
+  "full_text_regraded_in_this_plot": false,
+  "confidence_interval_contract": {
+    "method": "Wilson score interval",
+    "nominal_confidence_level": 0.95,
+    "interpretation": "Model-based interval, conditional on this fixed checkpoint and evaluation setup",
+    "estimand": "Marginal one-sample verifier accuracy on a hypothetical target distribution of questions",
+    "sampling_unit": "One question and its one decoded answer",
+    "working_model": "IID Bernoulli correctness after marginalizing over IID questions and independent decoding",
+    "fixed_conditions": [
+      "checkpoint",
+      "prompt",
+      "decode settings and budget",
+      "verifier"
+    ],
+    "assumptions": [
+      "Questions represent the same target distribution",
+      "Question/answer observations are approximately independent",
+      "No audit-based selection of the reported checkpoint or prompt"
+    ],
+    "assumptions_verified_by_this_experiment": false,
+    "coverage": "Nominal approximate frequentist coverage under the working model; not demonstrated design-based coverage",
+    "not_estimated": [
+      "Training-seed variability",
+      "Repeated-decoding distribution on the fixed question list",
+      "Paired treatment-effect confidence interval",
+      "Distribution shift or verifier bias",
+      "Decode-cost uncertainty or a joint accuracy/cost confidence region"
+    ],
+    "fixed_set_score": "The realized correct/N value is known exactly; these bars are not uncertainty in that count",
+    "assumptions_document": "docs/shared/evaluation.md"
+  },
+  "validation": {
+    "status": "PASS",
+    "experiment": "grpo",
+    "scope": "Saved paired statistics only; supply --data for text regrading",
+    "text_regraded": false,
+    "new_model_run": false,
+    "n": 1319,
+    "before_correct": 837,
+    "after_correct": 970,
+    "delta": 0.10083396512509477,
+    "paired_95_ci": [
+      0.07657316148597422,
+      0.12509476876421532
+    ],
+    "mcnemar_p": 3.436844955515167e-16,
+    "adjusted_p": 6.873689911030334e-16,
+    "token_totals": {
+      "before": 1051630,
+      "after": 973659
+    },
+    "numpy": "2.4.6"
+  },
+  "producer": {
+    "path": "repro/accuracy_decode_cost.py",
+    "bytes": 10500,
+    "sha256": "5264136de1fcde02dc52690e83b62241d2eaf48a237a870a7c49b120cb31cbd0"
+  }
+}

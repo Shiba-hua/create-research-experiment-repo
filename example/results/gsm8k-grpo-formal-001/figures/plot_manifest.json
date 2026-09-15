@@ -1,0 +1,956 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-09-10T05:57:35.960556+00:00",
+  "run": "..",
+  "output": ".",
+  "path_basis": "run is relative to this manifest; source paths and series.source are relative to run; charts.files.path is relative to this manifest",
+  "run_status": "training_completed_not_yet_accepted",
+  "run_git_commit": "75e05a621004e1e29bfd05b4f6b859afc89fc8e4",
+  "plot_code_sha256": "cba7b35edb2441ad7d147129bf8587ce0f73371e5e9d2972cc2af6bd0d4ed276",
+  "matplotlib_version": "3.10.9",
+  "numpy_version": "2.4.6",
+  "sources": [
+    {
+      "path": "metrics.jsonl",
+      "sha256": "e1da176a327acc7b43e6b150ed8e77d1fb864b6d6f96cd05557ec91872f09d8c",
+      "bytes": 91860,
+      "relative_to_run": "metrics.jsonl",
+      "rows": 65
+    },
+    {
+      "path": "groups.jsonl",
+      "sha256": "ff8997b1ad59c1e7fbe22710e1719262f04512f611210bf9ec4ba01e5bf25678",
+      "bytes": 18045,
+      "relative_to_run": "groups.jsonl",
+      "rows": 64
+    },
+    {
+      "path": "validation.jsonl",
+      "sha256": "f3ec8fa11154c6b47d9f0b910cf98cc2667b6820d647482ee059c4ffb8c8f8a5",
+      "bytes": 436,
+      "relative_to_run": "validation.jsonl",
+      "rows": 5
+    },
+    {
+      "path": "manifest.json",
+      "sha256": "a5de2488316f0fc6cbe38628894988e766ab9bd3ce6acb336432946b0f1728d2",
+      "bytes": 11383,
+      "relative_to_run": "manifest.json"
+    },
+    {
+      "path": "acceptance.json",
+      "sha256": "49db5c2a46c60d6edb15590e09c6b559c9c84ef75aa566264cde494708805f04",
+      "bytes": 3587,
+      "relative_to_run": "acceptance.json"
+    },
+    {
+      "path": "../../evidence/gsm8k-grpo-formal-001/resources.jsonl",
+      "sha256": "5cabc47537d5d9402a696de0e22f934871ca6f53244f69ba0e9720f922083dae",
+      "bytes": 136362,
+      "rows": 569
+    },
+    {
+      "path": "audit-before-001/predictions.jsonl",
+      "sha256": "8a1eb3551f1d3b81984fbb616578ff8d00c01f259751264ada64a4897de0d7f4",
+      "bytes": 4681422,
+      "relative_to_run": "audit-before-001/predictions.jsonl",
+      "rows": 1319
+    },
+    {
+      "path": "audit-before-001/evaluation_summary.json",
+      "sha256": "00347edcf112005a0e40bcc3c7f61636bf7f88695fd54a8ac6037a1f9eed80e0",
+      "bytes": 8057,
+      "relative_to_run": "audit-before-001/evaluation_summary.json"
+    },
+    {
+      "path": "audit-after-001/predictions.jsonl",
+      "sha256": "554ee6b5d0b0e5d71bdce6d761b74fec2e912a44f1dcba731efd6f35b3bcfb62",
+      "bytes": 4467315,
+      "relative_to_run": "audit-after-001/predictions.jsonl",
+      "rows": 1319
+    },
+    {
+      "path": "audit-after-001/evaluation_summary.json",
+      "sha256": "085caa2785813ddaf5841cb3236d7e49aa75e142e01fe8fc614aeb9284d84e7f",
+      "bytes": 8625,
+      "relative_to_run": "audit-after-001/evaluation_summary.json"
+    }
+  ],
+  "charts": [
+    {
+      "name": "01_learning",
+      "files": [
+        {
+          "path": "01_learning.png",
+          "sha256": "efe9194457e2965ed743f16252b8c255f685b645366d07ecb4200df2deb98890",
+          "bytes": 303040
+        },
+        {
+          "path": "01_learning.svg",
+          "sha256": "2bdae03aa4ad7a6541b1d271131d5f22acc122070b692aa6407a303ac4b300fb",
+          "bytes": 75263
+        }
+      ],
+      "series": [
+        {
+          "panel": "Training reward",
+          "label": "Reward",
+          "source": "metrics.jsonl",
+          "key": "reward",
+          "candidate_fields": [
+            {
+              "source": "metrics.jsonl",
+              "key": "reward"
+            },
+            {
+              "source": "groups.jsonl",
+              "key": "reward"
+            }
+          ],
+          "x_key": "step",
+          "scale": 1.0,
+          "finite_points": 64,
+          "missing_points": 1,
+          "status": "recorded"
+        },
+        {
+          "panel": "Held-out development accuracy",
+          "label": "Dev val_acc",
+          "source": "validation.jsonl",
+          "key": "val_acc",
+          "candidate_fields": [
+            {
+              "source": "validation.jsonl",
+              "key": "val_acc"
+            }
+          ],
+          "x_key": "step",
+          "scale": 1.0,
+          "finite_points": 5,
+          "missing_points": 0,
+          "status": "recorded"
+        },
+        {
+          "panel": "Optimization loss",
+          "label": "Loss",
+          "source": "metrics.jsonl",
+          "key": "loss",
+          "candidate_fields": [
+            {
+              "source": "metrics.jsonl",
+              "key": "loss"
+            }
+          ],
+          "x_key": "step",
+          "scale": 1.0,
+          "finite_points": 64,
+          "missing_points": 1,
+          "status": "recorded"
+        },
+        {
+          "panel": "Gradient norm",
+          "label": "Gradient norm",
+          "source": "metrics.jsonl",
+          "key": "grad_norm",
+          "candidate_fields": [
+            {
+              "source": "metrics.jsonl",
+              "key": "grad_norm"
+            }
+          ],
+          "x_key": "step",
+          "scale": 1.0,
+          "finite_points": 64,
+          "missing_points": 1,
+          "status": "recorded"
+        },
+        {
+          "panel": "Learning rate",
+          "label": "Learning rate",
+          "source": "metrics.jsonl",
+          "key": "learning_rate",
+          "candidate_fields": [
+            {
+              "source": "metrics.jsonl",
+              "key": "learning_rate"
+            }
+          ],
+          "x_key": "step",
+          "scale": 1.0,
+          "finite_points": 64,
+          "missing_points": 1,
+          "status": "recorded"
+        },
+        {
+          "panel": "Nonzero advantages",
+          "label": "Nonzero advantage",
+          "source": "metrics.jsonl",
+          "key": "advantage/nonzero_fraction",
+          "candidate_fields": [
+            {
+              "source": "metrics.jsonl",
+              "key": "advantage/nonzero_fraction"
+            }
+          ],
+          "x_key": "step",
+          "scale": 1.0,
+          "finite_points": 64,
+          "missing_points": 1,
+          "status": "recorded"
+        }
+      ],
+      "note": "Raw logged values; no smoothing or zero imputation. Missing rows break lines. Sources and SHA256: plot_manifest.json.\nDev selects checkpoints; it is not the final audit-set result.",
+      "retained_generation_code_sha256": "e1e45a71051448357b5715359bd66ff2bbb01499930ab6ed21af890d7edaea71"
+    },
+    {
+      "name": "02_stability",
+      "files": [
+        {
+          "path": "02_stability.png",
+          "sha256": "50cc0d152800d340aa5d903177585693fd23a32ea91f4b80c9548c46802a8b29",
+          "bytes": 392442
+        },
+        {
+          "path": "02_stability.svg",
+          "sha256": "719bc379e4bbe3b3ad5e4cfdf6c19db15b9550bfffa8a0dedccf5840c9ab9361",
+          "bytes": 83941
+        }
+      ],
+      "series": [
+        {
+          "panel": "Predictive token entropy",
+          "label": "Token entropy",
+          "source": "metrics.jsonl",
+          "key": "entropy",
+          "candidate_fields": [
+            {
+              "source": "metrics.jsonl",
+              "key": "entropy"
+            }
+          ],
+          "x_key": "step",
+          "scale": 1.0,
+          "finite_points": 64,
+          "missing_points": 1,
+          "status": "recorded"
+        },
+        {
+          "panel": "Reference divergence",
+          "label": "KL",
+          "source": "metrics.jsonl",
+          "key": "kl",
+          "candidate_fields": [
+            {
+              "source": "metrics.jsonl",
+              "key": "kl"
+            }
+          ],
+          "x_key": "step",
+          "scale": 1.0,
+          "finite_points": 64,
+          "missing_points": 1,
+          "status": "recorded"
+        },
+        {
+          "panel": "Policy clipping",
+          "label": "Clipped region",
+          "source": "metrics.jsonl",
+          "key": "clip_ratio/region_mean",
+          "candidate_fields": [
+            {
+              "source": "metrics.jsonl",
+              "key": "clip_ratio/region_mean"
+            }
+          ],
+          "x_key": "step",
+          "scale": 1.0,
+          "finite_points": 64,
+          "missing_points": 1,
+          "status": "recorded"
+        },
+        {
+          "panel": "Policy clipping",
+          "label": "Lower clip",
+          "source": "metrics.jsonl",
+          "key": "clip_ratio/low_mean",
+          "candidate_fields": [
+            {
+              "source": "metrics.jsonl",
+              "key": "clip_ratio/low_mean"
+            }
+          ],
+          "x_key": "step",
+          "scale": 1.0,
+          "finite_points": 64,
+          "missing_points": 1,
+          "status": "recorded"
+        },
+        {
+          "panel": "Policy clipping",
+          "label": "Upper clip",
+          "source": "metrics.jsonl",
+          "key": "clip_ratio/high_mean",
+          "candidate_fields": [
+            {
+              "source": "metrics.jsonl",
+              "key": "clip_ratio/high_mean"
+            }
+          ],
+          "x_key": "step",
+          "scale": 1.0,
+          "finite_points": 64,
+          "missing_points": 1,
+          "status": "recorded"
+        },
+        {
+          "panel": "Reward groups without variance",
+          "label": "Zero variance",
+          "source": "metrics.jsonl",
+          "key": "zero_variance_rate",
+          "candidate_fields": [
+            {
+              "source": "metrics.jsonl",
+              "key": "zero_variance_rate"
+            },
+            {
+              "source": "groups.jsonl",
+              "key": "zero_variance_rate"
+            }
+          ],
+          "x_key": "step",
+          "scale": 1.0,
+          "finite_points": 64,
+          "missing_points": 1,
+          "status": "recorded"
+        },
+        {
+          "panel": "Reward groups without variance",
+          "label": "All wrong",
+          "source": "metrics.jsonl",
+          "key": "all_wrong_rate",
+          "candidate_fields": [
+            {
+              "source": "metrics.jsonl",
+              "key": "all_wrong_rate"
+            },
+            {
+              "source": "groups.jsonl",
+              "key": "all_wrong_rate"
+            }
+          ],
+          "x_key": "step",
+          "scale": 1.0,
+          "finite_points": 64,
+          "missing_points": 1,
+          "status": "recorded"
+        },
+        {
+          "panel": "Reward groups without variance",
+          "label": "All correct",
+          "source": "metrics.jsonl",
+          "key": "all_correct_rate",
+          "candidate_fields": [
+            {
+              "source": "metrics.jsonl",
+              "key": "all_correct_rate"
+            },
+            {
+              "source": "groups.jsonl",
+              "key": "all_correct_rate"
+            }
+          ],
+          "x_key": "step",
+          "scale": 1.0,
+          "finite_points": 64,
+          "missing_points": 1,
+          "status": "recorded"
+        },
+        {
+          "panel": "Advantage magnitude",
+          "label": "Absolute advantage",
+          "source": "metrics.jsonl",
+          "key": "advantage/absolute_mean",
+          "candidate_fields": [
+            {
+              "source": "metrics.jsonl",
+              "key": "advantage/absolute_mean"
+            }
+          ],
+          "x_key": "step",
+          "scale": 1.0,
+          "finite_points": 64,
+          "missing_points": 1,
+          "status": "recorded"
+        },
+        {
+          "panel": "Reward variation",
+          "label": "TRL reward std",
+          "source": "metrics.jsonl",
+          "key": "reward_std",
+          "candidate_fields": [
+            {
+              "source": "metrics.jsonl",
+              "key": "reward_std"
+            }
+          ],
+          "x_key": "step",
+          "scale": 1.0,
+          "finite_points": 64,
+          "missing_points": 1,
+          "status": "recorded"
+        }
+      ],
+      "note": "Raw logged values; no smoothing or zero imputation. Missing rows break lines. Sources and SHA256: plot_manifest.json.\nEntropy uses temperature-scaled full-vocabulary logits. Zero clip fraction with fresh GRPO rollouts does not prove small updates.",
+      "retained_generation_code_sha256": "e1e45a71051448357b5715359bd66ff2bbb01499930ab6ed21af890d7edaea71"
+    },
+    {
+      "name": "03_generation",
+      "files": [
+        {
+          "path": "03_generation.png",
+          "sha256": "eec8a554e35414e5bfbe9ac91a47e01803393715cd993e7495a342760e9bd52b",
+          "bytes": 333042
+        },
+        {
+          "path": "03_generation.svg",
+          "sha256": "f62c6da1031c5c186fd3e72628102159e70a5c4f5774e19130c5cef9912a7316",
+          "bytes": 58160
+        }
+      ],
+      "series": [
+        {
+          "panel": "Generated completion length",
+          "label": "Mean",
+          "source": "metrics.jsonl",
+          "key": "completions/mean_length",
+          "candidate_fields": [
+            {
+              "source": "metrics.jsonl",
+              "key": "completions/mean_length"
+            }
+          ],
+          "x_key": "step",
+          "scale": 1.0,
+          "finite_points": 64,
+          "missing_points": 1,
+          "status": "recorded"
+        },
+        {
+          "panel": "Generated completion length",
+          "label": "Minimum",
+          "source": "metrics.jsonl",
+          "key": "completions/min_length",
+          "candidate_fields": [
+            {
+              "source": "metrics.jsonl",
+              "key": "completions/min_length"
+            }
+          ],
+          "x_key": "step",
+          "scale": 1.0,
+          "finite_points": 64,
+          "missing_points": 1,
+          "status": "recorded"
+        },
+        {
+          "panel": "Generated completion length",
+          "label": "Maximum",
+          "source": "metrics.jsonl",
+          "key": "completions/max_length",
+          "candidate_fields": [
+            {
+              "source": "metrics.jsonl",
+              "key": "completions/max_length"
+            }
+          ],
+          "x_key": "step",
+          "scale": 1.0,
+          "finite_points": 64,
+          "missing_points": 1,
+          "status": "recorded"
+        },
+        {
+          "panel": "Generated completion length",
+          "label": "Terminated mean",
+          "source": "metrics.jsonl",
+          "key": "completions/mean_terminated_length",
+          "candidate_fields": [
+            {
+              "source": "metrics.jsonl",
+              "key": "completions/mean_terminated_length"
+            }
+          ],
+          "x_key": "step",
+          "scale": 1.0,
+          "finite_points": 64,
+          "missing_points": 1,
+          "status": "recorded"
+        },
+        {
+          "panel": "Completions without normal termination",
+          "label": "TRL clipped completions",
+          "source": "metrics.jsonl",
+          "key": "completions/clipped_ratio",
+          "candidate_fields": [
+            {
+              "source": "metrics.jsonl",
+              "key": "completions/clipped_ratio"
+            }
+          ],
+          "x_key": "step",
+          "scale": 1.0,
+          "finite_points": 64,
+          "missing_points": 1,
+          "status": "recorded"
+        },
+        {
+          "panel": "Answer diversity within a group",
+          "label": "Mean distinct outcomes",
+          "source": "metrics.jsonl",
+          "key": "unique_answers_per_group",
+          "candidate_fields": [
+            {
+              "source": "metrics.jsonl",
+              "key": "unique_answers_per_group"
+            },
+            {
+              "source": "groups.jsonl",
+              "key": "unique_answers_per_group"
+            }
+          ],
+          "x_key": "step",
+          "scale": 1.0,
+          "finite_points": 64,
+          "missing_points": 1,
+          "status": "recorded"
+        },
+        {
+          "panel": "Required answer format",
+          "label": "Format pass",
+          "source": "metrics.jsonl",
+          "key": "format_pass_rate",
+          "candidate_fields": [
+            {
+              "source": "metrics.jsonl",
+              "key": "format_pass_rate"
+            },
+            {
+              "source": "groups.jsonl",
+              "key": "format_pass_rate"
+            }
+          ],
+          "x_key": "step",
+          "scale": 1.0,
+          "finite_points": 64,
+          "missing_points": 1,
+          "status": "recorded"
+        }
+      ],
+      "note": "Raw logged values; no smoothing or zero imputation. Missing rows break lines. Sources and SHA256: plot_manifest.json.\nParsed outcomes include a parse-failure category; diversity is not a count of valid or correct answers.",
+      "retained_generation_code_sha256": "e1e45a71051448357b5715359bd66ff2bbb01499930ab6ed21af890d7edaea71"
+    },
+    {
+      "name": "04_resources",
+      "files": [
+        {
+          "path": "04_resources.png",
+          "sha256": "878dc57cd690a93224f0c1b59524503dfe60224e5e4191c70b31ff45c9d62c19",
+          "bytes": 271098
+        },
+        {
+          "path": "04_resources.svg",
+          "sha256": "edcc7f10c653d495d79e7957ccb9996831fb2f2c6cf40bea45560c48033bf8eb",
+          "bytes": 59639
+        }
+      ],
+      "series": [
+        {
+          "panel": "PyTorch GPU memory",
+          "label": "Allocated",
+          "source": "metrics.jsonl",
+          "key": "gpu_allocated_gb",
+          "candidate_fields": [
+            {
+              "source": "metrics.jsonl",
+              "key": "gpu_allocated_gb"
+            }
+          ],
+          "x_key": "step",
+          "scale": 1.0,
+          "finite_points": 65,
+          "missing_points": 0,
+          "status": "recorded"
+        },
+        {
+          "panel": "PyTorch GPU memory",
+          "label": "Reserved",
+          "source": "metrics.jsonl",
+          "key": "gpu_reserved_gb",
+          "candidate_fields": [
+            {
+              "source": "metrics.jsonl",
+              "key": "gpu_reserved_gb"
+            }
+          ],
+          "x_key": "step",
+          "scale": 1.0,
+          "finite_points": 65,
+          "missing_points": 0,
+          "status": "recorded"
+        },
+        {
+          "panel": "PyTorch GPU memory",
+          "label": "Peak allocated",
+          "source": "metrics.jsonl",
+          "key": "gpu_peak_allocated_gb",
+          "candidate_fields": [
+            {
+              "source": "metrics.jsonl",
+              "key": "gpu_peak_allocated_gb"
+            }
+          ],
+          "x_key": "step",
+          "scale": 1.0,
+          "finite_points": 65,
+          "missing_points": 0,
+          "status": "recorded"
+        },
+        {
+          "panel": "Rollout + scoring + reference",
+          "label": "Measured throughput",
+          "source": "metrics.jsonl",
+          "key": "rollout_and_reference_tokens_per_second",
+          "candidate_fields": [
+            {
+              "source": "metrics.jsonl",
+              "key": "rollout_and_reference_tokens_per_second"
+            }
+          ],
+          "x_key": "step",
+          "scale": 1.0,
+          "finite_points": 64,
+          "missing_points": 1,
+          "status": "recorded"
+        },
+        {
+          "panel": "Rollout + scoring + reference time",
+          "label": "Measured elapsed",
+          "source": "metrics.jsonl",
+          "key": "rollout_and_reference_seconds",
+          "candidate_fields": [
+            {
+              "source": "metrics.jsonl",
+              "key": "rollout_and_reference_seconds"
+            }
+          ],
+          "x_key": "step",
+          "scale": 1.0,
+          "finite_points": 64,
+          "missing_points": 1,
+          "status": "recorded"
+        },
+        {
+          "panel": "Elapsed time at telemetry callback",
+          "label": "Wall time",
+          "source": "metrics.jsonl",
+          "key": "wall_seconds",
+          "candidate_fields": [
+            {
+              "source": "metrics.jsonl",
+              "key": "wall_seconds"
+            }
+          ],
+          "x_key": "step",
+          "scale": 0.016666666666666666,
+          "finite_points": 65,
+          "missing_points": 0,
+          "status": "recorded"
+        },
+        {
+          "panel": "GPU utilization",
+          "label": "GPU utilization",
+          "source": null,
+          "key": null,
+          "candidate_fields": [
+            {
+              "source": "metrics.jsonl",
+              "key": "gpu_utilization_percent"
+            }
+          ],
+          "x_key": "step",
+          "scale": 1.0,
+          "finite_points": 0,
+          "missing_points": 0,
+          "status": "not recorded"
+        },
+        {
+          "panel": "GPU power",
+          "label": "Power draw",
+          "source": null,
+          "key": null,
+          "candidate_fields": [
+            {
+              "source": "metrics.jsonl",
+              "key": "gpu_power_watts"
+            }
+          ],
+          "x_key": "step",
+          "scale": 1.0,
+          "finite_points": 0,
+          "missing_points": 0,
+          "status": "not recorded"
+        }
+      ],
+      "note": "Raw logged values; no smoothing or zero imputation. Missing rows break lines. Sources and SHA256: plot_manifest.json.\nThroughput includes scoring/reference work; PyTorch memory is not total device memory. Callback wall time includes dev evaluation.",
+      "retained_generation_code_sha256": "e1e45a71051448357b5715359bd66ff2bbb01499930ab6ed21af890d7edaea71"
+    },
+    {
+      "name": "05_acceptance_gsm8k",
+      "files": [
+        {
+          "path": "05_acceptance_gsm8k.png",
+          "sha256": "d1abc041e9458c48ca9bca3ffc099848fde5e2d05b35e3d3521039a5542c8bab",
+          "bytes": 98607
+        },
+        {
+          "path": "05_acceptance_gsm8k.svg",
+          "sha256": "4efa764b9c00c7d458e63e9d733eb0fb04dd2ec347871521a4278bdaf0d36261",
+          "bytes": 18157
+        }
+      ],
+      "series": [
+        {
+          "label": "before",
+          "source": "acceptance.json",
+          "key": "statistics.before.accuracy",
+          "interval_key": "statistics.before.wilson_95_ci",
+          "scale": 100,
+          "status": "recorded"
+        },
+        {
+          "label": "after",
+          "source": "acceptance.json",
+          "key": "statistics.after.accuracy",
+          "interval_key": "statistics.after.wilson_95_ci",
+          "scale": 100,
+          "status": "recorded"
+        },
+        {
+          "label": "paired gain",
+          "source": "acceptance.json",
+          "key": "statistics.absolute_gain",
+          "interval_key": "statistics.paired_bootstrap_95_ci",
+          "scale": 100,
+          "status": "recorded"
+        }
+      ],
+      "note": "N=1319; recorded statistical acceptance=True; gsm8k project acceptance=True; adjusted McNemar p=6.874e-16.\nWilson intervals describe each accuracy; only the gain interval is paired. Statistical acceptance alone does not verify training integrity."
+    },
+    {
+      "name": "06_tokens_gsm8k",
+      "files": [
+        {
+          "path": "06_tokens_gsm8k.png",
+          "sha256": "6a5687b2603991c482a4743b5ccd4b06402262702e26fc7a3024c02e6a6c973f",
+          "bytes": 115800
+        },
+        {
+          "path": "06_tokens_gsm8k.svg",
+          "sha256": "f20acd5469dfbd26e96a0b38cb91d47e30d3f3967fa48f0a229fa8732ddb7137",
+          "bytes": 80438
+        }
+      ],
+      "series": [
+        {
+          "label": "before",
+          "source": "audit-before-001/predictions.jsonl",
+          "key": "response_tokens",
+          "status": "recorded",
+          "finite_points": 1319,
+          "transformation": "empirical cumulative distribution"
+        },
+        {
+          "label": "after",
+          "source": "audit-after-001/predictions.jsonl",
+          "key": "response_tokens",
+          "status": "recorded",
+          "finite_points": 1319,
+          "transformation": "empirical cumulative distribution"
+        },
+        {
+          "label": "before truncation",
+          "source": "audit-before-001/predictions.jsonl",
+          "key": "truncated",
+          "status": "recorded",
+          "transformation": "mean of per-question boolean"
+        },
+        {
+          "label": "after truncation",
+          "source": "audit-after-001/predictions.jsonl",
+          "key": "truncated",
+          "status": "recorded",
+          "transformation": "mean of per-question boolean"
+        }
+      ],
+      "note": "Same paired audit questions; empirical distributions use exact generated token counts.\nShorter answers alone do not establish efficiency at preserved accuracy.",
+      "retained_generation_code_sha256": "b1be6414a8ba794fab142f31977305b6c0459b50328bc684d4b4f5d5cf4020f9"
+    },
+    {
+      "name": "07_system_resources",
+      "files": [
+        {
+          "path": "07_system_resources.png",
+          "sha256": "f12db17e0be35fa5808e666068f8763f9dfa617dd3e7797af371286333ebbd93",
+          "bytes": 284585
+        },
+        {
+          "path": "07_system_resources.svg",
+          "sha256": "3e14f556856fec0943e0a36f4e485bcae17a1b5249077058260e9a874834d210",
+          "bytes": 101100
+        }
+      ],
+      "series": [
+        {
+          "panel": "GPU utilization",
+          "label": "GPU utilization",
+          "source": "../../evidence/gsm8k-grpo-formal-001/resources.jsonl",
+          "key": "gpu.utilization_percent",
+          "x_key": "unix_time - first unix_time",
+          "unit": "Percent",
+          "finite_points": 569,
+          "missing_points": 0,
+          "status": "recorded",
+          "transformation": "none"
+        },
+        {
+          "panel": "Total device memory used",
+          "label": "Total device memory used",
+          "source": "../../evidence/gsm8k-grpo-formal-001/resources.jsonl",
+          "key": "gpu.memory_used_mib",
+          "x_key": "unix_time - first unix_time",
+          "unit": "MiB",
+          "finite_points": 569,
+          "missing_points": 0,
+          "status": "recorded",
+          "transformation": "none"
+        },
+        {
+          "panel": "Sampled board power",
+          "label": "Sampled board power",
+          "source": "../../evidence/gsm8k-grpo-formal-001/resources.jsonl",
+          "key": "gpu.power_watts",
+          "x_key": "unix_time - first unix_time",
+          "unit": "Watts",
+          "finite_points": 569,
+          "missing_points": 0,
+          "status": "recorded",
+          "transformation": "none"
+        },
+        {
+          "panel": "GPU temperature",
+          "label": "GPU temperature",
+          "source": "../../evidence/gsm8k-grpo-formal-001/resources.jsonl",
+          "key": "gpu.temperature_c",
+          "x_key": "unix_time - first unix_time",
+          "unit": "Degrees C",
+          "finite_points": 569,
+          "missing_points": 0,
+          "status": "recorded",
+          "transformation": "none"
+        },
+        {
+          "panel": "Monitored process resident memory",
+          "label": "Monitored process resident memory",
+          "source": "../../evidence/gsm8k-grpo-formal-001/resources.jsonl",
+          "key": "process_memory_kb.VmRSS",
+          "x_key": "unix_time - first unix_time",
+          "unit": "MiB",
+          "finite_points": 569,
+          "missing_points": 0,
+          "status": "recorded",
+          "transformation": "VmRSS / 1024 (Linux kB to MiB)"
+        },
+        {
+          "panel": "Estimated cumulative board energy",
+          "label": "Estimated cumulative board energy",
+          "source": "../../evidence/gsm8k-grpo-formal-001/resources.jsonl",
+          "key": "sampled_board_energy_wh",
+          "x_key": "unix_time - first unix_time",
+          "unit": "Wh",
+          "finite_points": 569,
+          "missing_points": 0,
+          "status": "recorded",
+          "transformation": "trapezoidal sampled board power / 3600; cumulative until first missing power"
+        }
+      ],
+      "note": "Real wall-clock samples; no optimizer-step interpolation. Board energy is a sampled trapezoidal estimate, not a meter reading.\nBoard-only energy excludes host CPU; sampling can miss spikes. Process RSS covers the monitored PID, not all child processes.",
+      "retained_generation_code_sha256": "e1e45a71051448357b5715359bd66ff2bbb01499930ab6ed21af890d7edaea71"
+    }
+  ],
+  "warnings": [],
+  "acceptance_outcomes": {
+    "format": "project_gate",
+    "project_accepted": true,
+    "project_checks": {
+      "training_and_job": true,
+      "gpu_release": true,
+      "raw_diagnostics": true,
+      "locked_audit": true,
+      "paired_statistics": true,
+      "full_audit_regrading": true,
+      "current_selected_artifacts": true,
+      "performance_gain": true
+    },
+    "project_check_failures": [],
+    "comparisons": [
+      {
+        "project": "gsm8k",
+        "statistical_accepted": true,
+        "statistical_pass": true
+      }
+    ]
+  },
+  "semantics": {
+    "missing_data": "not recorded; no zero imputation; missing numeric rows are NaN line gaps",
+    "smoothing": "none",
+    "step": "logged step unchanged; metrics are post-update, groups.jsonl records pre-update rollouts",
+    "entropy": "TRL 0.24.0 full-vocabulary entropy after logits/temperature; nats; completion-masked microbatch means averaged at logging",
+    "entropy_is_not": "attention-weight entropy, top-p/top-k filtered sampling entropy, or a standalone collapse test",
+    "accuracy_intervals": "Wilson per-model intervals; paired bootstrap only for before/after gain",
+    "snapshot": "Source hashes cover bytes read by this plotting invocation; a live run can append later.",
+    "acceptance": "Figures visualize recorded evidence; plotting does not grant experiment acceptance."
+  },
+  "retained_prior_images": {
+    "reason": "Original 5 PNGs match rerender byte-for-byte. SVGs match after date/generated-ID normalization; original audited PNG/SVG encodings retained.",
+    "sha256": {
+      "04_resources.png": "878dc57cd690a93224f0c1b59524503dfe60224e5e4191c70b31ff45c9d62c19",
+      "03_generation.png": "eec8a554e35414e5bfbe9ac91a47e01803393715cd993e7495a342760e9bd52b",
+      "07_system_resources.png": "f12db17e0be35fa5808e666068f8763f9dfa617dd3e7797af371286333ebbd93",
+      "02_stability.png": "50cc0d152800d340aa5d903177585693fd23a32ea91f4b80c9548c46802a8b29",
+      "01_learning.png": "efe9194457e2965ed743f16252b8c255f685b645366d07ecb4200df2deb98890",
+      "03_generation.svg": "f62c6da1031c5c186fd3e72628102159e70a5c4f5774e19130c5cef9912a7316",
+      "04_resources.svg": "edcc7f10c653d495d79e7957ccb9996831fb2f2c6cf40bea45560c48033bf8eb",
+      "01_learning.svg": "2bdae03aa4ad7a6541b1d271131d5f22acc122070b692aa6407a303ac4b300fb",
+      "02_stability.svg": "719bc379e4bbe3b3ad5e4cfdf6c19db15b9550bfffa8a0dedccf5840c9ab9361",
+      "07_system_resources.svg": "3e14f556856fec0943e0a36f4e485bcae17a1b5249077058260e9a874834d210"
+    }
+  },
+  "repaired_scope_note": {
+    "chart": "05_acceptance_gsm8k",
+    "change": "Name the comparison project in acceptance text: gsm8k project acceptance=True. Numeric results unchanged.",
+    "unmodified_other_image_sha256": {
+      "04_resources.png": "878dc57cd690a93224f0c1b59524503dfe60224e5e4191c70b31ff45c9d62c19",
+      "06_tokens_gsm8k.png": "6a5687b2603991c482a4743b5ccd4b06402262702e26fc7a3024c02e6a6c973f",
+      "03_generation.png": "eec8a554e35414e5bfbe9ac91a47e01803393715cd993e7495a342760e9bd52b",
+      "07_system_resources.png": "f12db17e0be35fa5808e666068f8763f9dfa617dd3e7797af371286333ebbd93",
+      "02_stability.png": "50cc0d152800d340aa5d903177585693fd23a32ea91f4b80c9548c46802a8b29",
+      "01_learning.png": "efe9194457e2965ed743f16252b8c255f685b645366d07ecb4200df2deb98890",
+      "03_generation.svg": "f62c6da1031c5c186fd3e72628102159e70a5c4f5774e19130c5cef9912a7316",
+      "06_tokens_gsm8k.svg": "f20acd5469dfbd26e96a0b38cb91d47e30d3f3967fa48f0a229fa8732ddb7137",
+      "04_resources.svg": "edcc7f10c653d495d79e7957ccb9996831fb2f2c6cf40bea45560c48033bf8eb",
+      "01_learning.svg": "2bdae03aa4ad7a6541b1d271131d5f22acc122070b692aa6407a303ac4b300fb",
+      "02_stability.svg": "719bc379e4bbe3b3ad5e4cfdf6c19db15b9550bfffa8a0dedccf5840c9ab9361",
+      "07_system_resources.svg": "3e14f556856fec0943e0a36f4e485bcae17a1b5249077058260e9a874834d210"
+    }
+  }
+}

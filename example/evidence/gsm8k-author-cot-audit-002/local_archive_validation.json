@@ -1,0 +1,94 @@
+{
+  "kind": "cpu_archive_fidelity_verification",
+  "runs": [
+    {
+      "counts": {
+        "author_correct": 977,
+        "eos": 1034,
+        "strict_correct": 969,
+        "strict_format_ok": 1025,
+        "thinking_closed": 1104,
+        "truncated": 285
+      },
+      "exact_small_originals": 10,
+      "forbidden_input_fields": [],
+      "full_model_output_and_ids_rows": 1319,
+      "historical_release_bound_to_job": true,
+      "original_status_gpu_release_verified": false,
+      "raw_identity": {
+        "bytes": 19504761,
+        "physical_rows": 1319,
+        "sha256": "1261a1215f6d2f013e19c1c3baf06d5456544ff5ca7f8ddf8cec426def2fca5a"
+      },
+      "remote_originals": 11,
+      "restore_result": {
+        "path": "/private/tmp/cod-author-archive-reverify-20260910/gsm8k-author-cot-audit-002/author_predictions.jsonl",
+        "status": "restored"
+      },
+      "run": "gsm8k-author-cot-audit-002",
+      "source_text_absence": [
+        {
+          "bytes": 2633,
+          "checked_snippets": 17,
+          "full_text_hits": [],
+          "sha256": "77fda02c1c68dc9e1f0143fed83e78c9f18febd838bfe2b4efcf86e90acf420d",
+          "source": "configs/gsm8k_cot.yaml"
+        },
+        {
+          "bytes": 1889,
+          "checked_snippets": 17,
+          "full_text_hits": [],
+          "sha256": "c83a151f36af1a491080df441044d6dfeb2ada15cefeb98368c2f9e3563f13cb",
+          "source": "configs/gsm8k_cod.yaml"
+        }
+      ],
+      "status": "PASS",
+      "verification_scope": "Archive fidelity and recorded fields; tokenizer/parser comparison is separate."
+    },
+    {
+      "counts": {
+        "author_correct": 935,
+        "eos": 1038,
+        "strict_correct": 922,
+        "strict_format_ok": 1021,
+        "thinking_closed": 1086,
+        "truncated": 281
+      },
+      "exact_small_originals": 10,
+      "forbidden_input_fields": [],
+      "full_model_output_and_ids_rows": 1319,
+      "historical_release_bound_to_job": true,
+      "original_status_gpu_release_verified": false,
+      "raw_identity": {
+        "bytes": 16231591,
+        "physical_rows": 1319,
+        "sha256": "71a6a50f4c929f732523761b58f762d1f6c20cbd7f723e7723808c4cd3784129"
+      },
+      "remote_originals": 11,
+      "restore_result": {
+        "path": "/private/tmp/cod-author-archive-reverify-20260910/gsm8k-author-cod-audit-001/author_predictions.jsonl",
+        "status": "restored"
+      },
+      "run": "gsm8k-author-cod-audit-001",
+      "source_text_absence": [
+        {
+          "bytes": 2633,
+          "checked_snippets": 17,
+          "full_text_hits": [],
+          "sha256": "77fda02c1c68dc9e1f0143fed83e78c9f18febd838bfe2b4efcf86e90acf420d",
+          "source": "configs/gsm8k_cot.yaml"
+        },
+        {
+          "bytes": 1889,
+          "checked_snippets": 17,
+          "full_text_hits": [],
+          "sha256": "c83a151f36af1a491080df441044d6dfeb2ada15cefeb98368c2f9e3563f13cb",
+          "source": "configs/gsm8k_cod.yaml"
+        }
+      ],
+      "status": "PASS",
+      "verification_scope": "Archive fidelity and recorded fields; tokenizer/parser comparison is separate."
+    }
+  ],
+  "status": "PASS"
+}

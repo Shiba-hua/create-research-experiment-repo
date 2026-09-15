@@ -1,0 +1,180 @@
+{
+  "scope": "Documentation layout repair only; no new scientific measurements",
+  "change": "Move the completion-length legend into unused upper plot space; two columns",
+  "original_figure": {
+    "path": "results/gsm8k-grpo-formal-001/figures/03_generation.png",
+    "bytes": 333042,
+    "sha256": "eec8a554e35414e5bfbe9ac91a47e01803393715cd993e7495a342760e9bd52b"
+  },
+  "renderer": {
+    "path": "repro/experiments/gsm8k-qwen3-0.6b-grpo/plotting/training_diagnostics.py",
+    "bytes": 32405,
+    "sha256": "e1e45a71051448357b5715359bd66ff2bbb01499930ab6ed21af890d7edaea71"
+  },
+  "repair_script": {
+    "path": "repro/redraw_generation.py",
+    "bytes": 4331,
+    "sha256": "1eab0884937c2d006473a00e5de6b59fd01e495cb38e8dd5d2cc4ed8d13d5ae8"
+  },
+  "inputs": [
+    {
+      "path": "results/gsm8k-grpo-formal-001/metrics.jsonl",
+      "bytes": 91860,
+      "sha256": "e1da176a327acc7b43e6b150ed8e77d1fb864b6d6f96cd05557ec91872f09d8c"
+    },
+    {
+      "path": "results/gsm8k-grpo-formal-001/groups.jsonl",
+      "bytes": 18045,
+      "sha256": "ff8997b1ad59c1e7fbe22710e1719262f04512f611210bf9ec4ba01e5bf25678"
+    },
+    {
+      "path": "results/gsm8k-grpo-formal-001/validation.jsonl",
+      "bytes": 436,
+      "sha256": "f3ec8fa11154c6b47d9f0b910cf98cc2667b6820d647482ee059c4ffb8c8f8a5"
+    }
+  ],
+  "series": [
+    {
+      "panel": "Generated completion length",
+      "label": "Mean",
+      "source": "metrics.jsonl",
+      "key": "completions/mean_length",
+      "candidate_fields": [
+        {
+          "source": "metrics.jsonl",
+          "key": "completions/mean_length"
+        }
+      ],
+      "x_key": "step",
+      "scale": 1.0,
+      "finite_points": 64,
+      "missing_points": 1,
+      "status": "recorded"
+    },
+    {
+      "panel": "Generated completion length",
+      "label": "Minimum",
+      "source": "metrics.jsonl",
+      "key": "completions/min_length",
+      "candidate_fields": [
+        {
+          "source": "metrics.jsonl",
+          "key": "completions/min_length"
+        }
+      ],
+      "x_key": "step",
+      "scale": 1.0,
+      "finite_points": 64,
+      "missing_points": 1,
+      "status": "recorded"
+    },
+    {
+      "panel": "Generated completion length",
+      "label": "Maximum",
+      "source": "metrics.jsonl",
+      "key": "completions/max_length",
+      "candidate_fields": [
+        {
+          "source": "metrics.jsonl",
+          "key": "completions/max_length"
+        }
+      ],
+      "x_key": "step",
+      "scale": 1.0,
+      "finite_points": 64,
+      "missing_points": 1,
+      "status": "recorded"
+    },
+    {
+      "panel": "Generated completion length",
+      "label": "Terminated mean",
+      "source": "metrics.jsonl",
+      "key": "completions/mean_terminated_length",
+      "candidate_fields": [
+        {
+          "source": "metrics.jsonl",
+          "key": "completions/mean_terminated_length"
+        }
+      ],
+      "x_key": "step",
+      "scale": 1.0,
+      "finite_points": 64,
+      "missing_points": 1,
+      "status": "recorded"
+    },
+    {
+      "panel": "Completions without normal termination",
+      "label": "TRL clipped completions",
+      "source": "metrics.jsonl",
+      "key": "completions/clipped_ratio",
+      "candidate_fields": [
+        {
+          "source": "metrics.jsonl",
+          "key": "completions/clipped_ratio"
+        }
+      ],
+      "x_key": "step",
+      "scale": 1.0,
+      "finite_points": 64,
+      "missing_points": 1,
+      "status": "recorded"
+    },
+    {
+      "panel": "Answer diversity within a group",
+      "label": "Mean distinct outcomes",
+      "source": "metrics.jsonl",
+      "key": "unique_answers_per_group",
+      "candidate_fields": [
+        {
+          "source": "metrics.jsonl",
+          "key": "unique_answers_per_group"
+        },
+        {
+          "source": "groups.jsonl",
+          "key": "unique_answers_per_group"
+        }
+      ],
+      "x_key": "step",
+      "scale": 1.0,
+      "finite_points": 64,
+      "missing_points": 1,
+      "status": "recorded"
+    },
+    {
+      "panel": "Required answer format",
+      "label": "Format pass",
+      "source": "metrics.jsonl",
+      "key": "format_pass_rate",
+      "candidate_fields": [
+        {
+          "source": "metrics.jsonl",
+          "key": "format_pass_rate"
+        },
+        {
+          "source": "groups.jsonl",
+          "key": "format_pass_rate"
+        }
+      ],
+      "x_key": "step",
+      "scale": 1.0,
+      "finite_points": 64,
+      "missing_points": 1,
+      "status": "recorded"
+    }
+  ],
+  "series_equal_original": true,
+  "files": [
+    {
+      "path": "03_generation.png",
+      "bytes": 333411,
+      "sha256": "1630fad7ed942d142a39386ea074369dc440b77edfd5b53d0b823abfff7ed204"
+    },
+    {
+      "path": "03_generation.svg",
+      "bytes": 58295,
+      "sha256": "8c3b557305e20853053bd5ba9059a34f4627cef066fde6b3f652433703c7d15b"
+    }
+  ],
+  "matplotlib": "3.10.9",
+  "new_model_run": false
+}

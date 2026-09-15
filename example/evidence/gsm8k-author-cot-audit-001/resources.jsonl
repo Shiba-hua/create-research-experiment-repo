@@ -1,0 +1,2 @@
+{"unix_time": 1789047496.8920305, "pid": 1171312, "process_memory_kb": {"VmSize": 4412, "VmHWM": 784, "VmRSS": 784}, "gpu": {"utilization_percent": 1.0, "memory_used_mib": 0.0, "power_watts": 81.6, "temperature_c": 30.0}}
+{"unix_time": 1789047513.220809, "pid": 1171312, "process_memory_kb": {"VmSize": 1512, "VmHWM": 1324, "VmRSS": 1324}, "gpu": {"utilization_percent": 1.0, "memory_used_mib": 0.0, "power_watts": 81.71, "temperature_c": 30.0}}

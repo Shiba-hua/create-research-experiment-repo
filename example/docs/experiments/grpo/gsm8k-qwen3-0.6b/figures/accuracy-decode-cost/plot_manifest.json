@@ -1,0 +1,27 @@
+{
+  "scope": "CPU visualization of observed historical audit points",
+  "points": {
+    "path": "points.json",
+    "bytes": 5119,
+    "sha256": "4ebf1cc4f59cc675ad9e6e88d7ad006f5aee428d412897d899bf3a28b3d9a12e"
+  },
+  "files": [
+    {
+      "path": "accuracy_decode_cost.png",
+      "bytes": 125862,
+      "sha256": "8c14d7356e4548cc8789eedbac1a4a870ac109eb224f03cfefde898bea4cb22c"
+    },
+    {
+      "path": "accuracy_decode_cost.svg",
+      "bytes": 14836,
+      "sha256": "abe16d241ff96271c91bf589785c0730a220f3652e8ca2d58c679a60882e7bee"
+    }
+  ],
+  "matplotlib": "3.10.9",
+  "producer": {
+    "path": "repro/accuracy_decode_cost.py",
+    "bytes": 10500,
+    "sha256": "5264136de1fcde02dc52690e83b62241d2eaf48a237a870a7c49b120cb31cbd0"
+  },
+  "new_model_run": false
+}

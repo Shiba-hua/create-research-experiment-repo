@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "hash_algorithm": "sha256",
+  "source_slice_convention": "Original bytes from the complete lines lineno through end_lineno, inclusive; original line endings retained.",
+  "ast_fingerprint_convention": "SHA256 of UTF-8 canonical JSON: recursively serialize each AST node as {node_type: class name, fields: ast.iter_fields values}; omit fields whose value is an empty list; recursively preserve ordered list values and scalar values; ast.iter_fields excludes position attributes. JSON uses sort_keys=True, ensure_ascii=False, separators=(comma, colon), allow_nan=False.",
+  "sources": {
+    "project_math.py": {
+      "commit": "9359731bc1fcdeeef867ff4c5dd1144ff9cdc11f",
+      "path": "src/rlvr_lab/rewards.py",
+      "full_source_sha256": "0299a9d11db45e9e712ee67c2eccd7151b8118b0864310a9c8e20ba4eceb6154",
+      "export_method": "scoped_to_gsm8k_numeric_contract",
+      "exported_module_sha256": "51f93bf838667f22d99615c5499370f368f31e3575db94d18912c35d09061ecd",
+      "historical_exported_module_sha256": "0299a9d11db45e9e712ee67c2eccd7151b8118b0864310a9c8e20ba4eceb6154"
+    },
+    "author_math.py": {
+      "commit": "61ff6a476c3cacec1fe87c846c9559a010f499dd",
+      "path": "src/rlvr_lab/cod_author.py",
+      "full_source_sha256": "03bf6af84e3406679706267139be61b59a032960ce6f9acdc916270e0ee906b8",
+      "export_method": "original_function_and_constant_lines_with_standard_library_imports",
+      "exported_module_sha256": "a8684d065792ae6aa1c8fc1024acd6f3fa84b687dcc096c4a861612c765d5a08",
+      "functions": {
+        "reference_string": {
+          "source_lines": [
+            112,
+            133
+          ],
+          "source_sha256": "943f99c606c2bccd2985f21c62adb0dab0000a10b84f6338d172789cc47950bc",
+          "ast_sha256": "32b4e718adca4818af7ed2f14c84ab076bdabd910b22b99fcb3d219cc8b73494"
+        },
+        "_extract_author": {
+          "source_lines": [
+            136,
+            138
+          ],
+          "source_sha256": "8c8d8b6b157768a176ccac3bbb7ad56da3451086898eaa59189c883161dc1a5f",
+          "ast_sha256": "82c0674ab2c40d8bf231daa1ee884c3b47dbf147b0b0d84ca3bd838325c84fbc"
+        },
+        "author_equal": {
+          "source_lines": [
+            141,
+            153
+          ],
+          "source_sha256": "a5727169563671be2b28bcedcd5d64857c8ed2d4f3586d0fa8cda509eef0a8b6",
+          "ast_sha256": "90caa1d65888ed45689d1bb3ec95061e33fb35cd2d8e6e20aa579c22ea7a9ea5"
+        },
+        "score_response": {
+          "source_lines": [
+            156,
+            196
+          ],
+          "source_sha256": "6f365262f3b6dbfda79c0d08128b6f883eca57c2ba75d5ac5528e16acc7582c9",
+          "ast_sha256": "f45141f7b0f9636ed22f8410a178466b29d308373b91cacd2bc90e1d0897bf48"
+        }
+      },
+      "parser_version": {
+        "value": "author_compat_qwen3_final_v2",
+        "source_lines": [
+          38,
+          38
+        ],
+        "source_sha256": "3da0fb977650ba0280ab4d3de097c05be9b3f61e2c6fa22e54c5fbdfd472c06f",
+        "ast_sha256": "1688afe3ec3aa24792bd41d2f74df9390d761704127da763f35ddfe061e91746"
+      },
+      "added_imports": [
+        "from __future__ import annotations",
+        "from fractions import Fraction",
+        "import re",
+        "from typing import Any"
+      ]
+    }
+  },
+  "exported_modules_sha256": {
+    "project_math.py": "0299a9d11db45e9e712ee67c2eccd7151b8118b0864310a9c8e20ba4eceb6154",
+    "author_math.py": "a8684d065792ae6aa1c8fc1024acd6f3fa84b687dcc096c4a861612c765d5a08",
+    "verify.py": "0710e20d7d85960ddfb8443ef7f813ef1414039f14e3125c6d454ca612315dfd"
+  },
+  "modes": {
+    "grpo": {
+      "module": "project_math.py",
+      "function": "verify_completion",
+      "project": "gsm8k",
+      "selected_score_key": "correctness"
+    },
+    "author-strict": {
+      "module": "author_math.py",
+      "function": "score_response",
+      "selected_score_key": "strict_correct",
+      "historical_thinking_opening_prefilled": false
+    },
+    "author-compatible": {
+      "module": "author_math.py",
+      "function": "score_response",
+      "selected_score_key": "author_correct",
+      "historical_thinking_opening_prefilled": false
+    }
+  },
+  "ast_fingerprint_format": "python-ast-canonical-json-v1"
+}

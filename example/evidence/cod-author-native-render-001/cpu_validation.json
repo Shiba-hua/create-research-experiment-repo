@@ -1,0 +1,49 @@
+{
+  "kind": "native_envelope_repair_cpu_validation",
+  "model_inference_performed": false,
+  "gpu_work_performed": false,
+  "real_original_tokenizer_checks_enabled": true,
+  "CUDA_VISIBLE_DEVICES": "-1",
+  "checks": [
+    {
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_cod_author.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "tests_run": 17,
+      "log": "author-tests.log",
+      "log_sha256": "e40710b230b742d9da68b3365885e9667bd81e1268746e3c83d9f9f698695e7f"
+    },
+    {
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_plot_cod_author.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "tests_run": 6,
+      "log": "plot-regression-tests.log",
+      "log_sha256": "0df3704307d6caa7318cb99c6f25a7023f13aa06516e8e15efb14594892d21ac"
+    }
+  ],
+  "source_files": {
+    "src/rlvr_lab/cod_author.py": "03bf6af84e3406679706267139be61b59a032960ce6f9acdc916270e0ee906b8",
+    "src/rlvr_lab/cod_author_compare.py": "41248d44cb161e4564ea537bf5123096f69229456dd8d9556c812eb2e5021652",
+    "tests/test_cod_author.py": "5154d3a9b6fc1263b6b831a776f7ebf480c71322ed04a76077faabbb706fcdce"
+  },
+  "scope": "Existing failed attempt remains failed. CPU envelope, full real 1319x2 tokenizer rendering, and plotting-regression tests only."
+}

@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "kind": "cod_author_static_eight_shot_overlap_audit",
+  "status": "PASS",
+  "created_at": "2026-09-10T08:55:46.586843+00:00",
+  "author_revision": "a7dbf5dea808b1aa1e12f7a90ea573321581df78",
+  "source_lock_sha256": "6b6345155e9782d8dc6bec417f0cf31aa0bf8a9b4b2cd4e2af65504559648c69",
+  "source_files": {
+    "configs/gsm8k_cot.yaml": {
+      "path": "/private/tmp/cod-author-a7dbf5d/configs/gsm8k_cot.yaml",
+      "url": "https://raw.githubusercontent.com/sileix/chain-of-draft/a7dbf5dea808b1aa1e12f7a90ea573321581df78/configs/gsm8k_cot.yaml",
+      "bytes": 2633,
+      "sha256": "77fda02c1c68dc9e1f0143fed83e78c9f18febd838bfe2b4efcf86e90acf420d",
+      "git_blob_sha": "c9bbd6fbba704694064724bf7b98ee66b0653fca"
+    },
+    "configs/gsm8k_cod.yaml": {
+      "path": "/private/tmp/cod-author-a7dbf5d/configs/gsm8k_cod.yaml",
+      "url": "https://raw.githubusercontent.com/sileix/chain-of-draft/a7dbf5dea808b1aa1e12f7a90ea573321581df78/configs/gsm8k_cod.yaml",
+      "bytes": 1889,
+      "sha256": "c83a151f36af1a491080df441044d6dfeb2ada15cefeb98368c2f9e3563f13cb",
+      "git_blob_sha": "b98a9a2c32477ce8fa67dc548ffada39a0932903"
+    },
+    "utils.py": {
+      "path": "/private/tmp/cod-author-a7dbf5d/utils.py",
+      "url": "https://raw.githubusercontent.com/sileix/chain-of-draft/a7dbf5dea808b1aa1e12f7a90ea573321581df78/utils.py",
+      "bytes": 1684,
+      "sha256": "6e144442e14cb16ebb7313661a80552a0e7e5d03d3828a54b47a79e5eb361782",
+      "git_blob_sha": "e1fc0f16aa7d7433371ee23dece33ccebedf99d8"
+    },
+    "tasks/gsm8k.py": {
+      "path": "/private/tmp/cod-author-a7dbf5d/tasks/gsm8k.py",
+      "url": "https://raw.githubusercontent.com/sileix/chain-of-draft/a7dbf5dea808b1aa1e12f7a90ea573321581df78/tasks/gsm8k.py",
+      "bytes": 1235,
+      "sha256": "884b1c71843390be21f722c2f7449607c0cba9cf41d492b67e6c76b6c883ae4a",
+      "git_blob_sha": "093435b8b8ae68664dce0c3ff09d90cc425d30f1"
+    },
+    "llm_client.py": {
+      "path": "/private/tmp/cod-author-a7dbf5d/llm_client.py",
+      "url": "https://raw.githubusercontent.com/sileix/chain-of-draft/a7dbf5dea808b1aa1e12f7a90ea573321581df78/llm_client.py",
+      "bytes": 1447,
+      "sha256": "de36886e5dbba9e39afe242ec9a2053aa3acf30e6af33912d5ac0006c8ed91e1",
+      "git_blob_sha": "6d7b06adc22b373ef507ec68a02349cc427cddc4"
+    }
+  },
+  "canonical_manifest": {
+    "path": "/workspace/research/experiments/rlvr-l40s-lab/data/gsm8k/manifest.json",
+    "sha256": "d417cf1d1d18b6870805df80fd57e94c24bb755c046688fecc781e301aff2333",
+    "manifest_payload_sha256": "3f495bf32e64b4c8b3648e587b52c7080480df8e512249223b85e95f3a703f81"
+  },
+  "canonical_files": {
+    "train": {
+      "path": "/workspace/research/experiments/rlvr-l40s-lab/data/gsm8k/train.jsonl",
+      "sha256": "c6edf7596d65032d25cc57fff7af20f5c318e7d7b0c15c935e17711c4ab0b4d8",
+      "bytes": 6720258,
+      "rows": 6961
+    },
+    "dev": {
+      "path": "/workspace/research/experiments/rlvr-l40s-lab/data/gsm8k/dev.jsonl",
+      "sha256": "1a7cbe4781a2e6e4dd8fca6214569ff0923f091127852448013f8d6c7396f73b",
+      "bytes": 494924,
+      "rows": 512
+    },
+    "audit": {
+      "path": "/workspace/research/experiments/rlvr-l40s-lab/data/gsm8k/audit.jsonl",
+      "sha256": "437f2042d9d210e34834d1f596a0b6289f89414672ede7fe47727041dc11da62",
+      "bytes": 1275168,
+      "rows": 1319
+    }
+  },
+  "split_counts": {
+    "train": 6961,
+    "dev": 512,
+    "audit": 1319
+  },
+  "author_example_count_per_mode": {
+    "cot": 8,
+    "cod": 8
+  },
+  "author_question_hashes": [
+    "8829584724eeeef0ef021b58d0ce6fc12069eac51e1aad7cbe4b135993386c5d",
+    "deec29034e37dcf6d10c84bf699e0663812191023eb46c7dc95a4a9b8842f735",
+    "9f79a2bd416e47b83719195b4094a8f5498ecc4b3bfa8a3e3ee43b647bb05af7",
+    "0aa763c369349c0fa4eea297ce814290d4c5abdfed9b3f3a65d868be593cbf2c",
+    "8f45a8cca3c824e05b269e6baf9cde200116fb6bad8ddc3499fee772f12b7253",
+    "ac61853234f79c44f4a82b51fa399569cc6bafd6f68d6ccdc30691a637aa5e25",
+    "612fb416bfd97231cccb983967a4147c78493909eddb20aebba1c1839a6226f3",
+    "44280b6b36c4125232a34d8f357250a860acc56e09025f0e271ed84ee4ec15b6"
+  ],
+  "same_ordered_questions_in_both_modes": true,
+  "normalization": "Unicode NFKC, casefold, whitespace collapse; matches rlvr_lab.data.question_hash",
+  "phrase_rule": "First seven Unicode word tokens of each author question, matched as a contiguous token sequence anywhere in each canonical question; casefolded NFKC with punctuation ignored",
+  "phrase_anchor_sha256": [
+    "ea69f785e0e9a5c418c993d14d62820cadb5484d15a9a690a7f67d157b12cfe8",
+    "03bfc201f17aafa2fc9264a3635bc9dceb8c7bf0b08b05dfbf0020315467ae51",
+    "8fc37b401a47aee14a637ec713207857ccdea1e5effea172f2576521689b57f9",
+    "5d2f1477fc5b8d3eba1dc16ac6dc5c4b051b47c1f4bb14e829671128da6bc90c",
+    "d800e36b743f8ec7f781444051281f13d2ce84d61d7c32b1a11c3ece5e6c837d",
+    "875dbafbe0c80dc76502c038d652a23626d86a99002894dfd2cdf535731c5d62",
+    "5e1902eb9fd0dd53464df99da7c524285b5debb9bd48e3a51ca65e59b7984344",
+    "ae106c71ce61086b7c5540b67e322d59155d57fd2698fb506a1b9b590c07bbe7"
+  ],
+  "exact_overlap_count": 0,
+  "exact_overlaps": [],
+  "identifying_phrase_hit_count": 0,
+  "identifying_phrase_hits": [],
+  "scope": "Every one of the eight ordered static author questions in both verified configs against every row in canonical train, dev, and audit. Uses actual canonical user text, recomputed question_hash, signed row/manifest hashes, and complete file counts. No dataset row is generated, modified, filtered, or used for tuning.",
+  "limitations": "PASS excludes these exact and identifying-prefix matches only; it does not establish absence of semantic duplicates, pretraining contamination, or author exemplar provenance outside the supplied canonical dataset.",
+  "model_api_calls": 0,
+  "upstream_code_executed": false,
+  "report_payload_sha256": "8f78852786e45619f4df38d5738f0bf1f2139bdcc606adc8c5614aadbb98be06"
+}

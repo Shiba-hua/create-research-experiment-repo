@@ -1,0 +1,43 @@
+{
+  "evidence_class": "CPU contract and real source/data verification; no GPU inference",
+  "model_inference_performed": false,
+  "gpu_validated": false,
+  "test_command": [
+    "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_cod_author.py",
+    "-v"
+  ],
+  "test_environment": {
+    "COD_AUTHOR_SOURCE_DIR": "/private/tmp/cod-author-a7dbf5d",
+    "PYTHONPATH": "src"
+  },
+  "python_version": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+  "exit_code": 0,
+  "real_source_tests_enabled": true,
+  "tests_run": 12,
+  "source_files": {
+    "src/rlvr_lab/cod_author.py": "ff8dfea177c89028ffbccf4d6d7686dfd9a65ec7fc149b4fe028831ade43ee51",
+    "src/rlvr_lab/cod_author_compare.py": "9630ad611b78761557faf335aac053ac90c378d3d3fc3c80bc91bde813eec5e7",
+    "tests/test_cod_author.py": "c21a66615985e2459485c1b548d0db985a2c772c3f67426fc779048af864bece",
+    "scripts/fetch_cod_author_sources.py": "a80ce2c371722968b7e0b7a273b10c02eb65e3add29cd5dfcece3e65780b295e",
+    "configs/cod_author_upstream.json": "e2c20262aec1d2b016ff5204833d91901624f84b39ec4118bdf7a35fb1788ad4"
+  },
+  "static_reports": {
+    "eight-shot-overlap.json": "0358b9abe285f40c68693a6b01d06247897068f9785a9674695affaa2f9d69ad",
+    "reference-equivalence.json": "9cf51baad422fed49ce615525d46d6f028fc68fe49a020515ea1e7206803098c"
+  },
+  "not_claimed": [
+    "GPU initialization or completion",
+    "model accuracy",
+    "performance improvement",
+    "token savings",
+    "GRPO acceptance",
+    "host process or GPU release"
+  ]
+}

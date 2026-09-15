@@ -1,0 +1,54 @@
+{
+  "records": [
+    {
+      "source": "evidence/cod-author-native-render-001/renderer_audit.json",
+      "values": {
+        "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+        "dependencies": {
+          "transformers": "5.9.0",
+          "tokenizers": "0.22.2",
+          "numpy": "2.4.6"
+        }
+      }
+    },
+    {
+      "source": "results/gsm8k-author-cod-audit-001/author_summary.json",
+      "values": {
+        "runtime": {
+          "python_executable": "/opt/rlvr-vllm-venv/bin/python",
+          "python_version": "3.11.13 (main, Jun  5 2025, 13:12:00) [GCC 11.2.0]",
+          "pid": 1228918,
+          "torch": "2.8.0+cu128",
+          "cuda": "12.8",
+          "gpu": "NVIDIA L40S",
+          "VLLM_USE_V1": "1",
+          "engine_class": "vllm.v1.engine.llm_engine.LLMEngine",
+          "engine_generation_verified": "V1",
+          "VLLM_ENABLE_V1_MULTIPROCESSING": "0",
+          "engine_client_class": "vllm.v1.engine.core_client.InprocClient",
+          "engine_client_mode_verified": "inprocess"
+        }
+      }
+    },
+    {
+      "source": "results/gsm8k-author-cot-audit-002/author_summary.json",
+      "values": {
+        "runtime": {
+          "python_executable": "/opt/rlvr-vllm-venv/bin/python",
+          "python_version": "3.11.13 (main, Jun  5 2025, 13:12:00) [GCC 11.2.0]",
+          "pid": 1205576,
+          "torch": "2.8.0+cu128",
+          "cuda": "12.8",
+          "gpu": "NVIDIA L40S",
+          "VLLM_USE_V1": "1",
+          "engine_class": "vllm.v1.engine.llm_engine.LLMEngine",
+          "engine_generation_verified": "V1",
+          "VLLM_ENABLE_V1_MULTIPROCESSING": "0",
+          "engine_client_class": "vllm.v1.engine.core_client.InprocClient",
+          "engine_client_mode_verified": "inprocess"
+        }
+      }
+    }
+  ],
+  "live_server_verification": false
+}

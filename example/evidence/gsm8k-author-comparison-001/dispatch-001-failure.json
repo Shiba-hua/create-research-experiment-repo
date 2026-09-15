@@ -1,0 +1,10 @@
+{
+  "kind": "cpu_dispatch_setup_failure",
+  "phase": "before_comparison_process_started",
+  "host_interpreter": "/usr/bin/python3 (Python 3.6)",
+  "error": "TypeError: __init__() got an unexpected keyword argument text",
+  "cause": "dispatcher used subprocess text keyword unavailable in host Python 3.6",
+  "comparison_started": false,
+  "gpu_work_requested": false,
+  "repair": "rerun dispatcher through explicit native .venv/bin/python"
+}

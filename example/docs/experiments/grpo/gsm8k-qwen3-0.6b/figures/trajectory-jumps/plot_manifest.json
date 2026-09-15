@@ -1,0 +1,57 @@
+{
+  "schema": "rlvr.recorded-trajectory-plot/v1",
+  "scope": "CPU completion-gated replay of saved trajectories, not independent budget evaluation",
+  "data": {
+    "path": "curves.json",
+    "bytes": 1036651,
+    "sha256": "aa162d2adb1c8d56899b7c507913b70458b6c619cbc7d50054f569fb2adf9eb6"
+  },
+  "files": [
+    {
+      "path": "trajectory_jumps.png",
+      "bytes": 195173,
+      "sha256": "bbad0293745d3151874ae958880b7019f3bdf9326724c3d41f1639333ee0f20d"
+    },
+    {
+      "path": "trajectory_jumps.svg",
+      "bytes": 124808,
+      "sha256": "115c3e08009d5097e04b38fac88a75f4be4f4dc978fafa902a2eab29dd744ddf"
+    }
+  ],
+  "producer": {
+    "path": "repro/trajectory_jumps.py",
+    "bytes": 14325,
+    "sha256": "f2d97f70f11fd0b8183db0676a87181c6e907b0562c34801ff6cd4ea26f1ae82"
+  },
+  "source_files": [
+    {
+      "path": "results/gsm8k-grpo-formal-001/audit-before-001/predictions.jsonl",
+      "bytes": 4681422,
+      "sha256": "8a1eb3551f1d3b81984fbb616578ff8d00c01f259751264ada64a4897de0d7f4"
+    },
+    {
+      "path": "results/gsm8k-grpo-formal-001/audit-before-001/evaluation_summary.json",
+      "bytes": 8057,
+      "sha256": "00347edcf112005a0e40bcc3c7f61636bf7f88695fd54a8ac6037a1f9eed80e0"
+    },
+    {
+      "path": "results/gsm8k-grpo-formal-001/audit-after-001/predictions.jsonl",
+      "bytes": 4467315,
+      "sha256": "554ee6b5d0b0e5d71bdce6d761b74fec2e912a44f1dcba731efd6f35b3bcfb62"
+    },
+    {
+      "path": "results/gsm8k-grpo-formal-001/audit-after-001/evaluation_summary.json",
+      "bytes": 8625,
+      "sha256": "085caa2785813ddaf5841cb3236d7e49aa75e142e01fe8fc614aeb9284d84e7f"
+    },
+    {
+      "path": "results/gsm8k-grpo-formal-001/acceptance.json",
+      "bytes": 3587,
+      "sha256": "49db5c2a46c60d6edb15590e09c6b559c9c84ef75aa566264cde494708805f04"
+    }
+  ],
+  "matplotlib": "3.10.9",
+  "new_model_run": false,
+  "new_inference": false,
+  "prefix_regrading": false
+}

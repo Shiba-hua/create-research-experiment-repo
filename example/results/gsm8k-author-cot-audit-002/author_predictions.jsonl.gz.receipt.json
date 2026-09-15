@@ -1,0 +1,15 @@
+{
+  "gzip": {
+    "bytes": 2571846,
+    "name": "author_predictions.jsonl.gz",
+    "sha256": "8a575d9cc0f96d910ba1343bf1f05f79de8c24c60e59bcadfb6f80a896916120"
+  },
+  "kind": "archived_jsonl",
+  "original": {
+    "bytes": 19504761,
+    "name": "author_predictions.jsonl",
+    "physical_rows": 1319,
+    "sha256": "1261a1215f6d2f013e19c1c3baf06d5456544ff5ca7f8ddf8cec426def2fca5a"
+  },
+  "schema_version": 1
+}

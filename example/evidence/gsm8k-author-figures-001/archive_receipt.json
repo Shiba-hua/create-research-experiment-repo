@@ -1,0 +1,83 @@
+{
+  "kind": "original_real_figure_archive",
+  "remote_root": "/workspace/experiment",
+  "all_source_hashes_match": true,
+  "files": {
+    "results/gsm8k-author-figures-001/plot_manifest.json": {
+      "bytes": 9469,
+      "sha256": "ae24bab19f23d046dd401d955d42c220e46ef17eb649857d453ad21e040d7104"
+    },
+    "results/gsm8k-author-figures-001/plot_data.json": {
+      "bytes": 123811,
+      "sha256": "4294d7697a1199820a9290f5a394d0f0d772f0a7f584822e4d88f7dbc35992e6"
+    },
+    "evidence/gsm8k-author-figures-001/cpu_job.json": {
+      "bytes": 1267,
+      "sha256": "c7022e7779632834c79da0af0a601a65710f13a95c8623927ade8e56755b79f4"
+    },
+    "evidence/gsm8k-author-figures-001/stdout.log": {
+      "bytes": 164,
+      "sha256": "37c2b43fba98c51546b67d25bd6d4571c01dca7f3f1942070a694e9a1494ea11"
+    },
+    "results/gsm8k-author-figures-001/01_accuracy.png": {
+      "bytes": 176630,
+      "sha256": "4b058f61774ae121bd96f029a4cb25f8686785b5ee5e5c238959b2961e71ec3b"
+    },
+    "results/gsm8k-author-figures-001/01_accuracy.svg": {
+      "bytes": 102707,
+      "sha256": "10ee66642c3ad26d585821504fa5ff69a6488731ee3d85110c45b6802c851411"
+    },
+    "results/gsm8k-author-figures-001/01_accuracy.pdf": {
+      "bytes": 30894,
+      "sha256": "241cac037d6d132ad1de00be1c7a0fd7bb370077caeac2c6ae22f5cf96cb5fa1"
+    },
+    "results/gsm8k-author-figures-001/02_paired_flips.png": {
+      "bytes": 102954,
+      "sha256": "9a0fa826e113edff4ac76bd5dee982dd5447da8e7fa1fa6e941783acb30671fc"
+    },
+    "results/gsm8k-author-figures-001/02_paired_flips.svg": {
+      "bytes": 71539,
+      "sha256": "ec1f6fe2934a1c98557a8b1ef82f3839e989e712c43719af66c82a8ec9d7d76b"
+    },
+    "results/gsm8k-author-figures-001/02_paired_flips.pdf": {
+      "bytes": 26546,
+      "sha256": "5c4726d326c2c3d54e1f30ec0c2f59bd4d782e19a3fe6206167d7ff86c12c2e0"
+    },
+    "results/gsm8k-author-figures-001/03_actual_token_cost.png": {
+      "bytes": 94846,
+      "sha256": "d955e6dd80647e5ae7577be4a80e83c1188e176e38bcf398d3a0f0101ce947dc"
+    },
+    "results/gsm8k-author-figures-001/03_actual_token_cost.svg": {
+      "bytes": 66753,
+      "sha256": "c17ec6e76cbb29e7058be68ca83e811a9c607bc6fc329aea7ff3f48a2051cb00"
+    },
+    "results/gsm8k-author-figures-001/03_actual_token_cost.pdf": {
+      "bytes": 24874,
+      "sha256": "93fcd494bbc7f6208ff564d7242591d8e654604581fd7706112befa5ae0e9c55"
+    },
+    "results/gsm8k-author-figures-001/04_length_and_termination.png": {
+      "bytes": 174468,
+      "sha256": "d60bdf3d22d68afecffe687cca7cafbbac8b74e50a42aa5ae063da7a60b438fd"
+    },
+    "results/gsm8k-author-figures-001/04_length_and_termination.svg": {
+      "bytes": 168876,
+      "sha256": "e83646064c5e9f925d69a21d76293154a75ad48cd80bbd9641323212c1e3591f"
+    },
+    "results/gsm8k-author-figures-001/04_length_and_termination.pdf": {
+      "bytes": 44884,
+      "sha256": "b5451a3c67d0cfe2271bf8f8e6d4c353c1e54116cfaf0aca10b1b741f0620c02"
+    },
+    "results/gsm8k-author-figures-001/05_timing.png": {
+      "bytes": 150251,
+      "sha256": "b4442044450c4e6a0eb545baa3dff3cd9cc15798f29a709eada9011ba92b61fa"
+    },
+    "results/gsm8k-author-figures-001/05_timing.svg": {
+      "bytes": 72839,
+      "sha256": "d813eb7c91b1cb5844afb50df24870c7ffc7ded1a57e60ef7e43dff1c1b5d3ec"
+    },
+    "results/gsm8k-author-figures-001/05_timing.pdf": {
+      "bytes": 25894,
+      "sha256": "48b62af1ac1a547ccc05794a00c0e3866fdd6e6535429fe36cd9d78d8ffb2899"
+    }
+  }
+}

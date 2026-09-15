@@ -1,0 +1,206 @@
+{
+  "charts": 5,
+  "comparison_recomputed_this_render": false,
+  "created_at": "2026-09-10T14:59:53.320489+00:00",
+  "figure_files": [
+    {
+      "bytes": 147527,
+      "path": "results/gsm8k-author-figures-002/01_accuracy.png",
+      "sha256": "e8bbf3d6b0e26acc881caf2d7a6c9b54fcdd5c278e708e668eb061e966214ae2"
+    },
+    {
+      "bytes": 102707,
+      "path": "results/gsm8k-author-figures-002/01_accuracy.svg",
+      "sha256": "65a92f44c96a2461a31dbf708761a8f890e0ef91b0186a08ab62026b6d0ef318"
+    },
+    {
+      "bytes": 30900,
+      "path": "results/gsm8k-author-figures-002/01_accuracy.pdf",
+      "sha256": "6abe16b9cee5d55b10963fa61809142989df54262a51bf57c1126875bf025860"
+    },
+    {
+      "bytes": 90816,
+      "path": "results/gsm8k-author-figures-002/02_paired_flips.png",
+      "sha256": "d3c9f1cc3109de8f0a8fbad24e52c75752cb1b3cd531a9669c855785caa6d6c4"
+    },
+    {
+      "bytes": 71539,
+      "path": "results/gsm8k-author-figures-002/02_paired_flips.svg",
+      "sha256": "e582550e2c0111e06ddd1959727f5d45f87ccb1376c4030ec78ab4e6700f794c"
+    },
+    {
+      "bytes": 27253,
+      "path": "results/gsm8k-author-figures-002/02_paired_flips.pdf",
+      "sha256": "16e5e1c30d32ba97cdac557974a9b88c6964a14e3f27fb3bc38be4d64e43f924"
+    },
+    {
+      "bytes": 82344,
+      "path": "results/gsm8k-author-figures-002/03_actual_token_cost.png",
+      "sha256": "cc6fa762bb9a816dbb0130fb5f408f54814b2fd0cb7881f3c6bcdec6ee2911f4"
+    },
+    {
+      "bytes": 66753,
+      "path": "results/gsm8k-author-figures-002/03_actual_token_cost.svg",
+      "sha256": "7a51f8a2331e9e455f2312052bf278cb9eefc523bbbb739a5a332fdf440cd56b"
+    },
+    {
+      "bytes": 24880,
+      "path": "results/gsm8k-author-figures-002/03_actual_token_cost.pdf",
+      "sha256": "7bf5ccabfce0494ad52ce57a4994c14307aa470d9cc767dc33475f28e743deec"
+    },
+    {
+      "bytes": 152653,
+      "path": "results/gsm8k-author-figures-002/04_length_and_termination.png",
+      "sha256": "124ebe79e21a90bd58e5d1708f10e87e5edad2419c1d3ef24e3bde6684f84381"
+    },
+    {
+      "bytes": 168876,
+      "path": "results/gsm8k-author-figures-002/04_length_and_termination.svg",
+      "sha256": "fd8e440ec65bd7c76d930e1c71613ca45192229ac1f911726e7555500a344af2"
+    },
+    {
+      "bytes": 44890,
+      "path": "results/gsm8k-author-figures-002/04_length_and_termination.pdf",
+      "sha256": "61a37d761510eeb3052fb32b6032894582be4f72320de69ebed8e66860cb198c"
+    },
+    {
+      "bytes": 132707,
+      "path": "results/gsm8k-author-figures-002/05_timing.png",
+      "sha256": "bd1bdc73cf2383e89f367c0fe961a38f6c1ca51cfbbe873708189ee3926b33c9"
+    },
+    {
+      "bytes": 72951,
+      "path": "results/gsm8k-author-figures-002/05_timing.svg",
+      "sha256": "974bd3d6733579d5b17a456e28c280f0d66a51c9635e7490aa9da47016f18111"
+    },
+    {
+      "bytes": 25924,
+      "path": "results/gsm8k-author-figures-002/05_timing.pdf",
+      "sha256": "f8d3320b18de7ded89c6d52ff4e790c2ef6a8d6acb5e1d8a557b12aabbad5e20"
+    }
+  ],
+  "gpu_operations": false,
+  "kind": "render_only_timing_legend_repair",
+  "matched_timing_axes": 1,
+  "matplotlib_version": "3.10.9",
+  "new_plot_data": {
+    "bytes": 123811,
+    "path": "results/gsm8k-author-figures-002/plot_data.json",
+    "sha256": "4294d7697a1199820a9290f5a394d0f0d772f0a7f584822e4d88f7dbc35992e6"
+  },
+  "new_plot_manifest": {
+    "bytes": 11116,
+    "path": "results/gsm8k-author-figures-002/plot_manifest.json",
+    "sha256": "111b65c4efd1bf89c20249202ec60d035eb7c51dcef2b71fc001924859f3c676"
+  },
+  "numpy_version": "2.4.6",
+  "original_renderer": {
+    "bytes": 19974,
+    "path": "scripts/plot_cod_author.py",
+    "sha256": "993d6b3939ed0236b0dbec27b9eaf37b6c7aaeb5e7b585eb11f7961cfd0b14cb"
+  },
+  "plot_data_bytes_equal": true,
+  "plot_data_dictionary_equal": true,
+  "python_executable": "/opt/homebrew/opt/python@3.14/bin/python3.14",
+  "remote_operations": false,
+  "repair_script": {
+    "bytes": 7183,
+    "path": "evidence/gsm8k-author-figures-002/render_legend_repair.py",
+    "sha256": "a843788db8631531dcc47f480930d3613cc3f9eb2984b5a23feb7262cb417996"
+  },
+  "source_code_modified": false,
+  "source_plot_artifacts_unchanged": [
+    {
+      "bytes": 9469,
+      "path": "results/gsm8k-author-figures-001/plot_manifest.json",
+      "sha256": "ae24bab19f23d046dd401d955d42c220e46ef17eb649857d453ad21e040d7104"
+    },
+    {
+      "bytes": 123811,
+      "path": "results/gsm8k-author-figures-001/plot_data.json",
+      "sha256": "4294d7697a1199820a9290f5a394d0f0d772f0a7f584822e4d88f7dbc35992e6"
+    },
+    {
+      "bytes": 176630,
+      "path": "results/gsm8k-author-figures-001/01_accuracy.png",
+      "sha256": "4b058f61774ae121bd96f029a4cb25f8686785b5ee5e5c238959b2961e71ec3b"
+    },
+    {
+      "bytes": 102707,
+      "path": "results/gsm8k-author-figures-001/01_accuracy.svg",
+      "sha256": "10ee66642c3ad26d585821504fa5ff69a6488731ee3d85110c45b6802c851411"
+    },
+    {
+      "bytes": 30894,
+      "path": "results/gsm8k-author-figures-001/01_accuracy.pdf",
+      "sha256": "241cac037d6d132ad1de00be1c7a0fd7bb370077caeac2c6ae22f5cf96cb5fa1"
+    },
+    {
+      "bytes": 102954,
+      "path": "results/gsm8k-author-figures-001/02_paired_flips.png",
+      "sha256": "9a0fa826e113edff4ac76bd5dee982dd5447da8e7fa1fa6e941783acb30671fc"
+    },
+    {
+      "bytes": 71539,
+      "path": "results/gsm8k-author-figures-001/02_paired_flips.svg",
+      "sha256": "ec1f6fe2934a1c98557a8b1ef82f3839e989e712c43719af66c82a8ec9d7d76b"
+    },
+    {
+      "bytes": 26546,
+      "path": "results/gsm8k-author-figures-001/02_paired_flips.pdf",
+      "sha256": "5c4726d326c2c3d54e1f30ec0c2f59bd4d782e19a3fe6206167d7ff86c12c2e0"
+    },
+    {
+      "bytes": 94846,
+      "path": "results/gsm8k-author-figures-001/03_actual_token_cost.png",
+      "sha256": "d955e6dd80647e5ae7577be4a80e83c1188e176e38bcf398d3a0f0101ce947dc"
+    },
+    {
+      "bytes": 66753,
+      "path": "results/gsm8k-author-figures-001/03_actual_token_cost.svg",
+      "sha256": "c17ec6e76cbb29e7058be68ca83e811a9c607bc6fc329aea7ff3f48a2051cb00"
+    },
+    {
+      "bytes": 24874,
+      "path": "results/gsm8k-author-figures-001/03_actual_token_cost.pdf",
+      "sha256": "93fcd494bbc7f6208ff564d7242591d8e654604581fd7706112befa5ae0e9c55"
+    },
+    {
+      "bytes": 174468,
+      "path": "results/gsm8k-author-figures-001/04_length_and_termination.png",
+      "sha256": "d60bdf3d22d68afecffe687cca7cafbbac8b74e50a42aa5ae063da7a60b438fd"
+    },
+    {
+      "bytes": 168876,
+      "path": "results/gsm8k-author-figures-001/04_length_and_termination.svg",
+      "sha256": "e83646064c5e9f925d69a21d76293154a75ad48cd80bbd9641323212c1e3591f"
+    },
+    {
+      "bytes": 44884,
+      "path": "results/gsm8k-author-figures-001/04_length_and_termination.pdf",
+      "sha256": "b5451a3c67d0cfe2271bf8f8e6d4c353c1e54116cfaf0aca10b1b741f0620c02"
+    },
+    {
+      "bytes": 150251,
+      "path": "results/gsm8k-author-figures-001/05_timing.png",
+      "sha256": "b4442044450c4e6a0eb545baa3dff3cd9cc15798f29a709eada9011ba92b61fa"
+    },
+    {
+      "bytes": 72839,
+      "path": "results/gsm8k-author-figures-001/05_timing.svg",
+      "sha256": "d813eb7c91b1cb5844afb50df24870c7ffc7ded1a57e60ef7e43dff1c1b5d3ec"
+    },
+    {
+      "bytes": 25894,
+      "path": "results/gsm8k-author-figures-001/05_timing.pdf",
+      "sha256": "48b62af1ac1a547ccc05794a00c0e3866fdd6e6535429fe36cd9d78d8ffb2899"
+    }
+  ],
+  "status": "RENDERED_PENDING_VISUAL_AUDIT",
+  "upstream_full_comparison_recomputed": true,
+  "verified_comparison": {
+    "bytes": 11632,
+    "path": "results/gsm8k-author-comparison-001.json",
+    "sha256": "bb9d6e5798f7cc16cec5a118202c0b235c59173b9621515e899f208a92295712"
+  }
+}

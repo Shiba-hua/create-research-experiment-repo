@@ -1,0 +1,11 @@
+{
+  "python": "3.11.13",
+  "torch": "2.6.0+cu124",
+  "transformers": "4.57.1",
+  "trl": "0.24.0",
+  "gpu": "NVIDIA L40S",
+  "gpu_count": 1,
+  "cuda": "12.4",
+  "bf16": true,
+  "matmul_gradient_finite": true
+}

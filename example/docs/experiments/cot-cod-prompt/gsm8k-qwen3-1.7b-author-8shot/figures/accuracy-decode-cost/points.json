@@ -1,0 +1,168 @@
+{
+  "schema": "rlvr.accuracy-decode-cost/v1",
+  "experiment": "author",
+  "title": "GSM8K | Qwen3-1.7B | Author CoT / CoD prompts",
+  "points": [
+    {
+      "n": 1319,
+      "correct": 969,
+      "val_acc": 0.734647460197119,
+      "decode_tokens_total": 1639168,
+      "avg_decode_tokens": 1242.7354056103109,
+      "accuracy_wilson_95_ci": [
+        0.7101635150114848,
+        0.7577685987520458
+      ],
+      "measured_output_budget": 4096,
+      "score_field": "strict_correct",
+      "correct_and_truncated": 0,
+      "arm": "cot",
+      "label": "CoT",
+      "predictions": "results/gsm8k-author-cot-audit-002/author_metrics.jsonl"
+    },
+    {
+      "n": 1319,
+      "correct": 922,
+      "val_acc": 0.6990144048521607,
+      "decode_tokens_total": 1471023,
+      "avg_decode_tokens": 1115.2562547384382,
+      "accuracy_wilson_95_ci": [
+        0.6737119057555992,
+        0.7231610501827749
+      ],
+      "measured_output_budget": 4096,
+      "score_field": "strict_correct",
+      "correct_and_truncated": 0,
+      "arm": "cod",
+      "label": "CoD",
+      "predictions": "results/gsm8k-author-cod-audit-001/author_metrics.jsonl"
+    }
+  ],
+  "sources": [
+    {
+      "path": "results/gsm8k-author-cot-audit-002/author_metrics.jsonl",
+      "bytes": 1749769,
+      "sha256": "4eb62b8c3a524c16dec52a1c808ef65c41c00ae042c3cb5e726c71880a57fc8e"
+    },
+    {
+      "path": "results/gsm8k-author-cot-audit-002/author_metrics_manifest.json",
+      "bytes": 2703,
+      "sha256": "bb2b0594956c8e7867191de7dffe6257a5aa05df5c71b506f16ee690f6b7387c"
+    },
+    {
+      "path": "results/gsm8k-author-cod-audit-001/author_metrics.jsonl",
+      "bytes": 1749217,
+      "sha256": "877b252a840261f7a311d01af05dac673773dd5d81b4c3c6ca0fcfa18ffe19da"
+    },
+    {
+      "path": "results/gsm8k-author-cod-audit-001/author_metrics_manifest.json",
+      "bytes": 2702,
+      "sha256": "bd5230a464cb9af5cccfc5624e53f48dc0b27d75c57477ed07e3acef93f4f323"
+    },
+    {
+      "path": "results/gsm8k-author-comparison-001.json",
+      "bytes": 11632,
+      "sha256": "bb9d6e5798f7cc16cec5a118202c0b235c59173b9621515e899f208a92295712"
+    }
+  ],
+  "historical_evaluation_commit": "61ff6a476c3cacec1fe87c846c9559a010f499dd",
+  "axis_contract": {
+    "x": "sum(response_tokens) / all question count",
+    "y": "sum(recorded strict correctness) / all question count",
+    "decode_includes": [
+      "generated reasoning",
+      "generated final answer",
+      "returned EOS"
+    ],
+    "decode_excludes": [
+      "prompt",
+      "padding",
+      "teacher generation",
+      "training"
+    ],
+    "failure_and_truncation_costs_included": true,
+    "thinking_segment_tokens_added_again": false
+  },
+  "independent_budgets_per_arm": 1,
+  "multi_budget_curve_observed": false,
+  "new_model_run": false,
+  "full_text_regraded_in_this_plot": false,
+  "confidence_interval_contract": {
+    "method": "Wilson score interval",
+    "nominal_confidence_level": 0.95,
+    "interpretation": "Model-based interval, conditional on this fixed checkpoint and evaluation setup",
+    "estimand": "Marginal one-sample verifier accuracy on a hypothetical target distribution of questions",
+    "sampling_unit": "One question and its one decoded answer",
+    "working_model": "IID Bernoulli correctness after marginalizing over IID questions and independent decoding",
+    "fixed_conditions": [
+      "checkpoint",
+      "prompt",
+      "decode settings and budget",
+      "verifier"
+    ],
+    "assumptions": [
+      "Questions represent the same target distribution",
+      "Question/answer observations are approximately independent",
+      "No audit-based selection of the reported checkpoint or prompt"
+    ],
+    "assumptions_verified_by_this_experiment": false,
+    "coverage": "Nominal approximate frequentist coverage under the working model; not demonstrated design-based coverage",
+    "not_estimated": [
+      "Training-seed variability",
+      "Repeated-decoding distribution on the fixed question list",
+      "Paired treatment-effect confidence interval",
+      "Distribution shift or verifier bias",
+      "Decode-cost uncertainty or a joint accuracy/cost confidence region"
+    ],
+    "fixed_set_score": "The realized correct/N value is known exactly; these bars are not uncertainty in that count",
+    "assumptions_document": "docs/shared/evaluation.md"
+  },
+  "validation": {
+    "status": "PASS",
+    "experiment": "author",
+    "scope": "Public numeric projection statistics only; no full-text regrading",
+    "text_regraded": false,
+    "new_model_run": false,
+    "n": 1319,
+    "scores": {
+      "strict_correct": {
+        "cot": 969,
+        "cod": 922,
+        "delta": -0.0356330553449583,
+        "paired_95_ci": [
+          -0.056103108415466264,
+          -0.01592115238817286
+        ],
+        "mcnemar_p_descriptive": 0.0006327886621251644
+      },
+      "author_correct": {
+        "cot": 977,
+        "cod": 935,
+        "delta": -0.03184230477634572,
+        "paired_95_ci": [
+          -0.05155420773313116,
+          -0.012130401819560273
+        ],
+        "mcnemar_p_descriptive": 0.002032353487996956
+      }
+    },
+    "token_totals": {
+      "cot": {
+        "prompt_tokens": 1047327,
+        "response_tokens": 1639168,
+        "total_tokens": 2686495
+      },
+      "cod": {
+        "prompt_tokens": 804631,
+        "response_tokens": 1471023,
+        "total_tokens": 2275654
+      }
+    },
+    "numpy": "2.4.6"
+  },
+  "producer": {
+    "path": "repro/accuracy_decode_cost.py",
+    "bytes": 10500,
+    "sha256": "5264136de1fcde02dc52690e83b62241d2eaf48a237a870a7c49b120cb31cbd0"
+  }
+}

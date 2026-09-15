@@ -1,0 +1,36 @@
+{
+  "records": [
+    {
+      "source": "results/gsm8k-grpo-formal-001/attention-after/manifest.json",
+      "values": {
+        "dtype": "bfloat16",
+        "versions": {
+          "torch": "2.6.0+cu124",
+          "transformers": "4.57.1",
+          "numpy": "2.2.6",
+          "matplotlib": "3.10.3"
+        }
+      }
+    },
+    {
+      "source": "results/gsm8k-grpo-formal-001/attention-before/manifest.json",
+      "values": {
+        "dtype": "bfloat16",
+        "versions": {
+          "torch": "2.6.0+cu124",
+          "transformers": "4.57.1",
+          "numpy": "2.2.6",
+          "matplotlib": "3.10.3"
+        }
+      }
+    },
+    {
+      "source": "results/gsm8k-grpo-formal-001/manifest.json",
+      "values": {
+        "torch": "2.6.0+cu124",
+        "gpu": "NVIDIA L40S"
+      }
+    }
+  ],
+  "live_server_verification": false
+}
