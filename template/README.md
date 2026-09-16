@@ -7,7 +7,7 @@ README.md                         人类入口：问题、主要结果和导航
 STATUS.md                         截止日期；执行、证据与结论分开
 AGENTS.md                         机器协作入口
 approvals/                        版本化方案、批准记录与变更单
-readme2machine/                    负责人批准的执行及审核说明
+readme2machine/                    负责人批准的协作配置、执行及审核说明
 asset/                            反复复用信息；按种类分目录
 docs/standards/                    报告及目录契约
 docs/experiments/<experiment-id>/  report、design、reproduce、必要 figures
@@ -17,3 +17,5 @@ evidence/<run-id>/                 运行、校准、异常、人工记录
 ```
 
 按批准方案按需建立实验/运行子目录。先阅读 [asset 规则](asset/README.md)、[报告契约](docs/standards/report-contract.md)、[证据说明](repro/README.md)。不创建空结果冒充已实验。
+
+协作方式先对齐：多智能体可用时推荐主代理派发/审核、子代理执行/交付；具体模型与低成本路由在 [collaboration.md](readme2machine/collaboration.md) 中确认，人类/设备执行也使用相同任务与移交边界。
