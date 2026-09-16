@@ -38,7 +38,7 @@ skill负责责任和交付约定，项目级 [协作配置](template/readme2mach
 
 ## 使用
 
-将整个仓库作为名为 `create-research-experiment-repo` 的 skill 目录放入 Agent 支持的技能路径；保留 template 与 example 的相对位置。也可以直接把 [SKILL.md](SKILL.md) 交给支持读取文件的 AI。
+将整个仓库作为名为 `create-research-experiment-repo` 的 skill 目录放入 Agent 支持的技能路径；保留 template 与 example 的相对位置。也可以直接把 [SKILL.md](SKILL.md) 交给支持读取文件的 AI。首次使用的话，可以直接把仓库链接粘贴进聊天框，然后让AI直接去网上读这个仓库（或者把这个skill安装下来），然后让AI照此工作。
 
 例如：
 
