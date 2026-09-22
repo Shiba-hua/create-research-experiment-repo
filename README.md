@@ -40,6 +40,16 @@ skill负责责任和交付约定，项目级 [协作配置](template/readme2mach
 
 ## 使用
 
+本仓库可用社区的 [skills CLI](https://github.com/vercel-labs/skills) 安装；它不是已发布的同名npm包，`npm install create-research-experiment-repo` 不是本项目的安装入口。已在隔离目录实测skills@1.7.0能发现根skill，并完整保留template、example与训练代码（[安装记录](validation-runs/skills-cli-install-20260920/installation.json)，记录注明当时测试的提交）。
+
+在目标项目目录执行（需要Node.js/npm及Git）：
+
+```sh
+npx skills@1.7.0 add Shiba-hua/create-research-experiment-repo --agent codex --skill create-research-experiment-repo --copy --yes
+```
+
+这是项目级安装，落在 `.agents/skills/create-research-experiment-repo/`。安装后可运行该目录下的 `python3 scripts/check_package.py` 核对附件完整性。仅希望交给AI读取时，也可克隆本仓库。不要只安装嵌套的experiment-submitter/reviewer，它们是模板附件。
+
 将整个仓库作为名为 `create-research-experiment-repo` 的 skill 目录放入 Agent 支持的技能路径；保留 template 与 example 的相对位置。也可以直接把 [SKILL.md](SKILL.md) 交给支持读取文件的 AI。首次使用的话，可以直接把仓库链接粘贴进聊天框，然后让AI直接去网上读这个仓库（或者把这个skill安装下来），然后让AI照此工作。
 
 例如：
@@ -47,6 +57,10 @@ skill负责责任和交付约定，项目级 [协作配置](template/readme2mach
 > 使用 $create-research-experiment-repo。我要管理材料老化实验，由两名实验员执行。我关心强度随时间变化和失败样品。请先和我对齐报告、图表、目录与权限，提交含 readme2machine 的审批单，批准后再建仓。
 
 安装本身不启动实验。该仓库的模板是普通文件模板，不是 Codex Artifact Template Gallery 制品。
+
+## 无人值守实验用法
+
+[GSM8K使用指南](example/guides/gsm8k-grpo/README.md)提供两段可复用prompt，并记录一次真实三学习率串行实验：主代理完成环境预检后等待，执行子代理运行、清理权重并交付报告，主代理审核merge。轮询偏差和报告待修订项见[独立验收](validation-runs/gsm8k-3lr-review-20260922/README.md)。
 
 ## 方法来源
 

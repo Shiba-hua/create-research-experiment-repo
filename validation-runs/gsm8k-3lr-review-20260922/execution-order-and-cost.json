@@ -1,0 +1,121 @@
+{
+  "serial_order_verified": true,
+  "stages": {
+    "1e-4": [
+      {
+        "stage": "baseline",
+        "start": 1789972057,
+        "end": 1789974330,
+        "exit_code": 0
+      },
+      {
+        "stage": "train",
+        "start": 1789974416,
+        "end": 1789991318,
+        "exit_code": 0
+      },
+      {
+        "stage": "after",
+        "start": 1789991390,
+        "end": 1789993755,
+        "exit_code": 0
+      },
+      {
+        "stage": "plots",
+        "start": 1789993834,
+        "end": 1789993842,
+        "exit_code": 0
+      },
+      {
+        "stage": "cleanup",
+        "start": 1789993931,
+        "end": 1789993932,
+        "exit_code": 0
+      }
+    ],
+    "5e-5": [
+      {
+        "stage": "baseline",
+        "start": 1789994233,
+        "end": 1789996505,
+        "exit_code": 0
+      },
+      {
+        "stage": "train",
+        "start": 1789996583,
+        "end": 1790013553,
+        "exit_code": 0
+      },
+      {
+        "stage": "after",
+        "start": 1790013630,
+        "end": 1790016002,
+        "exit_code": 0
+      },
+      {
+        "stage": "plots",
+        "start": 1790016092,
+        "end": 1790016100,
+        "exit_code": 0
+      },
+      {
+        "stage": "cleanup",
+        "start": 1790016254,
+        "end": 1790016256,
+        "exit_code": 0
+      }
+    ],
+    "2e-4": [
+      {
+        "stage": "baseline",
+        "start": 1790016761,
+        "end": 1790019032,
+        "exit_code": 0
+      },
+      {
+        "stage": "train",
+        "start": 1790019107,
+        "end": 1790036020,
+        "exit_code": 0
+      },
+      {
+        "stage": "after",
+        "start": 1790036132,
+        "end": 1790038502,
+        "exit_code": 0
+      },
+      {
+        "stage": "plots",
+        "start": 1790038571,
+        "end": 1790038578,
+        "exit_code": 0
+      },
+      {
+        "stage": "cleanup",
+        "start": 1790038731,
+        "end": 1790038732,
+        "exit_code": 0
+      }
+    ]
+  },
+  "nine_baseline_train_after_jobs_hours": 17.9752613818736,
+  "training_board_energy": {
+    "1e-4": {
+      "sample_count": 560,
+      "estimated_board_energy_wh": 1493.45285162983,
+      "resource_sha256": "44b913bb07c7a699d936b870d722e77b59fae8784db8e82e5bd7bba1b1a2bcc9"
+    },
+    "5e-5": {
+      "sample_count": 562,
+      "estimated_board_energy_wh": 1495.5564210612347,
+      "resource_sha256": "a1778c777464839b3073622115db1bdafec594bf962a3eca7591cf12a487c38a"
+    },
+    "2e-4": {
+      "sample_count": 560,
+      "estimated_board_energy_wh": 1491.73421476369,
+      "resource_sha256": "87e311453d49c3c990c343942542b2b364760c43bd42322989888960d26a4b09"
+    }
+  },
+  "training_board_energy_total_kwh": 4.480743487454754,
+  "energy_scope": "Trapezoidal integral of saved board-power samples; excludes host CPU and audit; not metered facility consumption"
+}

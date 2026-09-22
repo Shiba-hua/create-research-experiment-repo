@@ -1,0 +1,40 @@
+{
+  "scope": "Local runtime transcripts cross-checked against recorded first-baseline/last-cleanup timestamps",
+  "interval_utc": [
+    "2026-09-21T06:27:37+00:00",
+    "2026-09-22T00:58:52+00:00"
+  ],
+  "actors": [
+    {
+      "role": "coordinator",
+      "actual_model_context": {
+        "model": "gpt-5.6-sol",
+        "effort": "medium"
+      },
+      "user_messages_in_execution_interval": 0,
+      "tool_counts": {
+        "collaboration.wait_agent": 18
+      }
+    },
+    {
+      "role": "executor",
+      "actual_model_context": {
+        "model": "gpt-5.6-luna",
+        "effort": "max"
+      },
+      "user_messages_in_execution_interval": 0,
+      "tool_counts": {
+        ".exec": 1718,
+        ".wait": 110
+      }
+    }
+  ],
+  "observation": "No new user message in this formal execution interval; coordinator calls are waits only",
+  "limitations": [
+    "Setup and smoke required human interaction before this interval",
+    "Full transcripts remain private; this public summary does not expose them",
+    "Historical process/job records were reviewed; GPUs were not rerun"
+  ],
+  "status": "FORMAL_MULTI_RUN_AUTONOMY_OBSERVED",
+  "not_claimed": "Perfect polling compliance or matching historical model score"
+}

@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "hash_algorithm": "sha256",
   "source_slice_convention": "Original bytes from the complete lines lineno through end_lineno, inclusive; original line endings retained.",
   "ast_fingerprint_convention": "SHA256 of UTF-8 canonical JSON: recursively serialize each AST node as {node_type: class name, fields: ast.iter_fields values}; omit fields whose value is an empty list; recursively preserve ordered list values and scalar values; ast.iter_fields excludes position attributes. JSON uses sort_keys=True, ensure_ascii=False, separators=(comma, colon), allow_nan=False.",
@@ -9,15 +9,14 @@
       "path": "src/rlvr_lab/rewards.py",
       "full_source_sha256": "0299a9d11db45e9e712ee67c2eccd7151b8118b0864310a9c8e20ba4eceb6154",
       "export_method": "scoped_to_gsm8k_numeric_contract",
-      "exported_module_sha256": "51f93bf838667f22d99615c5499370f368f31e3575db94d18912c35d09061ecd",
-      "historical_exported_module_sha256": "0299a9d11db45e9e712ee67c2eccd7151b8118b0864310a9c8e20ba4eceb6154"
+      "historical_exported_module_sha256": "0299a9d11db45e9e712ee67c2eccd7151b8118b0864310a9c8e20ba4eceb6154",
+      "provenance_exported_module_sha256": "51f93bf838667f22d99615c5499370f368f31e3575db94d18912c35d09061ecd"
     },
     "author_math.py": {
       "commit": "61ff6a476c3cacec1fe87c846c9559a010f499dd",
       "path": "src/rlvr_lab/cod_author.py",
       "full_source_sha256": "03bf6af84e3406679706267139be61b59a032960ce6f9acdc916270e0ee906b8",
       "export_method": "original_function_and_constant_lines_with_standard_library_imports",
-      "exported_module_sha256": "a8684d065792ae6aa1c8fc1024acd6f3fa84b687dcc096c4a861612c765d5a08",
       "functions": {
         "reference_string": {
           "source_lines": [
@@ -66,11 +65,12 @@
         "from fractions import Fraction",
         "import re",
         "from typing import Any"
-      ]
+      ],
+      "provenance_exported_module_sha256": "a8684d065792ae6aa1c8fc1024acd6f3fa84b687dcc096c4a861612c765d5a08"
     }
   },
   "exported_modules_sha256": {
-    "project_math.py": "0299a9d11db45e9e712ee67c2eccd7151b8118b0864310a9c8e20ba4eceb6154",
+    "project_math.py": "51f93bf838667f22d99615c5499370f368f31e3575db94d18912c35d09061ecd",
     "author_math.py": "a8684d065792ae6aa1c8fc1024acd6f3fa84b687dcc096c4a861612c765d5a08",
     "verify.py": "0710e20d7d85960ddfb8443ef7f813ef1414039f14e3125c6d454ca612315dfd"
   },
@@ -94,5 +94,6 @@
       "historical_thinking_opening_prefilled": false
     }
   },
-  "ast_fingerprint_format": "python-ast-canonical-json-v1"
+  "ast_fingerprint_format": "python-ast-canonical-json-v1",
+  "validation_contract": "exported_modules_sha256 is the authoritative current-file map; sources entries describe original provenance."
 }

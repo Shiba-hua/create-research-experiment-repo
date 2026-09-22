@@ -1,0 +1,267 @@
+{
+  "scope": "Independent CPU audit of existing formal run evidence; no new experiments",
+  "source_commit": "cff186f88b54307a2a70c4249761511589648cd6",
+  "parents": [
+    "ece16b7557a4b6fade4442564375141c7733fcbd",
+    "0cb5ea5bfa6e54f6e294e8731ab4d1f3f6b51197"
+  ],
+  "canonical_sha256": "437f2042d9d210e34834d1f596a0b6289f89414672ede7fe47727041dc11da62",
+  "verifier_sha256": "51f93bf838667f22d99615c5499370f368f31e3575db94d18912c35d09061ecd",
+  "runs": {
+    "1e-4": {
+      "summaries": [
+        {
+          "arm": "before",
+          "n": 1319,
+          "correct": 837,
+          "mean_decode_tokens": 797.2934040940106,
+          "predictions_sha256": "282210f5692602376f4267acc4bcf7dfa066bb42828e180c51820c2355f09e73",
+          "response_content_sha256": "62965a504fffde974cd4cd53c3d523549ade8d604c626dc0646c54ab02b9774a"
+        },
+        {
+          "arm": "after",
+          "n": 1319,
+          "correct": 938,
+          "mean_decode_tokens": 812.6853677028051,
+          "predictions_sha256": "80f2c2e469332849023c9b67fd20966748ceb08c135e5156c57c284b7d4fb936",
+          "response_content_sha256": "54e3712e65e95c952e33b5d3f8da63dc5a91a824bef1ef9b9f36dd07b8ede584"
+        }
+      ],
+      "text_regraded_rows": 2638,
+      "verdict_mismatches": [],
+      "gain_pp": 7.657316148597422,
+      "paired_flips": {
+        "wrong_to_right": 182,
+        "right_to_wrong": 81
+      },
+      "paired_bootstrap_ci": [
+        0.05307050796057619,
+        0.10007581501137225
+      ],
+      "mcnemar_exact_p": 4.3013666250276283e-10,
+      "best_dev_step": 48,
+      "optimizer_steps": 64,
+      "remote_hashes_matched": 74,
+      "cleanup_receipt_verified": true,
+      "new_local_weight_files": 0,
+      "polling_categories": {
+        "running": 354,
+        "completed": 5,
+        "local_monitor_command_or_transport_error": 5
+      },
+      "polling_intervals_seconds": {
+        "count": 359,
+        "median": 51.0,
+        "under_120": 340
+      },
+      "jobs": [
+        {
+          "stage": "audit-before-001",
+          "pid": 804190,
+          "elapsed_seconds": 2273.237118039746,
+          "git_commit": "32ba2ef849a66fe6df5d6d0f11341020e0e7db1a"
+        },
+        {
+          "stage": "train",
+          "pid": 841712,
+          "elapsed_seconds": 16902.412375433836,
+          "git_commit": "32ba2ef849a66fe6df5d6d0f11341020e0e7db1a"
+        },
+        {
+          "stage": "audit-after-001",
+          "pid": 1211129,
+          "elapsed_seconds": 2365.040085416753,
+          "git_commit": "32ba2ef849a66fe6df5d6d0f11341020e0e7db1a"
+        }
+      ],
+      "reference_after_correct": 970,
+      "absolute_reference_delta_pp": 2.4260803639120545,
+      "reference_under_0_5pp": false,
+      "holm3_p": 8.602733250055257e-10
+    },
+    "5e-5": {
+      "summaries": [
+        {
+          "arm": "before",
+          "n": 1319,
+          "correct": 837,
+          "mean_decode_tokens": 797.2934040940106,
+          "predictions_sha256": "eb215eb4d952af120ee983c07bfaeb920c1f35fa22dc1c47c84ea6c1cf921183",
+          "response_content_sha256": "62965a504fffde974cd4cd53c3d523549ade8d604c626dc0646c54ab02b9774a"
+        },
+        {
+          "arm": "after",
+          "n": 1319,
+          "correct": 950,
+          "mean_decode_tokens": 710.3009855951478,
+          "predictions_sha256": "1428323216c18ede447fff3a0c3c1670f7970dfa339d65e4dc2fe5a1394c39ba",
+          "response_content_sha256": "3ff78984dab28b1be153b6be77a5ef4a6e5f5d54200adae54bbdefef3d6acd58"
+        }
+      ],
+      "text_regraded_rows": 2638,
+      "verdict_mismatches": [],
+      "gain_pp": 8.567096285064443,
+      "paired_flips": {
+        "wrong_to_right": 189,
+        "right_to_wrong": 76
+      },
+      "paired_bootstrap_ci": [
+        0.0621683093252464,
+        0.10993176648976498
+      ],
+      "mcnemar_exact_p": 2.798769471034964e-12,
+      "best_dev_step": 48,
+      "optimizer_steps": 64,
+      "remote_hashes_matched": 74,
+      "cleanup_receipt_verified": true,
+      "new_local_weight_files": 0,
+      "polling_categories": {
+        "running": 383,
+        "local_monitor_command_or_transport_error": 10,
+        "completed": 5
+      },
+      "polling_intervals_seconds": {
+        "count": 393,
+        "median": 50.0,
+        "under_120": 383
+      },
+      "jobs": [
+        {
+          "stage": "audit-before-001",
+          "pid": 1280738,
+          "elapsed_seconds": 2272.2714530248195,
+          "git_commit": "32ba2ef849a66fe6df5d6d0f11341020e0e7db1a"
+        },
+        {
+          "stage": "train",
+          "pid": 1337976,
+          "elapsed_seconds": 16970.611346241087,
+          "git_commit": "32ba2ef849a66fe6df5d6d0f11341020e0e7db1a"
+        },
+        {
+          "stage": "audit-after-001",
+          "pid": 1751482,
+          "elapsed_seconds": 2372.19372005295,
+          "git_commit": "32ba2ef849a66fe6df5d6d0f11341020e0e7db1a"
+        }
+      ],
+      "reference_after_correct": 970,
+      "absolute_reference_delta_pp": 1.5163002274450341,
+      "reference_under_0_5pp": false,
+      "holm3_p": 8.396308413104893e-12
+    },
+    "2e-4": {
+      "summaries": [
+        {
+          "arm": "before",
+          "n": 1319,
+          "correct": 837,
+          "mean_decode_tokens": 797.2934040940106,
+          "predictions_sha256": "270d2eb07496918dbf339b160c933f19557c1ea5edeb091ac1339fdbd8076b67",
+          "response_content_sha256": "62965a504fffde974cd4cd53c3d523549ade8d604c626dc0646c54ab02b9774a"
+        },
+        {
+          "arm": "after",
+          "n": 1319,
+          "correct": 889,
+          "mean_decode_tokens": 755.7763457164518,
+          "predictions_sha256": "7de064a80c8a353c3e24b88d00a169888491740b53238d43847f3c96525de363",
+          "response_content_sha256": "52de3c10e1f5a5bd915d4a907089ea75fb75756f1ca9c969f47bb9425b569a5b"
+        }
+      ],
+      "text_regraded_rows": 2638,
+      "verdict_mismatches": [],
+      "gain_pp": 3.9423805913570886,
+      "paired_flips": {
+        "wrong_to_right": 169,
+        "right_to_wrong": 117
+      },
+      "paired_bootstrap_ci": [
+        0.013646702047005308,
+        0.06444275966641395
+      ],
+      "mcnemar_exact_p": 0.0025037556184562214,
+      "best_dev_step": 32,
+      "optimizer_steps": 64,
+      "remote_hashes_matched": 74,
+      "cleanup_receipt_verified": true,
+      "new_local_weight_files": 0,
+      "polling_categories": {
+        "running": 350,
+        "completed": 5,
+        "local_monitor_command_or_transport_error": 11
+      },
+      "polling_intervals_seconds": {
+        "count": 362,
+        "median": 51.0,
+        "under_120": 345
+      },
+      "jobs": [
+        {
+          "stage": "audit-before-001",
+          "pid": 1827318,
+          "elapsed_seconds": 2271.5842914436944,
+          "git_commit": "32ba2ef849a66fe6df5d6d0f11341020e0e7db1a"
+        },
+        {
+          "stage": "train",
+          "pid": 1884230,
+          "elapsed_seconds": 16913.69291962823,
+          "git_commit": "32ba2ef849a66fe6df5d6d0f11341020e0e7db1a"
+        },
+        {
+          "stage": "audit-after-001",
+          "pid": 2295535,
+          "elapsed_seconds": 2369.8976654638536,
+          "git_commit": "32ba2ef849a66fe6df5d6d0f11341020e0e7db1a"
+        }
+      ],
+      "reference_after_correct": 970,
+      "absolute_reference_delta_pp": 6.1410159211523885,
+      "reference_under_0_5pp": false,
+      "holm3_p": 0.0025037556184562214
+    }
+  },
+  "reference_comparison": {
+    "initial_adapter_equal": true,
+    "old_selected_step": 64,
+    "new_selected_step": 48,
+    "train_args_differences": [
+      "output_dir",
+      "logging_dir"
+    ],
+    "matching_rollout_prefix_rows": 256,
+    "first_rollout_difference": {
+      "row_index": 256,
+      "old_step": 2,
+      "new_step": 2,
+      "id_equal": true,
+      "fields_differ": [
+        "response",
+        "response_tokens",
+        "correctness"
+      ]
+    },
+    "cause_of_divergence": "Not established; dataset/Arrow compatibility shims and runtime are material differences requiring separate equivalence evidence"
+  },
+  "polling_totals": {
+    "running": 1087,
+    "completed": 15,
+    "local_monitor_command_or_transport_error": 26
+  },
+  "acceptance": {
+    "recorded_experimental_numbers_and_text_regrade": "PASS",
+    "three_formal_runs_completed": "PASS",
+    "approved_polling_schedule": "FAIL",
+    "original_reference_under_0_5pp": "FAIL",
+    "full_original_e2e_acceptance": "NOT_PASS",
+    "report_contract_and_model_provenance": "REQUIRES_SEPARATE_REVIEW"
+  },
+  "usage_guide_case": {
+    "status": "ACCEPTED_WITH_DISCLOSED_DEVIATIONS",
+    "basis": "User clarified that actual unattended multi-run execution suffices for recording usage experience",
+    "numerical_reproduction_threshold_waived_for_case_inclusion_only": true,
+    "polling_compliance_claimed": false,
+    "report_contract_complete_claimed": false
+  }
+}

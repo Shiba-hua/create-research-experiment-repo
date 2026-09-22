@@ -1,0 +1,27 @@
+{
+  "date": "2026-09-20",
+  "status": "PASS",
+  "installer": "skills@1.7.0",
+  "source": "Shiba-hua/create-research-experiment-repo",
+  "tested_public_revision": "e9325f19aa993d05aaeb98bca778ede92b606a83",
+  "method": "project-level copy for codex in isolated temporary directory",
+  "registry_package_published_by_this_project": false,
+  "command": "npx skills@1.7.0 add Shiba-hua/create-research-experiment-repo --agent codex --skill create-research-experiment-repo --copy --yes",
+  "checks": [
+    "root skill discovered",
+    "template approval present",
+    "nested submitter skill present",
+    "example README present",
+    "GSM8K train.py present",
+    "installed package integrity checked"
+  ],
+  "global_install_performed": false,
+  "public_tree_comparison": {
+    "reference_commit": "e9325f19aa993d05aaeb98bca778ede92b606a83",
+    "files_compared": 355,
+    "excluded_installer_file": [
+      ".gitignore"
+    ],
+    "different": []
+  }
+}
