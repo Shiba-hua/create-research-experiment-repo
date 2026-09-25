@@ -1,10 +1,28 @@
-# 科研实验仓库 Skill
+# create-research-experiment-repo
 
-**把实验交给执行者，把科学判断留给负责人。**
+**把实验交给执行者，把科学判断留给负责人。** 这是一个供 Codex 等 Agent 使用的 skill：先与科研负责人约定报告、图表、目录和审批责任，再创建能追溯实验结果的 Git 仓库。
 
 适合手下至少有一个能自主执行实验的主体、需要掌控项目却不亲自操作的科研人员：Coding Agent、实验员、受 AI 调度的仪器或机器人都可以参与。
 
-多人协作时，报告、脚本、原始数据和聊天记录常常各在一处。负责人看到一个漂亮数字，却不知道它来自哪次运行、哪版配方，失败是否被删掉，下一个执行者能否接手。本 skill 让 AI 先与你对齐报告和协作契约，再建立能把结论追溯到证据的仓库。
+多人协作时，报告、脚本、原始数据和聊天记录常常各在一处。负责人看到一个数字，却不知道它来自哪次运行、哪版配方，失败记录是否还在。本 skill 先把这些交付约定写进审批单，获批后建仓；后续由执行者提交材料、负责人审核。
+
+## 快速开始
+
+在准备用来管理实验的项目目录中安装（需要 Node.js/npm 和 Git）：
+
+```sh
+npx skills@1.7.0 add Shiba-hua/create-research-experiment-repo --agent codex --skill create-research-experiment-repo --copy --yes
+```
+
+然后对 Agent 说：
+
+> 使用 $create-research-experiment-repo。我要把一组实验交给执行者，自己负责设计和审核。请先问清报告、图表、目录和权限，给我看包含 readme2machine 的建仓审批单；批准后再建仓。
+
+安装使用社区 [skills CLI](https://github.com/vercel-labs/skills)，并非 `npm install create-research-experiment-repo`；[隔离安装记录](validation-runs/skills-cli-install-20260920/installation.json)验证了 `skills@1.7.0` 对当时公开版本的完整复制。安装或建仓都不会自行启动实验。
+
+## 一次公开的使用记录
+
+[GSM8K 三学习率案例](validation-runs/gsm8k-3lr-review-20260922/README.md)记录了 Sol 主代理与 Luna-Max 执行者串行完成三次正式训练、评测、报告提交和 Git 审核合并。正式执行区间约 18 小时 31 分钟，三组结果及核验材料均可在记录中查到。这是**无人值守执行与项目交接的案例**，不是该 skill 能保证实验成功的证据；原先要求与旧实验结果相差小于 0.5 个百分点的复现门槛并未通过，轮询和部分报告契约也有已披露的偏差。
 
 ## 开始前准备
 
@@ -40,15 +58,7 @@ skill负责责任和交付约定，项目级 [协作配置](template/readme2mach
 
 ## 使用
 
-本仓库可用社区的 [skills CLI](https://github.com/vercel-labs/skills) 安装；它不是已发布的同名npm包，`npm install create-research-experiment-repo` 不是本项目的安装入口。已在隔离目录实测skills@1.7.0能发现根skill，并完整保留template、example与训练代码（[安装记录](validation-runs/skills-cli-install-20260920/installation.json)，记录注明当时测试的提交）。
-
-在目标项目目录执行（需要Node.js/npm及Git）：
-
-```sh
-npx skills@1.7.0 add Shiba-hua/create-research-experiment-repo --agent codex --skill create-research-experiment-repo --copy --yes
-```
-
-这是项目级安装，落在 `.agents/skills/create-research-experiment-repo/`。安装后可运行该目录下的 `python3 scripts/check_package.py` 核对附件完整性。仅希望交给AI读取时，也可克隆本仓库。不要只安装嵌套的experiment-submitter/reviewer，它们是模板附件。
+上述命令执行项目级安装，落在 `.agents/skills/create-research-experiment-repo/`。安装后可运行该目录下的 `python3 scripts/check_package.py` 核对附件完整性。仅希望交给AI读取时，也可克隆本仓库。不要只安装嵌套的experiment-submitter/reviewer，它们是模板附件。
 
 将整个仓库作为名为 `create-research-experiment-repo` 的 skill 目录放入 Agent 支持的技能路径；保留 template 与 example 的相对位置。也可以直接把 [SKILL.md](SKILL.md) 交给支持读取文件的 AI。首次使用的话，可以直接把仓库链接粘贴进聊天框，然后让AI直接去网上读这个仓库（或者把这个skill安装下来），然后让AI照此工作。
 
@@ -61,6 +71,8 @@ npx skills@1.7.0 add Shiba-hua/create-research-experiment-repo --agent codex --s
 ## 无人值守实验用法
 
 [GSM8K使用指南](example/guides/gsm8k-grpo/README.md)提供两段可复用prompt，并记录一次真实三学习率串行实验：主代理完成环境预检后等待，执行子代理运行、清理权重并交付报告，主代理审核merge。轮询偏差和报告待修订项见[独立验收](validation-runs/gsm8k-3lr-review-20260922/README.md)。
+
+如果这套实验交接方式对你的项目有用，欢迎给仓库一个 Star，方便其他研究者找到它。
 
 ## 方法来源
 
