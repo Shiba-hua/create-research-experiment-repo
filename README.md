@@ -72,6 +72,21 @@ skill负责责任和交付约定，项目级 [协作配置](template/readme2mach
 
 [GSM8K使用指南](example/guides/gsm8k-grpo/README.md)提供两段可复用prompt，并记录一次真实三学习率串行实验：主代理完成环境预检后等待，执行子代理运行、清理权重并交付报告，主代理审核merge。轮询偏差和报告待修订项见[独立验收](validation-runs/gsm8k-3lr-review-20260922/README.md)。
 
+## 配套 skill：unattended-experiment-orchestrator（计算机实验的无人值守编排）
+
+面向**大批量计算机实验**（参数扫描、多模型×多数据集×多卡型矩阵、吞吐/基准测试）的另一种执行方式。AI 不派子代理轮询，而是在开跑前配好环境、debug、做最小冒烟测试，写好**编排脚本**一次提交全部调度器作业，再交给**看门狗脚本**无人值守。运行期间 AI 不介入；收尾时，负责人明确指示后 AI 再写报告。这个 skill 只管“怎么规划和承接一批实验”，不规定具体实验方法；仓库结构和报告规格仍可沿用本仓库的 create-research-experiment-repo。
+
+```sh
+npx skills@1.7.0 add Shiba-hua/create-research-experiment-repo --agent claude-code --skill unattended-experiment-orchestrator --copy --yes
+```
+
+Codex 用户把 `--agent claude-code` 换成 `--agent codex`。内容见 [skills/unattended-experiment-orchestrator/SKILL.md](skills/unattended-experiment-orchestrator/SKILL.md)。附带的 Slurm 模板（矩阵提交、系列作业、两层看门狗、同节点清理、状态查看）由实际集群作业用过的脚本泛化而来。来源和变更见 [CHANGELOG](CHANGELOG.md)。
+
+| 场景 | 选哪个 |
+|---|---|
+| 实验执行者是人或设备，或需要子代理逐个执行并提交报告 | create-research-experiment-repo 的协作模式 |
+| 计算机实验，能写成调度器作业，希望开跑后完全无人值守 | unattended-experiment-orchestrator |
+
 如果这套实验交接方式对你的项目有用，欢迎给仓库一个 Star，方便其他研究者找到它。
 
 ## 方法来源
