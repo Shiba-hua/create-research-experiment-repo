@@ -1,0 +1,5 @@
+# series_id	task	hw_type	node_args	priority (smaller submits first)
+# Example rows; replace with the project's matrix. node_args are passed verbatim to sbatch.
+taskA-gpuX	taskA	GPU_X	--nodelist=nodeX	1
+taskA-gpuY	taskA	GPU_Y	--exclude=nodeX	1
+taskB-gpuX	taskB	GPU_X	--nodelist=nodeX	2
